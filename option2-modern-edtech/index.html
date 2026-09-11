@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Tusyen Inspirasi | Modern EdTech 2026 - Master SPM & IGCSE</title>
+    <meta name="description" content="Next-Generation Tuition & Academic Mentorship. AI-empowered analytics, elite top-tier educators, proven +2.4 grade improvement in 90 days.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            bg: '#07090e',
+                            card: '#0d131f',
+                            cardLight: '#141d2e',
+                            border: '#1e293b',
+                            neonBlue: '#38bdf8',
+                            neonCyan: '#06b6d4',
+                            neonPurple: '#818cf8',
+                            neonEmerald: '#10b981',
+                            neonAmber: '#f59e0b'
+                        }
+                    },
+                    fontFamily: {
+                        heading: ['Outfit', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace']
+                    },
+                    boxShadow: {
+                        'neon-blue': '0 0 25px -5px rgba(56, 189, 248, 0.35)',
+                        'neon-glow': '0 0 35px -5px rgba(99, 102, 241, 0.4)',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07090e;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .font-heading { font-family: 'Outfit', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+        
+        .glass-panel {
+            background: rgba(13, 19, 31, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .glass-panel-hover {
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .glass-panel-hover:hover {
+            background: rgba(20, 29, 46, 0.85);
+            border-color: rgba(56, 189, 248, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px -10px rgba(56, 189, 248, 0.2);
+        }
+        .grid-bg {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+            background-size: 28px 28px;
+        }
+        .radial-gradient-top {
+            background: radial-gradient(circle 800px at 50% -100px, rgba(56, 189, 248, 0.15), transparent 70%);
+        }
+        .text-gradient-cyan {
+            background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #07090e; }
+        ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #334155; }
+    </style>
+</head>
+<body class="selection:bg-cyan-500 selection:text-black">
+
+    <!-- Ambient Gradient Backdrops -->
+    <div class="fixed inset-0 pointer-events-none z-0 grid-bg opacity-40"></div>
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-[600px] pointer-events-none z-0 radial-gradient-top"></div>
+    <div class="fixed -top-40 -right-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none z-0"></div>
+    <div class="fixed top-1/2 -left-40 w-96 h-96 bg-cyan-600/15 rounded-full blur-[120px] pointer-events-none z-0"></div>
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 transition-all duration-300 backdrop-blur-md bg-cyber-bg/85 border-b border-cyber-border/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo & Brand -->
+                <a href="#hero" class="flex items-center gap-3.5 group">
+                    <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-cyan-500 via-blue-600 to-indigo-600 p-[1.5px] shadow-neon-blue transition-transform duration-300 group-hover:scale-105">
+                        <div class="w-full h-full bg-cyber-bg rounded-[10px] flex items-center justify-center">
+                            <span class="font-heading font-black text-xl text-cyan-400">IN</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-heading font-black text-lg sm:text-xl text-white tracking-tight">PUSAT TUSYEN INSPIRASI</span>
+                            <span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">EdTech '26</span>
+                        </div>
+                        <p class="text-xs text-slate-400 font-medium tracking-wide" data-i18n="nav.subtitle">Next-Gen SPM & IGCSE Academic Hub</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center gap-8">
+                    <a href="#pillars" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors" data-i18n="nav.pillars">10 Pillars</a>
+                    <a href="#simulator" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span data-i18n="nav.simulator">Grade Projector</span>
+                    </a>
+                    <a href="#syllabus" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors" data-i18n="nav.syllabus">Syllabus Matrix</a>
+                    <a href="#results" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors" data-i18n="nav.results">Results & Faculty</a>
+                    <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors" data-i18n="nav.faq">FAQ</a>
+                </nav>
+
+                <!-- Actions & Language Switcher -->
+                <div class="flex items-center gap-3">
+                    <!-- Language Switcher -->
+                    <div class="flex items-center bg-cyber-card border border-cyber-border rounded-lg p-1">
+                        <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-xs font-semibold rounded-md transition-all bg-cyan-500 text-black">EN</button>
+                        <button id="lang-bm" onclick="setLanguage('bm')" class="px-2.5 py-1 text-xs font-semibold rounded-md transition-all text-slate-400 hover:text-white">BM</button>
+                    </div>
+
+                    <!-- CTA Button -->
+                    <a href="#enroll" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl font-heading font-semibold text-sm bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 text-white shadow-neon-blue hover:opacity-95 hover:shadow-cyan-500/50 hover:scale-[1.02] transition-all">
+                        <span data-i18n="nav.cta">Book Diagnostic</span>
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <!-- Hero Section -->
+        <section id="hero" class="pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                    
+                    <!-- Hero Content Left -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <!-- Top Pill -->
+                        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-cyan-500/10 border border-cyan-500/30 backdrop-blur-md">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            <span class="text-xs font-mono font-medium text-cyan-300" data-i18n="hero.badge">2026 INTAKE NOW OPEN • SPM & IGCSE ACCELERATION</span>
+                        </div>
+
+                        <!-- Main Title -->
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-heading tracking-tight leading-[1.15]">
+                            <span class="text-white" data-i18n="hero.title1">Empowering the Next Generation of</span>
+                            <br class="hidden sm:inline">
+                            <span class="text-gradient-cyan" data-i18n="hero.title2">High Achievers & Thinkers.</span>
+                        </h1>
+
+                        <!-- Subtitle -->
+                        <p class="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed" data-i18n="hero.subtitle">
+                            Malaysia's leading hybrid tuition academy. Combining MOE Master Tutors with precision diagnostic tracking, high-yield examination modules, and structured 1-on-1 coaching for sustained A* outcomes.
+                        </p>
+
+                        <!-- Live Telemetry Badges -->
+                        <div class="grid grid-cols-3 gap-3 pt-2 max-w-lg mx-auto lg:mx-0 font-mono">
+                            <div class="glass-panel p-3 rounded-xl border-slate-800 text-center">
+                                <div class="text-2xl sm:text-3xl font-bold text-cyan-400 font-heading">98.4%</div>
+                                <div class="text-[11px] text-slate-400 tracking-tight uppercase" data-i18n="hero.stat1">Pass Rate</div>
+                            </div>
+                            <div class="glass-panel p-3 rounded-xl border-slate-800 text-center">
+                                <div class="text-2xl sm:text-3xl font-bold text-indigo-400 font-heading">+2.4</div>
+                                <div class="text-[11px] text-slate-400 tracking-tight uppercase" data-i18n="hero.stat2">Grade Jump</div>
+                            </div>
+                            <div class="glass-panel p-3 rounded-xl border-slate-800 text-center">
+                                <div class="text-2xl sm:text-3xl font-bold text-emerald-400 font-heading">15k+</div>
+                                <div class="text-[11px] text-slate-400 tracking-tight uppercase" data-i18n="hero.stat3">Alumni Top As</div>
+                            </div>
+                        </div>
+
+                        <!-- CTAs -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                            <a href="#simulator" class="w-full sm:w-auto px-8 py-4 rounded-xl font-heading font-bold text-base bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-neon-blue hover:opacity-90 hover:scale-[1.02] transition-all text-center flex items-center justify-center gap-2.5">
+                                <span data-i18n="hero.cta1">Launch Grade Simulator</span>
+                                <svg class="w-5 h-5 text-cyan-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                            </a>
+                            <a href="#syllabus" class="w-full sm:w-auto px-7 py-4 rounded-xl font-heading font-bold text-base glass-panel text-slate-200 hover:text-white hover:border-cyan-400/40 transition-all text-center flex items-center justify-center gap-2">
+                                <span data-i18n="hero.cta2">Explore 2026 Syllabus</span>
+                            </a>
+                        </div>
+
+                        <!-- Trust signals -->
+                        <div class="flex items-center justify-center lg:justify-start gap-6 pt-3 text-xs text-slate-400">
+                            <span class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> MOE Registered</span>
+                            <span class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Max 12 Per Class</span>
+                            <span class="flex items-center gap-1.5"><span class="text-emerald-400">✓</span> Free 1-Week Trial</span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Visual Card / Dashboard Graphic Right -->
+                    <div class="lg:col-span-5 relative">
+                        <div class="relative mx-auto max-w-md lg:max-w-none">
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-3xl blur-xl opacity-40 animate-pulse-slow"></div>
+                            
+                            <div class="relative glass-panel rounded-2xl p-6 border-slate-700/80 shadow-2xl overflow-hidden space-y-6">
+                                <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-10 h-10 rounded-xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center text-cyan-400 font-bold">
+                                            SPM
+                                        </div>
+                                        <div>
+                                            <h4 class="font-heading font-bold text-white text-sm">SPM & IGCSE Fast-Track</h4>
+                                            <p class="text-xs text-slate-400 font-mono">Performance Metric Engine</p>
+                                        </div>
+                                    </div>
+                                    <span class="px-2.5 py-1 text-[11px] font-mono font-semibold rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">Active Sprint</span>
+                                </div>
+
+                                <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-slate-700/60 group">
+                                    <img src="images/hero-student.png" alt="Inspirasi High Achiever" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-cyber-bg via-transparent to-transparent opacity-80"></div>
+                                    
+                                    <div class="absolute bottom-3 left-3 right-3 glass-panel p-3 rounded-lg border-cyan-500/30 flex items-center justify-between text-xs">
+                                        <div class="flex items-center gap-2">
+                                            <div class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></div>
+                                            <span class="text-slate-200 font-medium">Add Maths & Physics Mastery</span>
+                                        </div>
+                                        <span class="font-mono font-bold text-cyan-300">Grade A+ (94%)</span>
+                                    </div>
+                                </div>
+
+                                <div class="space-y-2.5 font-mono text-xs">
+                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+                                        <span class="text-slate-400">Diagnostic Weakness Elimination</span>
+                                        <span class="text-emerald-400 font-semibold">100% Tracked</span>
+                                    </div>
+                                    <div class="flex items-center justify-between p-2.5 rounded-lg bg-slate-900/60 border border-slate-800">
+                                        <span class="text-slate-400">Past Year KBAT & HOTS Drill Bank</span>
+                                        <span class="text-cyan-400 font-semibold">2,500+ Solved</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 Pillars of Academic Excellence (Bento Grid) -->
+        <section id="pillars" class="py-20 bg-slate-950/70 border-y border-slate-800/80 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">
+                        ARCHITECTURE OF ACADEMIC SUCCESS
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white tracking-tight" data-i18n="pillars.title">
+                        The 10 Pillars of the <span class="text-gradient-cyan">Inspirasi Formula</span>
+                    </h2>
+                    <p class="text-slate-400 text-base sm:text-lg" data-i18n="pillars.subtitle">
+                        Every student receives a calibrated learning system designed to eliminate academic friction, reinforce core concepts, and build unbreakable exam resilience.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Pillar 1 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-black transition-all">
+                                01
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-cyan-300 transition-colors" data-i18n="p1.title">Precision Diagnostic Assessment</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p1.desc">
+                                We analyze exact foundational gaps from day one. Instead of repetitive drill work, students receive customized roadmaps addressing high-risk exam blind spots.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Phase: Onboarding</span>
+                            <span class="text-cyan-400">Baseline Set</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+                                02
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-indigo-300 transition-colors" data-i18n="p2.title">MOE Master Examiner Faculty</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p2.desc">
+                                Learn directly from teachers who mark actual SPM and IGCSE papers. Gain direct insights into marking rubrics, keyword allocation, and common penalty triggers.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Standard: Official MOE</span>
+                            <span class="text-indigo-400">100% Certified</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-blue-500 group-hover:text-white transition-all">
+                                03
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-blue-300 transition-colors" data-i18n="p3.title">HOTS / KBAT Mastery Engine</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p3.desc">
+                                Specialized training in high-order thinking questions. Students learn structured multi-step problem solving, application logic, and conceptual synthesis.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Focus: Critical Thinking</span>
+                            <span class="text-blue-400">+40% Exam Weight</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 4 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-black transition-all">
+                                04
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-emerald-300 transition-colors" data-i18n="p4.title">Micro-Class Cohorts (Max 12)</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p4.desc">
+                                We strictly cap class sizes to ensure active participation, instant teacher feedback, and zero students falling behind in passive lecture auditoriums.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Ratio: 1:12 Max</span>
+                            <span class="text-emerald-400">High Engagement</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 5 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-purple-500 group-hover:text-white transition-all">
+                                05
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-purple-300 transition-colors" data-i18n="p5.title">Hybrid Classroom Flexibility</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p5.desc">
+                                Attend in-person at our premium modern centers or stream live interactive classes in HD. Includes instant cloud recordings and searchable revision archives.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Access: 24/7 Cloud LMS</span>
+                            <span class="text-purple-400">Zero Missed Lessons</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 6 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-black transition-all">
+                                06
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-amber-300 transition-colors" data-i18n="p6.title">Real-Time Parent Progress Sync</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p6.desc">
+                                Bi-weekly automated reports delivered directly to parents via WhatsApp and dashboard, highlighting attendance, homework completion, and quiz trajectories.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Reporting: WhatsApp / App</span>
+                            <span class="text-amber-400">100% Transparency</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 7 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center text-rose-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-rose-500 group-hover:text-white transition-all">
+                                07
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-rose-300 transition-colors" data-i18n="p7.title">Proprietary Exam Modules</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p7.desc">
+                                Annually updated, curated study notes and trial question banks aligned precisely with the latest KSSM format and Cambridge IGCSE syllabus updates.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Editions: 2026 Updated</span>
+                            <span class="text-rose-400">All Subjects</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 8 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 border border-teal-500/30 flex items-center justify-center text-teal-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-teal-500 group-hover:text-black transition-all">
+                                08
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-teal-300 transition-colors" data-i18n="p8.title">Weekly 1-on-1 Helpdesk Clinic</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p8.desc">
+                                Free dedicated consultation slots where students can bring difficult school homework, past year questions, or specific topic doubts for immediate resolution.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Format: 1-on-1 Guidance</span>
+                            <span class="text-teal-400">Zero Extra Cost</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 9 -->
+                    <div class="glass-panel glass-panel-hover p-6 rounded-2xl flex flex-col justify-between border-slate-800/80 group">
+                        <div class="space-y-4">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-sky-400 font-mono font-bold text-lg group-hover:scale-110 group-hover:bg-sky-500 group-hover:text-black transition-all">
+                                09
+                            </div>
+                            <h3 class="font-heading font-bold text-xl text-white group-hover:text-sky-300 transition-colors" data-i18n="p9.title">Simulated Real-Condition Mocks</h3>
+                            <p class="text-slate-400 text-sm leading-relaxed" data-i18n="p9.desc">
+                                Timed, strict mock examinations conducted under authentic board conditions to eliminate exam anxiety, master time management, and build mental stamina.
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-between text-xs font-mono text-slate-500">
+                            <span>Frequency: 3x Annually</span>
+                            <span class="text-sky-400">Exam-Conditioned</span>
+                        </div>
+                    </div>
+
+                    <!-- Pillar 10 (Span 3 on LG) -->
+                    <div class="lg:col-span-3 glass-panel glass-panel-hover p-8 rounded-2xl border-cyan-500/30 bg-gradient-to-r from-cyan-950/40 via-slate-900 to-indigo-950/40 flex flex-col md:flex-row items-center justify-between gap-6 group">
+                        <div class="space-y-2 text-center md:text-left">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">
+                                PILLAR 10 • THE COMMITMENT
+                            </div>
+                            <h3 class="font-heading font-bold text-2xl text-white" data-i18n="p10.title">14-Day Academic Satisfaction & Grade Jump Guarantee</h3>
+                            <p class="text-slate-300 text-sm max-w-2xl" data-i18n="p10.desc">
+                                We stand behind our proven methodology with complete confidence. If within the first 14 days you are not completely satisfied with our teaching quality and structure, receive a 100% full refund with zero questions asked.
+                            </p>
+                        </div>
+                        <a href="#enroll" class="px-6 py-3.5 rounded-xl font-heading font-bold text-sm bg-cyan-500 text-black hover:bg-cyan-400 shadow-neon-blue transition-all whitespace-nowrap">
+                            Experience the Difference →
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Diagnostic & Grade Projector Simulator -->
+        <section id="simulator" class="py-20 relative">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-panel rounded-3xl p-6 sm:p-10 border-slate-700/80 shadow-2xl relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-80 h-80 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                    <!-- Simulator Header -->
+                    <div class="text-center max-w-2xl mx-auto space-y-3 mb-8">
+                        <span class="px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">INTERACTIVE DIAGNOSTIC SIMULATOR</span>
+                        <h2 class="text-3xl sm:text-4xl font-black font-heading text-white" data-i18n="sim.title">Project Your Academic Improvement</h2>
+                        <p class="text-slate-400 text-sm" data-i18n="sim.subtitle">Select your current grade baseline and subject focus to estimate target 90-day progress trajectory with Inspirasi coaching.</p>
+                    </div>
+
+                    <!-- Simulator Controls -->
+                    <div class="grid md:grid-cols-2 gap-8 items-center bg-slate-900/80 p-6 sm:p-8 rounded-2xl border border-slate-800">
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-400 mb-2" data-i18n="sim.targetLevel">1. Academic Level</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <button type="button" onclick="updateSim('spm')" id="sim-btn-spm" class="px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-cyan-500 bg-cyan-500/20 text-cyan-300 transition-all">SPM Form 4 & 5</button>
+                                    <button type="button" onclick="updateSim('igcse')" id="sim-btn-igcse" class="px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-slate-700 bg-slate-800/50 text-slate-400 hover:text-white transition-all">IGCSE Year 10-11</button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-400 mb-2" data-i18n="sim.currentGrade">2. Current Assessment Grade</label>
+                                <select id="sim-grade" onchange="calculateGrade()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono">
+                                    <option value="D">Grade D / E (Borderline Fail / 40-49%)</option>
+                                    <option value="C" selected>Grade C (Average Passing / 50-64%)</option>
+                                    <option value="B">Grade B (Good Competency / 65-74%)</option>
+                                    <option value="A-">Grade A- (High Potential / 75-79%)</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-400 mb-2" data-i18n="sim.subjectFocus">3. Key Focus Subject</label>
+                                <select id="sim-subject" onchange="calculateGrade()" class="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-2.5 text-sm text-white focus:outline-none focus:border-cyan-500 font-mono">
+                                    <option value="addmaths">Additional Mathematics (Matematik Tambahan)</option>
+                                    <option value="physics">Physics (Fizik)</option>
+                                    <option value="chemistry">Chemistry (Kimia)</option>
+                                    <option value="biology">Biology (Biologi)</option>
+                                    <option value="maths">Mathematics (Matematik)</option>
+                                    <option value="bm">Bahasa Melayu (Kertas 1, 2, 3)</option>
+                                    <option value="english">English (1119 / IGCSE ESL)</option>
+                                    <option value="sejarah">Sejarah</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Result Display Box -->
+                        <div class="glass-panel p-6 rounded-2xl border-cyan-500/40 text-center space-y-4">
+                            <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">PROJECTED 90-DAY OUTCOME</span>
+                            <div class="flex items-center justify-center gap-4 my-2">
+                                <div>
+                                    <div class="text-xs text-slate-500 font-mono">Current</div>
+                                    <div id="disp-current" class="text-3xl font-black font-heading text-slate-400">Grade C</div>
+                                </div>
+                                <div class="text-cyan-400 text-2xl font-bold animate-pulse">➔</div>
+                                <div>
+                                    <div class="text-xs text-emerald-400 font-mono">Inspirasi Target</div>
+                                    <div id="disp-target" class="text-4xl font-black font-heading text-gradient-cyan">Grade A / A+</div>
+                                </div>
+                            </div>
+                            <div class="p-3 rounded-lg bg-slate-950/80 border border-slate-800 text-left space-y-1.5 text-xs text-slate-300">
+                                <div class="flex items-center justify-between font-mono">
+                                    <span>Estimated Score Uplift:</span>
+                                    <span id="disp-uplift" class="text-emerald-400 font-bold">+28% to +35%</span>
+                                </div>
+                                <div class="flex items-center justify-between font-mono">
+                                    <span>Weekly Required Hours:</span>
+                                    <span class="text-cyan-300">3.5 hrs (Class + Clinic)</span>
+                                </div>
+                                <div class="flex items-center justify-between font-mono">
+                                    <span>HOTS Question Mastery:</span>
+                                    <span class="text-indigo-400 font-bold">85%+ Precision</span>
+                                </div>
+                            </div>
+                            <a href="#enroll" class="block w-full py-3 rounded-xl font-heading font-bold text-sm bg-cyan-500 text-black hover:bg-cyan-400 shadow-neon-blue transition-all">
+                                Claim Diagnostic Assessment Plan →
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Comprehensive 2026 Syllabus Matrix -->
+        <section id="syllabus" class="py-20 bg-slate-950/80 border-t border-slate-800 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/30 text-xs font-mono text-indigo-300">
+                        CURRICULUM EXCELLENCE
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white" data-i18n="syl.title">
+                        Comprehensive <span class="text-gradient-cyan">Syllabus Matrix</span>
+                    </h2>
+                    <p class="text-slate-400 text-base" data-i18n="syl.subtitle">
+                        Structured, high-yield syllabus coverage designed to build foundational clarity before mastering exam-level KBAT questions.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center gap-2 pt-4">
+                        <button onclick="switchLevel('spm')" id="tab-spm" class="px-5 py-2.5 rounded-xl font-heading font-bold text-sm bg-cyan-500 text-black shadow-neon-blue transition-all">SPM (Form 4 & 5)</button>
+                        <button onclick="switchLevel('igcse')" id="tab-igcse" class="px-5 py-2.5 rounded-xl font-heading font-bold text-sm glass-panel text-slate-300 hover:text-white transition-all">IGCSE (Year 7-11)</button>
+                        <button onclick="switchLevel('lowersec')" id="tab-lowersec" class="px-5 py-2.5 rounded-xl font-heading font-bold text-sm glass-panel text-slate-300 hover:text-white transition-all">Lower Secondary (Form 1-3)</button>
+                        <button onclick="switchLevel('primary')" id="tab-primary" class="px-5 py-2.5 rounded-xl font-heading font-bold text-sm glass-panel text-slate-300 hover:text-white transition-all">Primary (Standard 4-6)</button>
+                    </div>
+                </div>
+
+                <div id="syllabus-content" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            </div>
+        </section>
+
+        <!-- Faculty & Results Track Record -->
+        <section id="results" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono text-emerald-300">
+                        VERIFIED TRACK RECORD
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black font-heading text-white" data-i18n="results.title">
+                        Led by Master Mentors, <span class="text-gradient-cyan">Validated by Results</span>
+                    </h2>
+                    <p class="text-slate-400 text-base" data-i18n="results.subtitle">
+                        Every mentor at Inspirasi is rigorously vetted, subject-specialized, and trained in high-engagement pedagogical techniques.
+                    </p>
+                </div>
+
+                <!-- Mentor Spotlight Grid -->
+                <div class="grid md:grid-cols-3 gap-6 mb-16">
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-4">
+                        <div class="w-16 h-16 rounded-2xl bg-cyan-500/20 border border-cyan-500/40 flex items-center justify-center font-heading font-black text-2xl text-cyan-400">
+                            Dr. T
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-white">Dr. Tan Hock Seng</h4>
+                            <p class="text-xs text-cyan-400 font-mono">Head of Additional Mathematics & Physics</p>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Former MOE Curriculum Reviewer with 18+ years of teaching experience. Produced 850+ SPM A+ scorers through algebraic logic framework.
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex justify-between">
+                            <span>Experience: 18+ Years</span>
+                            <span class="text-emerald-400">99.1% A-Rate</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-4">
+                        <div class="w-16 h-16 rounded-2xl bg-indigo-500/20 border border-indigo-500/40 flex items-center justify-center font-heading font-black text-2xl text-indigo-400">
+                            Cikgu N
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-white">Cikgu Nurul Ain</h4>
+                            <p class="text-xs text-indigo-400 font-mono">Senior Specialist - Bahasa Melayu & Sejarah</p>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            SPM Karangan & KBAT structure master. Developed the 4-tier thematic essay model that elevates average C grades to solid A/A+ within 4 months.
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex justify-between">
+                            <span>Experience: 14+ Years</span>
+                            <span class="text-indigo-400">Author of 4 Books</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800 space-y-4">
+                        <div class="w-16 h-16 rounded-2xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center font-heading font-black text-2xl text-purple-400">
+                            Sir R
+                        </div>
+                        <div>
+                            <h4 class="font-heading font-bold text-lg text-white">Sir Robert Lim</h4>
+                            <p class="text-xs text-purple-400 font-mono">IGCSE & Chemistry Lead Mentor</p>
+                        </div>
+                        <p class="text-xs text-slate-400 leading-relaxed">
+                            Cambridge University Graduate. Expert in stoichiometric calculations, organic chemistry mechanisms, and experimental paper technique drills.
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-[11px] font-mono text-slate-500 flex justify-between">
+                            <span>Experience: 12+ Years</span>
+                            <span class="text-purple-400">100% IGCSE A*-B</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Verified Testimonials Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-mono text-cyan-400">SPM 2025 • 9A+</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            "Before joining Inspirasi, I was failing Add Maths (28% in Mid-Terms). Dr. Tan completely broke down the questions into logical steps. In SPM, I scored A+! Truly life changing."
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-xs font-medium text-white flex items-center justify-between">
+                            <span>Daniel Wong</span>
+                            <span class="text-slate-500 text-[11px]">SMK Damansara Utama</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-mono text-emerald-400">Parent Review</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            "The WhatsApp progress updates give me total peace of mind as a working parent. You can actually see the weekly quiz scores and know they are receiving proper attention."
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-xs font-medium text-white flex items-center justify-between">
+                            <span>Puan Sarah binti Rahim</span>
+                            <span class="text-slate-500 text-[11px]">Mother of Form 5 Student</span>
+                        </div>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-2xl border-slate-800/80 space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-400 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-mono text-purple-400">IGCSE • 7A*</span>
+                        </div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            "The hybrid flexibility saved my schedule. When I had sports tournaments, I caught up on HD recordings and attended the 1-on-1 clinic without falling behind."
+                        </p>
+                        <div class="pt-3 border-t border-slate-800 text-xs font-medium text-white flex items-center justify-between">
+                            <span>Chloe Tan</span>
+                            <span class="text-slate-500 text-[11px]">International School Student</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-slate-950/60 border-t border-slate-800 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-14 space-y-3">
+                    <span class="px-3.5 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">FREQUENTLY ASKED QUESTIONS</span>
+                    <h2 class="text-3xl sm:text-4xl font-black font-heading text-white" data-i18n="faq.title">Everything You Need to Know</h2>
+                    <p class="text-slate-400 text-sm" data-i18n="faq.subtitle">Got questions regarding our methodology, class schedules, or trial arrangements? We have answers.</p>
+                </div>
+
+                <div class="space-y-4" id="faq-list">
+                    <div class="glass-panel rounded-xl border-slate-800 overflow-hidden">
+                        <button type="button" onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-heading font-bold text-white hover:text-cyan-400 transition-colors">
+                            <span data-i18n="faq.q1">How does the 1-Week Free Trial work?</span>
+                            <span id="faq-icon-1" class="text-cyan-400 text-lg font-mono transition-transform duration-200">+</span>
+                        </button>
+                        <div id="faq-ans-1" class="hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                            You can choose any 2 subjects for your child to attend for one full week. This includes access to our study modules, live class session, and diagnostic baseline report with zero upfront payment or credit card required.
+                        </div>
+                    </div>
+
+                    <div class="glass-panel rounded-xl border-slate-800 overflow-hidden">
+                        <button type="button" onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-heading font-bold text-white hover:text-cyan-400 transition-colors">
+                            <span data-i18n="faq.q2">What is the maximum number of students per class?</span>
+                            <span id="faq-icon-2" class="text-cyan-400 text-lg font-mono transition-transform duration-200">+</span>
+                        </button>
+                        <div id="faq-ans-2" class="hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                            We strictly cap our micro-cohorts at 12 students per class. This guarantees that every student receives individualized attention and direct question-and-answer opportunities during each lesson.
+                        </div>
+                    </div>
+
+                    <div class="glass-panel rounded-xl border-slate-800 overflow-hidden">
+                        <button type="button" onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-heading font-bold text-white hover:text-cyan-400 transition-colors">
+                            <span data-i18n="faq.q3">Can we switch between physical classes and online zoom sessions?</span>
+                            <span id="faq-icon-3" class="text-cyan-400 text-lg font-mono transition-transform duration-200">+</span>
+                        </button>
+                        <div id="faq-ans-3" class="hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                            Yes! Our hybrid platform allows seamless switching. If a student is unwell or traveling, they can log in to the live broadcast and access past recorded replays 24/7 on the Inspirasi LMS portal.
+                        </div>
+                    </div>
+
+                    <div class="glass-panel rounded-xl border-slate-800 overflow-hidden">
+                        <button type="button" onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-heading font-bold text-white hover:text-cyan-400 transition-colors">
+                            <span data-i18n="faq.q4">How are parents updated on student attendance and progress?</span>
+                            <span id="faq-icon-4" class="text-cyan-400 text-lg font-mono transition-transform duration-200">+</span>
+                        </button>
+                        <div id="faq-ans-4" class="hidden px-6 pb-5 text-xs sm:text-sm text-slate-300 leading-relaxed border-t border-slate-800/60 pt-3">
+                            Parents receive automated check-in notifications when their child enters the center, along with bi-weekly progress reports over WhatsApp outlining test scores, homework ratings, and tutor feedback.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Conversion Enrollment Form Section -->
+        <section id="enroll" class="py-20 relative">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-panel rounded-3xl p-8 sm:p-12 border-cyan-500/40 shadow-2xl relative">
+                    <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+                        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-xs font-mono text-cyan-300">
+                            LIMITED COHORT SEATS FOR 2026
+                        </div>
+                        <h2 class="text-3xl sm:text-4xl font-black font-heading text-white" data-i18n="form.title">Secure Your Diagnostic Session & Free Trial</h2>
+                        <p class="text-slate-400 text-sm" data-i18n="form.subtitle">Fill up the details below to receive a personalized academic consultation and schedule your 1-week free trial class.</p>
+                    </div>
+
+                    <form onsubmit="handleEnroll(event)" class="space-y-5">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5" data-i18n="form.parentName">Parent / Guardian Name *</label>
+                                <input type="text" required placeholder="e.g. Tan Mei Ling" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 font-sans">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5" data-i18n="form.phone">WhatsApp / Phone Number *</label>
+                                <input type="tel" required placeholder="e.g. 012-3456789" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 font-sans">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5" data-i18n="form.studentName">Student Name *</label>
+                                <input type="text" required placeholder="e.g. Lucas Tan" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-cyan-500 font-sans">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5" data-i18n="form.level">Academic Level *</label>
+                                <select required class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 font-sans">
+                                    <option value="SPM-F5">SPM - Form 5 (2026 Candidate)</option>
+                                    <option value="SPM-F4">SPM - Form 4</option>
+                                    <option value="IGCSE-Y11">IGCSE - Year 11</option>
+                                    <option value="IGCSE-Y10">IGCSE - Year 10</option>
+                                    <option value="LowerSec">Lower Secondary (Form 1-3 / Year 7-9)</option>
+                                    <option value="Primary">Primary (Standard 4-6 / Year 4-6)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-mono uppercase text-slate-300 mb-1.5" data-i18n="form.subjects">Subjects of Interest (Select all that apply)</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 text-xs text-slate-300">
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" checked class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Add Maths</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" checked class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Physics</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Chemistry</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Biology</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Mathematics</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> B. Melayu</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> English</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-900/60 border border-slate-800 cursor-pointer hover:border-cyan-500/50"><input type="checkbox" class="rounded border-slate-700 text-cyan-500 focus:ring-0"> Sejarah</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-heading font-bold text-base bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-neon-blue hover:opacity-95 hover:scale-[1.01] transition-all">
+                            <span data-i18n="form.submit">Confirm Diagnostic Consultation & Free Trial Class</span>
+                        </button>
+                        <p class="text-center text-[11px] text-slate-500">
+                            🔒 No upfront payment required. Your information is strictly protected under PDPA guidelines.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 border-t border-slate-800/80 py-12 text-xs text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-cyan-500 flex items-center justify-center font-heading font-bold text-black text-sm">IN</div>
+                        <span class="font-heading font-bold text-white text-base">PUSAT TUSYEN INSPIRASI</span>
+                    </div>
+                    <p class="text-slate-400">Next-generation tuition academy combining top MOE examiners, hybrid smart classrooms, and personalized diagnostic analytics.</p>
+                </div>
+                <div>
+                    <h5 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-xs">Programs</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li><a href="#syllabus" class="hover:text-cyan-400">SPM Form 4 & 5 Intensive</a></li>
+                        <li><a href="#syllabus" class="hover:text-cyan-400">IGCSE Cambridge Fast-Track</a></li>
+                        <li><a href="#syllabus" class="hover:text-cyan-400">Lower Secondary Mastery</a></li>
+                        <li><a href="#syllabus" class="hover:text-cyan-400">Primary Foundations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-xs">Campus Centers</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li>📍 Subang Jaya SS15 Main Campus</li>
+                        <li>📍 Petaling Jaya SS2 Center</li>
+                        <li>📍 Cheras Mahkota Center</li>
+                        <li>🌐 Online Global Hybrid Portal</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-heading font-bold text-white mb-3 uppercase tracking-wider text-xs">Contact</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li>📞 +60 12-345 6789</li>
+                        <li>💬 WhatsApp Support: +60 12-987 6543</li>
+                        <li>✉️ admissions@inspirasi-edtech.edu.my</li>
+                        <li>🕒 Mon - Sun: 9:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <p>© 2026 Pusat Tusyen Inspirasi. All rights reserved. Registered with Ministry of Education Malaysia.</p>
+                <div class="flex items-center gap-4 text-slate-500">
+                    <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#" class="hover:text-slate-300">Terms of Enrollment</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Sticky Action Dock -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 p-3 glass-panel border-t border-slate-800 flex items-center gap-3">
+        <a href="https://wa.me/60123456789" class="flex-1 py-3 rounded-xl bg-emerald-600 font-heading font-bold text-xs text-white text-center flex items-center justify-center gap-2 shadow-lg">
+            <span>WhatsApp Mentor</span>
+        </a>
+        <a href="#enroll" class="flex-1 py-3 rounded-xl bg-cyan-500 font-heading font-bold text-xs text-black text-center flex items-center justify-center gap-2 shadow-neon-blue">
+            <span>Book Free Trial</span>
+        </a>
+    </div>
+
+    <!-- Interactive Script -->
+    <script>
+        const i18n = {
+            en: {
+                "nav.subtitle": "Next-Gen SPM & IGCSE Academic Hub",
+                "nav.pillars": "10 Pillars",
+                "nav.simulator": "Grade Projector",
+                "nav.syllabus": "Syllabus Matrix",
+                "nav.results": "Results & Faculty",
+                "nav.faq": "FAQ",
+                "nav.cta": "Book Diagnostic",
+                "hero.badge": "2026 INTAKE NOW OPEN • SPM & IGCSE ACCELERATION",
+                "hero.title1": "Empowering the Next Generation of",
+                "hero.title2": "High Achievers & Thinkers.",
+                "hero.subtitle": "Malaysia's leading hybrid tuition academy. Combining MOE Master Tutors with precision diagnostic tracking, high-yield examination modules, and structured 1-on-1 coaching for sustained A* outcomes.",
+                "hero.stat1": "Pass Rate",
+                "hero.stat2": "Grade Jump",
+                "hero.stat3": "Alumni Top As",
+                "hero.cta1": "Launch Grade Simulator",
+                "hero.cta2": "Explore 2026 Syllabus",
+                "pillars.title": "The 10 Pillars of the Inspirasi Formula",
+                "pillars.subtitle": "Every student receives a calibrated learning system designed to eliminate academic friction, reinforce core concepts, and build unbreakable exam resilience.",
+                "p1.title": "Precision Diagnostic Assessment",
+                "p1.desc": "We analyze exact foundational gaps from day one. Instead of repetitive drill work, students receive customized roadmaps addressing high-risk exam blind spots.",
+                "p2.title": "MOE Master Examiner Faculty",
+                "p2.desc": "Learn directly from teachers who mark actual SPM and IGCSE papers. Gain direct insights into marking rubrics, keyword allocation, and common penalty triggers.",
+                "p3.title": "HOTS / KBAT Mastery Engine",
+                "p3.desc": "Specialized training in high-order thinking questions. Students learn structured multi-step problem solving, application logic, and conceptual synthesis.",
+                "p4.title": "Micro-Class Cohorts (Max 12)",
+                "p4.desc": "We strictly cap class sizes to ensure active participation, instant teacher feedback, and zero students falling behind in passive lecture auditoriums.",
+                "p5.title": "Hybrid Classroom Flexibility",
+                "p5.desc": "Attend in-person at our premium modern centers or stream live interactive classes in HD. Includes instant cloud recordings and searchable revision archives.",
+                "p6.title": "Real-Time Parent Progress Sync",
+                "p6.desc": "Bi-weekly automated reports delivered directly to parents via WhatsApp and dashboard, highlighting attendance, homework completion, and quiz trajectories.",
+                "p7.title": "Proprietary Exam Modules",
+                "p7.desc": "Annually updated, curated study notes and trial question banks aligned precisely with the latest KSSM format and Cambridge IGCSE syllabus updates.",
+                "p8.title": "Weekly 1-on-1 Helpdesk Clinic",
+                "p8.desc": "Free dedicated consultation slots where students can bring difficult school homework, past year questions, or specific topic doubts for immediate resolution.",
+                "p9.title": "Simulated Real-Condition Mocks",
+                "p9.desc": "Timed, strict mock examinations conducted under authentic board conditions to eliminate exam anxiety, master time management, and build mental stamina.",
+                "p10.title": "14-Day Academic Satisfaction & Grade Jump Guarantee",
+                "p10.desc": "We stand behind our proven methodology with complete confidence. If within the first 14 days you are not completely satisfied with our teaching quality and structure, receive a 100% full refund with zero questions asked.",
+                "sim.title": "Project Your Academic Improvement",
+                "sim.subtitle": "Select your current grade baseline and subject focus to estimate target 90-day progress trajectory with Inspirasi coaching.",
+                "sim.targetLevel": "1. Academic Level",
+                "sim.currentGrade": "2. Current Assessment Grade",
+                "sim.subjectFocus": "3. Key Focus Subject",
+                "syl.title": "Comprehensive Syllabus Matrix",
+                "syl.subtitle": "Structured, high-yield syllabus coverage designed to build foundational clarity before mastering exam-level KBAT questions.",
+                "results.title": "Led by Master Mentors, Validated by Results",
+                "results.subtitle": "Every mentor at Inspirasi is rigorously vetted, subject-specialized, and trained in high-engagement pedagogical techniques.",
+                "faq.title": "Everything You Need to Know",
+                "faq.subtitle": "Got questions regarding our methodology, class schedules, or trial arrangements? We have answers.",
+                "faq.q1": "How does the 1-Week Free Trial work?",
+                "faq.q2": "What is the maximum number of students per class?",
+                "faq.q3": "Can we switch between physical classes and online zoom sessions?",
+                "faq.q4": "How are parents updated on student attendance and progress?",
+                "form.title": "Secure Your Diagnostic Session & Free Trial",
+                "form.subtitle": "Fill up the details below to receive a personalized academic consultation and schedule your 1-week free trial class.",
+                "form.parentName": "Parent / Guardian Name *",
+                "form.phone": "WhatsApp / Phone Number *",
+                "form.studentName": "Student Name *",
+                "form.level": "Academic Level *",
+                "form.subjects": "Subjects of Interest (Select all that apply)",
+                "form.submit": "Confirm Diagnostic Consultation & Free Trial Class"
+            },
+            bm: {
+                "nav.subtitle": "Pusat Kecemerlangan SPM & IGCSE Termaju",
+                "nav.pillars": "10 Tonggak",
+                "nav.simulator": "Unjuran Gred",
+                "nav.syllabus": "Matriks Silibus",
+                "nav.results": "Keputusan & Guru",
+                "nav.faq": "Soalan Lazim",
+                "nav.cta": "Tempah Diagnostik",
+                "hero.badge": "PENGAMBILAN 2026 DIBUKA • PECUTAN AKADEMIK SPM & IGCSE",
+                "hero.title1": "Memperkasa Generasi Pencapai",
+                "hero.title2": "Gred Cemerlang & Pemikir Masa Depan.",
+                "hero.subtitle": "Akademi tuisyen hibrid terkemuka Malaysia. Menggabungkan Guru Pakar Pemeriksa KPM, diagnostik berketepatan tinggi, modul KBAT eksklusif dan bimbingan 1-ke-1 untuk kejayaan A* berterusan.",
+                "hero.stat1": "Kadar Lulus",
+                "hero.stat2": "Lonjakan Gred",
+                "hero.stat3": "Alumni Gred A",
+                "hero.cta1": "Uji Simulator Gred",
+                "hero.cta2": "Lihat Silibus 2026",
+                "pillars.title": "10 Tonggak Formula Kecemerlangan Inspirasi",
+                "pillars.subtitle": "Setiap pelajar dibimbing melalui sistem pembelajaran sistematik untuk menghapuskan kekeliruan konsep dan membina ketahanan peperiksaan tinggi.",
+                "p1.title": "Penilaian Diagnostik Berketepatan",
+                "p1.desc": "Kami menganalisis kelemahan asas dari hari pertama. Pelajar menerima pelan tindakan khusus yang memfokuskan kepada topik berisiko tinggi dalam peperiksaan.",
+                "p2.title": "Tenaga Pengajar Pakar Pemeriksa KPM",
+                "p2.desc": "Belajar terus daripada guru pemeriksa kertas sebenar SPM dan IGCSE. Kuasai skema pemarkahan rasmi, kata kunci tepat dan elak perangkap markah.",
+                "p3.title": "Enjin Penguasaan KBAT / HOTS",
+                "p3.desc": "Latihan khas untuk soalan pemikiran aras tinggi. Pelajar diajar teknik penyelesaian masalah langkah demi langkah dan analisis aplikasi konsep.",
+                "p4.title": "Kelas Mikro Terhad (Maksimum 12 Pelajar)",
+                "p4.desc": "Kapasiti kelas dihadkan dengan ketat bagi memastikan interaksi aktif, bimbingan terus daripada guru, dan tiada pelajar yang ketinggalan.",
+                "p5.title": "Fleksibiliti Kelas Hibrid Pintar",
+                "p5.desc": "Hadir secara fizikal di cawangan moden kami atau sertai siaran langsung interaktif HD. Dilengkapi rakaman ulangkaji tanpa had 24/7 di portal.",
+                "p6.title": "Laporan Kemajuan Ibu Bapa Masa Nyata",
+                "p6.desc": "Laporan dwimingguan automatik dihantar terus kepada ibu bapa melalui WhatsApp merangkumi rekod kehadiran, kerja rumah dan markah kuiz berkala.",
+                "p7.title": "Modul Peperiksaan Hak Milik Eksklusif",
+                "p7.desc": "Nota komprehensif dan bank soalan percubaan yang dikemas kini setiap tahun mengikut format KSSM terkini dan silibus Cambridge IGCSE.",
+                "p8.title": "Klinik Bantuan 1-ke-1 Mingguan",
+                "p8.desc": "Sesi bimbingan peribadi percuma setiap minggu di mana pelajar boleh membawa kerja rumah sukar atau topik lemah untuk dibimbing sehingga faham.",
+                "p9.title": "Peperiksaan Percubaan Suasana Sebenar",
+                "p9.desc": "Ujian simulasi bermasa mengikut prosedur dewan peperiksaan sebenar untuk mengatasi rasa panik dan menguasai pengurusan masa yang mantap.",
+                "p10.title": "Jaminan Kepuasan & Peningkatan Gred 14 Hari",
+                "p10.desc": "Kami yakin sepenuhnya dengan kaedah kami. Sekiranya anda tidak berpuas hati dalam 14 hari pertama, kami pulangkan 100% yuran tanpa sebarang soalan.",
+                "sim.title": "Kira Unjuran Peningkatan Akademik",
+                "sim.subtitle": "Pilih gred semasa dan subjek sasaran anda untuk melihat anggaran lonjakan prestasi dalam tempoh 90 hari bersama Inspirasi.",
+                "sim.targetLevel": "1. Peringkat Akademik",
+                "sim.currentGrade": "2. Gred Ujian Semasa",
+                "sim.subjectFocus": "3. Subjek Tumpuan",
+                "syl.title": "Matriks Silibus Komprehensif",
+                "syl.subtitle": "Liputan silibus berstruktur untuk membina pemahaman konsep kukuh sebelum menguasai soalan KBAT peringkat peperiksaan.",
+                "results.title": "Dipimpin Guru Pakar, Dibuktikan dengan Keputusan",
+                "results.subtitle": "Setiap guru di Inspirasi disaring dengan ketat, berkemahiran tinggi dalam subjek, dan terlatih dalam pedagogi interaktif.",
+                "faq.title": "Soalan Lazim Mengenai Inspirasi",
+                "faq.subtitle": "Ada soalan mengenai jadual, kaedah pembelajaran atau kelas percubaan? Kami sedia membantu.",
+                "faq.q1": "Bagaimanakah Kelas Percubaan Percuma 1 Minggu berfungsi?",
+                "faq.q2": "Berapakah bilangan maksimum pelajar dalam satu kelas?",
+                "faq.q3": "Bolehkah kami bertukar antara kelas fizikal dan sesi atas talian?",
+                "faq.q4": "Bagaimanakah ibu bapa dimaklumkan tentang kehadiran dan prestasi anak?",
+                "form.title": "Daftar Sesi Diagnostik & Kelas Percubaan Percuma",
+                "form.subtitle": "Isikan maklumat di bawah untuk menerima perundingan akademik peribadi dan jadual kelas percubaan 1 minggu percuma.",
+                "form.parentName": "Nama Ibu Bapa / Penjaga *",
+                "form.phone": "Nombor WhatsApp / Telefon *",
+                "form.studentName": "Nama Pelajar *",
+                "form.level": "Peringkat Akademik *",
+                "form.subjects": "Subjek Pilihan (Pilih yang berkaitan)",
+                "form.submit": "Sahkan Pendaftaran Diagnostik & Kelas Percubaan"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerText = i18n[lang][key];
+                }
+            });
+
+            const btnEn = document.getElementById('lang-en');
+            const btnBm = document.getElementById('lang-bm');
+            if (lang === 'en') {
+                btnEn.className = 'px-2.5 py-1 text-xs font-semibold rounded-md transition-all bg-cyan-500 text-black';
+                btnBm.className = 'px-2.5 py-1 text-xs font-semibold rounded-md transition-all text-slate-400 hover:text-white';
+            } else {
+                btnBm.className = 'px-2.5 py-1 text-xs font-semibold rounded-md transition-all bg-cyan-500 text-black';
+                btnEn.className = 'px-2.5 py-1 text-xs font-semibold rounded-md transition-all text-slate-400 hover:text-white';
+            }
+        }
+
+        const syllabusData = {
+            spm: [
+                {
+                    title: "SPM Additional Mathematics (Form 4 & 5)",
+                    badge: "Core STEM",
+                    topics: ["Functions, Quadratic & Systems of Equations", "Calculus: Differentiation & Integration", "Trigonometric Functions & Identities", "Vectors & Coordinate Geometry", "Permutations, Combinations & Probability"],
+                    features: "HOTS / KBAT Paper 1 & 2 Blueprint, Step-by-Step Mark Scheme"
+                },
+                {
+                    title: "SPM Physics (Form 4 & 5)",
+                    badge: "Pure Science",
+                    topics: ["Forces and Motion I & II, Momentum", "Thermodynamics & Gas Laws", "Waves, Light and Optics", "Electricity & Electromagnetism", "Nuclear Physics & Quantum Mechanics"],
+                    features: "Paper 2 Section B/C Essay Writing Techniques, Practical Paper 3 Drills"
+                },
+                {
+                    title: "SPM Chemistry (Form 4 & 5)",
+                    badge: "Pure Science",
+                    topics: ["Mole Concept, Chemical Formulae & Equations", "Periodic Table of Elements & Chemical Bonds", "Acids, Bases and Salts Masterclass", "Thermochemistry & Electrochemistry", "Carbon Compounds & Organic Chemistry"],
+                    features: "Stoichiometry Flowcharts, Qualitative Analysis Color Master Sheets"
+                },
+                {
+                    title: "SPM Biology (Form 4 & 5)",
+                    badge: "Pure Science",
+                    topics: ["Cell Biology, Organization & Movement of Substances", "Enzymes, Nutrition & Cellular Respiration", "Circulation, Immunity & Homeostasis", "Inheritance, Variation & Genetic Tech", "Ecosystem, Environmental Sustainability"],
+                    features: "High-Yield Essay Framework, Keyword Annotation Bank"
+                },
+                {
+                    title: "SPM Bahasa Melayu (Form 4 & 5)",
+                    badge: "Compulsory Pass",
+                    topics: ["Kertas 1: Karangan Respons Terhad & Terbuka (Format Terkini)", "Kertas 2: Morfologi, Sintaksis, Penyuntingan & Bahasa Klasik", "KOMSAS: Puisi Tradisional, Sajak, Prosa & Novel Analisis", "Kertas 3 & 4: Ujian Bertutur & Ujian Mendengar"],
+                    features: "Ungkapan Menarik & Kosa Kata Berdarjat Tinggi, Analisis Isu Semasa"
+                },
+                {
+                    title: "SPM Sejarah (Form 4 & 5)",
+                    badge: "Compulsory Pass",
+                    topics: ["Warisan Negara Bangsa & Nasionalisme", "Perjuangan Menuntut Kemerdekaan & Perlembagaan", "Pembentukan Malaysia & Rukun Negara", "Dasar Ekonomi Baru, Hubungan Antarabangsa", "Soalan KBAT 8-Markah Struktur & Esei"],
+                    features: "Mind-Map Kronologi Sejarah, Formula Jawapan KBAT Maksimum"
+                }
+            ],
+            igcse: [
+                {
+                    title: "IGCSE Additional Mathematics (0606)",
+                    badge: "Cambridge IGCSE",
+                    topics: ["Functions, Factors & Logarithms", "Simultaneous Equations & Polynomials", "Differential & Integral Calculus", "Trigonometry & Circular Measure", "Vectors, Series & Permutations"],
+                    features: "Past 10 Years Classified Exam Question Pack"
+                },
+                {
+                    title: "IGCSE Physics (0625)",
+                    badge: "Cambridge IGCSE",
+                    topics: ["General Physics: Motion, Forces, Energy", "Thermal Physics & Kinetic Molecular Model", "Waves, Sound, Electromagnetic Spectrum", "Electricity, Magnetism & Logic Gates", "Atomic Physics & Space Physics"],
+                    features: "Paper 4 Theory & Paper 6 Alternative to Practical"
+                },
+                {
+                    title: "IGCSE Chemistry (0620)",
+                    badge: "Cambridge IGCSE",
+                    topics: ["States of Matter, Atoms, Elements & Compounds", "Stoichiometry & Quantitative Chemistry", "Chemical Energetics & Reaction Kinetics", "Organic Chemistry: Hydrocarbons, Alcohols, Polymers", "Experimental Techniques & Salt Preparation"],
+                    features: "Core definitions list & structural drawing guide"
+                }
+            ],
+            lowersec: [
+                {
+                    title: "Lower Secondary Mathematics (Form 1-3 / UASA)",
+                    badge: "UASA Format",
+                    topics: ["Rational Numbers, Factors & Multiples", "Algebraic Expressions, Linear Equations & Inequalities", "Geometry, Pythagoras Theorem, Trigonometry", "Statistics, Data Representation & Probability"],
+                    features: "Foundational mastery & early SPM readiness transition"
+                },
+                {
+                    title: "Lower Secondary Science (Form 1-3 / UASA)",
+                    badge: "UASA Format",
+                    topics: ["Scientific Methodology, Cell Structure", "Matter, Periodic System, Air & Water", "Human Reproduction, Respiration, Blood Circulatory", "Energy, Forces, Electricity & Magnetism"],
+                    features: "Hands-on conceptual visualizations & structured answers"
+                }
+            ],
+            primary: [
+                {
+                    title: "Primary School Core (Standard 4-6 / UASA)",
+                    badge: "Primary Foundations",
+                    topics: ["Mathematics: Number Operations, Fractions, Decimals, Shape & Space", "Sains: Inkuiri Sains, Manusia, Haiwan, Tumbuhan, Tenaga", "Bahasa Melayu: Tatabahasa, Pemahaman, Penulisan Karangan", "English: Grammar mastery, Vocabulary & Reading Comprehension"],
+                    features: "Fun, highly interactive interactive pedagogy to build love for learning"
+                }
+            ]
+        };
+
+        function switchLevel(level) {
+            const tabs = ['spm', 'igcse', 'lowersec', 'primary'];
+            tabs.forEach(t => {
+                const btn = document.getElementById('tab-' + t);
+                if (t === level) {
+                    btn.className = 'px-5 py-2.5 rounded-xl font-heading font-bold text-sm bg-cyan-500 text-black shadow-neon-blue transition-all';
+                } else {
+                    btn.className = 'px-5 py-2.5 rounded-xl font-heading font-bold text-sm glass-panel text-slate-300 hover:text-white transition-all';
+                }
+            });
+
+            const container = document.getElementById('syllabus-content');
+            const items = syllabusData[level] || [];
+            
+            container.innerHTML = items.map(item => `
+                <div class="glass-panel glass-panel-hover p-6 rounded-2xl border-slate-800 flex flex-col justify-between group">
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[11px] font-mono font-semibold px-2.5 py-0.5 rounded-full bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">${item.badge}</span>
+                            <span class="text-xs text-slate-500 font-mono">2026 Format</span>
+                        </div>
+                        <h3 class="font-heading font-bold text-lg text-white group-hover:text-cyan-300 transition-colors">${item.title}</h3>
+                        <ul class="space-y-1.5 text-xs text-slate-300 pt-2">
+                            ${item.topics.map(top => `<li class="flex items-start gap-2"><span class="text-cyan-400 font-bold">›</span><span>${top}</span></li>`).join('')}
+                        </ul>
+                    </div>
+                    <div class="mt-5 pt-3 border-t border-slate-800/80 text-[11px] font-mono text-slate-400">
+                        <strong class="text-cyan-300">Features:</strong> ${item.features}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        let simLevel = 'spm';
+        function updateSim(lvl) {
+            simLevel = lvl;
+            const btnSpm = document.getElementById('sim-btn-spm');
+            const btnIgcse = document.getElementById('sim-btn-igcse');
+            if (lvl === 'spm') {
+                btnSpm.className = 'px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-cyan-500 bg-cyan-500/20 text-cyan-300 transition-all';
+                btnIgcse.className = 'px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-slate-700 bg-slate-800/50 text-slate-400 hover:text-white transition-all';
+            } else {
+                btnIgcse.className = 'px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-cyan-500 bg-cyan-500/20 text-cyan-300 transition-all';
+                btnSpm.className = 'px-4 py-2.5 rounded-lg font-heading font-semibold text-xs border border-slate-700 bg-slate-800/50 text-slate-400 hover:text-white transition-all';
+            }
+            calculateGrade();
+        }
+
+        function calculateGrade() {
+            const current = document.getElementById('sim-grade').value;
+            const dispCurr = document.getElementById('disp-current');
+            const dispTarget = document.getElementById('disp-target');
+            const dispUplift = document.getElementById('disp-uplift');
+
+            dispCurr.innerText = 'Grade ' + current;
+            if (current === 'D') {
+                dispTarget.innerText = simLevel === 'spm' ? 'Grade B+ / A-' : 'Grade B / A';
+                dispUplift.innerText = '+35% to +42%';
+            } else if (current === 'C') {
+                dispTarget.innerText = simLevel === 'spm' ? 'Grade A / A+' : 'Grade A* / A';
+                dispUplift.innerText = '+25% to +32%';
+            } else if (current === 'B') {
+                dispTarget.innerText = simLevel === 'spm' ? 'Grade A+ (Distinction)' : 'Grade A* (Top Band)';
+                dispUplift.innerText = '+18% to +24%';
+            } else {
+                dispTarget.innerText = simLevel === 'spm' ? 'Solid A+ (90%+ Top Tier)' : 'Cambridge A* (Rank 1)';
+                dispUplift.innerText = '+12% to +18%';
+            }
+        }
+
+        function toggleFaq(index) {
+            const ans = document.getElementById('faq-ans-' + index);
+            const icon = document.getElementById('faq-icon-' + index);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.innerText = '−';
+            } else {
+                ans.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
+
+        function handleEnroll(e) {
+            e.preventDefault();
+            alert(currentLang === 'en' 
+                ? 'Thank you! Your diagnostic consultation request has been submitted. Our academic advisor will WhatsApp you within 2 hours.' 
+                : 'Terima kasih! Permohonan sesi diagnostik anda telah diterima. Pegawai akademik kami akan menghubungi anda melalui WhatsApp dalam tempoh 2 jam.');
+            e.target.reset();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            switchLevel('spm');
+            calculateGrade();
+        });
+    </script>
+</body>
+</html>

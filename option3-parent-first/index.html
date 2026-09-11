@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Tusyen Inspirasi | Parent-First Academic Excellence & Mentorship</title>
+    <meta name="description" content="Trusted by over 15,000 Malaysian parents. Small micro-classes (max 8-12), weekly WhatsApp progress reports, 100% MOE certified examiner tutors.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        trust: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            200: '#bae0fd',
+                            300: '#7cc7fb',
+                            400: '#36abf7',
+                            500: '#0c90e6',
+                            600: '#0172c3',
+                            700: '#025ba0',
+                            800: '#064c83',
+                            900: '#0a406e',
+                            950: '#072a4b',
+                        },
+                        parent: {
+                            blue: '#1E40AF',
+                            darkNavy: '#0F172A',
+                            emerald: '#16A34A',
+                            whatsapp: '#25D366',
+                            warmGray: '#F8FAFC',
+                            softBorder: '#E2E8F0',
+                            gold: '#D97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #F8FAFC;
+            color: #0F172A;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .trust-card {
+            background: #FFFFFF;
+            border: 1px solid #E2E8F0;
+            box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .trust-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px -4px rgba(30, 64, 175, 0.12);
+            border-color: #93C5FD;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
+        ::-webkit-scrollbar-thumb { background: #CBD5E1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94A3B8; }
+    </style>
+</head>
+<body class="selection:bg-blue-600 selection:text-white">
+
+    <!-- Top Announcement & Parent Trust Bar -->
+    <div class="bg-parent-darkNavy text-white text-xs py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 font-medium">
+            <div class="flex items-center gap-3">
+                <span class="flex items-center gap-1.5 text-emerald-400 font-bold">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>MOE Registered Academy (B4K8291)</span>
+                </span>
+                <span class="hidden md:inline text-slate-500">•</span>
+                <span class="hidden md:inline text-slate-300">100% Vetted SPM Examiners & Master Tutors</span>
+            </div>
+            <div class="flex items-center gap-4 text-slate-300">
+                <a href="tel:+60123456789" class="hover:text-white flex items-center gap-1.5">
+                    <span>📞 Parent Helpline: 012-345 6789</span>
+                </a>
+                <span>•</span>
+                <span class="text-amber-300 font-semibold">14-Day Full Satisfaction Guarantee</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <a href="#hero" class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-blue-700 flex items-center justify-center text-white font-extrabold text-xl shadow-md">
+                        IN
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2">
+                            <span class="font-bold text-lg sm:text-xl text-slate-900 tracking-tight">PUSAT TUSYEN INSPIRASI</span>
+                            <span class="text-[11px] font-bold px-2 py-0.5 rounded-full bg-blue-50 text-blue-700 border border-blue-200">Parent-First</span>
+                        </div>
+                        <p class="text-xs text-slate-500 font-medium" data-i18n="nav.subtitle">Nurturing Confidence & Proven Grade Improvements</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+                    <a href="#promise" class="hover:text-blue-700 transition-colors" data-i18n="nav.promise">Parent Promise</a>
+                    <a href="#pillars" class="hover:text-blue-700 transition-colors" data-i18n="nav.pillars">10 Pillars</a>
+                    <a href="#syllabus" class="hover:text-blue-700 transition-colors" data-i18n="nav.syllabus">Syllabus & Levels</a>
+                    <a href="#reporting" class="hover:text-blue-700 transition-colors" data-i18n="nav.reporting">Parent Progress App</a>
+                    <a href="#testimonials" class="hover:text-blue-700 transition-colors" data-i18n="nav.reviews">Parent Reviews</a>
+                    <a href="#faq" class="hover:text-blue-700 transition-colors" data-i18n="nav.faq">FAQ</a>
+                </nav>
+
+                <!-- Actions: Language & Direct Consultation -->
+                <div class="flex items-center gap-3">
+                    <!-- Language Selector -->
+                    <div class="flex items-center bg-slate-100 border border-slate-200 rounded-lg p-1">
+                        <button id="lang-en" onclick="setLanguage('en')" class="px-2.5 py-1 text-xs font-bold rounded-md transition-all bg-blue-700 text-white shadow-sm">EN</button>
+                        <button id="lang-bm" onclick="setLanguage('bm')" class="px-2.5 py-1 text-xs font-bold rounded-md transition-all text-slate-600 hover:text-slate-900">BM</button>
+                    </div>
+
+                    <!-- Direct WhatsApp Consultation Button -->
+                    <a href="https://wa.me/60123456789?text=Hi%20Inspirasi,%20I%20would%20like%20to%20inquire%20about%20classes%20for%20my%20child." target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-xl font-bold text-sm bg-[#25D366] text-white hover:bg-[#1ebc59] shadow-md transition-all">
+                        <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                        <span>WhatsApp Tutor</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section: Parent Assurance & High Impact -->
+        <section id="hero" class="pt-10 pb-16 lg:pt-16 lg:pb-24 bg-gradient-to-b from-blue-50/70 via-white to-slate-50 border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-12 gap-10 items-center">
+                    
+                    <!-- Left Hero Copy -->
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                        <!-- Reassurance Pill -->
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-100/80 border border-blue-200 text-blue-800 text-xs font-bold">
+                            <span>🛡️</span>
+                            <span data-i18n="hero.badge">2026 Academic Intake • Trusted by 15,000+ Malaysian Families</span>
+                        </div>
+
+                        <!-- Main Headline -->
+                        <h1 class="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.2]">
+                            <span data-i18n="hero.title1">Your Child Deserves More Than Memorisation.</span>
+                            <br class="hidden sm:inline">
+                            <span class="text-blue-700" data-i18n="hero.title2">Build Real Understanding & Exam Confidence.</span>
+                        </h1>
+
+                        <!-- Reassuring Subtitle -->
+                        <p class="text-base sm:text-lg text-slate-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal" data-i18n="hero.subtitle">
+                            We know how stressful exam preparations can be. At Inspirasi, we combine caring MOE examiner mentors with small micro-classes (max 12), customized weakness-fixing plans, and weekly progress updates sent directly to your WhatsApp.
+                        </p>
+
+                        <!-- Key Value Props for Parents -->
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 max-w-xl mx-auto lg:mx-0">
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
+                                <div class="text-2xl font-bold text-blue-700">+2.4 Grades</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5" data-i18n="hero.stat1">Avg 90-Day Improvement</div>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
+                                <div class="text-2xl font-bold text-emerald-600">Max 8-12</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5" data-i18n="hero.stat2">Students Per Micro-Cohort</div>
+                            </div>
+                            <div class="bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm text-center">
+                                <div class="text-2xl font-bold text-amber-600">100% Free</div>
+                                <div class="text-xs text-slate-500 font-medium mt-0.5" data-i18n="hero.stat3">1-Week Trial Class</div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-3">
+                            <a href="#trial" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-blue-700 text-white hover:bg-blue-800 shadow-lg hover:shadow-blue-700/25 transition-all text-center flex items-center justify-center gap-2">
+                                <span data-i18n="hero.cta1">Book Free 1-Week Trial Class</span>
+                                <span>→</span>
+                            </a>
+                            <a href="https://wa.me/60123456789?text=Hi%20Inspirasi,%20I'd%20like%20to%20ask%20about%20the%20suitable%20class%20for%20my%20child." target="_blank" class="w-full sm:w-auto px-6 py-4 rounded-xl font-bold text-base bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 transition-all text-center flex items-center justify-center gap-2 shadow-sm">
+                                <span class="text-emerald-500 text-lg">💬</span>
+                                <span data-i18n="hero.cta2">Chat with Academic Advisor</span>
+                            </a>
+                        </div>
+
+                        <!-- Guarantee Note -->
+                        <p class="text-xs text-slate-500 text-center lg:text-left">
+                            🔒 <strong>14-Day Money Back Guarantee:</strong> If your child is not completely happy, get a 100% full refund with zero questions asked.
+                        </p>
+                    </div>
+
+                    <!-- Right Visual / Parent Trust Card -->
+                    <div class="lg:col-span-5">
+                        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xl space-y-5">
+                            <!-- Card Header -->
+                            <div class="flex items-center justify-between border-b border-slate-100 pb-4">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 font-bold text-lg">
+                                        ✓
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-slate-900 text-sm">Parent Peace-of-Mind System</h4>
+                                        <p class="text-xs text-slate-500">Live WhatsApp sync & student portal</p>
+                                    </div>
+                                </div>
+                                <span class="px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">Verified</span>
+                            </div>
+
+                            <!-- Image with warm badge -->
+                            <div class="relative rounded-xl overflow-hidden aspect-[4/3] border border-slate-200 shadow-inner">
+                                <img src="images/hero-student.png" alt="Happy student studying with mentor" class="w-full h-full object-cover">
+                                <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3 rounded-lg border border-slate-200 shadow-md text-xs">
+                                    <div class="flex items-center justify-between font-bold text-slate-800">
+                                        <span>Daniel's Form 5 Add Maths</span>
+                                        <span class="text-emerald-600">Grade: A+ (SPM 2025)</span>
+                                    </div>
+                                    <div class="text-[11px] text-slate-500 mt-0.5">Jumped from 34% (Mid-Year) to 92% in 4 months.</div>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp Preview Notification Mock -->
+                            <div class="bg-emerald-50/70 border border-emerald-200 rounded-xl p-3.5 space-y-1.5 text-xs text-slate-700">
+                                <div class="flex items-center justify-between font-bold text-emerald-900">
+                                    <span class="flex items-center gap-1.5">
+                                        <span class="text-base">📱</span> Weekly WhatsApp Report to Parents
+                                    </span>
+                                    <span class="text-[10px] text-slate-500 font-normal">Every Sunday 7:00 PM</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed text-[11px]">
+                                    "Dear Mrs. Tan, Lucas attended class today on time. He mastered quadratic inequalities and scored 9/10 in the post-class drill. Homework submitted on time."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 4-Point Parent Promise Guarantee Banner -->
+        <section id="promise" class="py-12 bg-white border-b border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">1</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Small Class Guarantee</h4>
+                            <p class="text-xs text-slate-600">Strictly capped at 12 students. Every child gets heard.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">2</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">100% MOE Examiners</h4>
+                            <p class="text-xs text-slate-600">Real teachers with direct grading rubric expertise.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">3</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">Free 1-on-1 Clinic</h4>
+                            <p class="text-xs text-slate-600">Weekly extra guidance for school homework doubts.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                        <div class="w-10 h-10 rounded-lg bg-blue-100 text-blue-700 flex items-center justify-center font-bold text-lg shrink-0">4</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm mb-1">14-Day Money Back</h4>
+                            <p class="text-xs text-slate-600">Zero financial risk if you decide it's not a fit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10 Pillars of Excellence: The Nurturing & Success System -->
+        <section id="pillars" class="py-16 sm:py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                    <span class="text-xs font-bold tracking-wider uppercase text-blue-700 bg-blue-100/80 px-3 py-1 rounded-full">HOW WE CARE & GUIDE</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900" data-i18n="pillars.title">
+                        The 10 Pillars of the <span class="text-blue-700">Inspirasi Method</span>
+                    </h2>
+                    <p class="text-slate-600 text-base" data-i18n="pillars.subtitle">
+                        Every student has distinct learning strengths. Our structured system ensures your child receives caring mentorship, clear explanations, and joyful progress.
+                    </p>
+                </div>
+
+                <!-- 10 Pillars Cards -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">01</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p1.title">Gentle Diagnostic Assessment</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p1.desc">
+                                We pinpoint specific concept misunderstandings without making students feel stressed or discouraged. Clear, step-by-step roadmap to close foundational gaps.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">✓ Personalized Study Route</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm">02</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p2.title">MOE Master Examiner Mentors</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p2.desc">
+                                Experienced, patient teachers who know the official exam marking schemes inside out. They teach students what examiners are looking for to award full marks.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-indigo-700">✓ Official Marking Guidelines</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm">03</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p3.title">HOTS & KBAT Simplified</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p3.desc">
+                                We demystify difficult higher-order thinking questions using relatable real-life analogies, breaking complex questions into simple logical stages.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-emerald-700">✓ Step-by-Step Logic Formula</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm">04</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p4.title">Micro-Classes (Max 8-12)</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p4.desc">
+                                No giant 50-student lecture halls where quiet students get ignored. In our micro-cohorts, every child is encouraged to ask questions comfortably.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-amber-700">✓ Individual Attention</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 flex items-center justify-center font-bold text-sm">05</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p5.title">Hybrid Classroom Flexibility</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p5.desc">
+                                Physical modern classes with air-conditioned comfort, plus live HD online streaming with unlimited 24/7 video replays when travel or school events occur.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-purple-700">✓ Never Miss Any Lesson</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-teal-100 text-teal-800 flex items-center justify-center font-bold text-sm">06</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p6.title">Weekly WhatsApp Parent Updates</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p6.desc">
+                                You never have to guess how your child is doing. We send weekly attendance confirmations, homework feedback, and quiz results directly to your phone.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-teal-700">✓ 100% Parent Transparency</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-sm">07</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p7.title">Comprehensive Physical Modules</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p7.desc">
+                                Beautifully printed, color-coded study notes and curated past-year trial questions delivered directly to your doorstep with zero extra book fees.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-rose-700">✓ Free Home Delivery</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-100 text-cyan-800 flex items-center justify-center font-bold text-sm">08</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p8.title">Free 1-on-1 Homework Clinic</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p8.desc">
+                                Have difficult school homework or tricky past year questions? Students can book weekly 1-on-1 consultation clinics with our tutors at zero additional charge.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-cyan-700">✓ Included in All Plans</div>
+                    </div>
+
+                    <div class="trust-card p-6 rounded-2xl flex flex-col justify-between">
+                        <div class="space-y-3">
+                            <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm">09</div>
+                            <h3 class="font-bold text-lg text-slate-900" data-i18n="p9.title">Low-Stress Simulated Mocks</h3>
+                            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed" data-i18n="p9.desc">
+                                Structured mock trials in a supportive environment to help students conquer exam anxiety, build test-taking speed, and master timing.
+                            </p>
+                        </div>
+                        <div class="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-blue-700">✓ Build Real Exam Resilience</div>
+                    </div>
+
+                    <!-- Pillar 10: Parent Guarantee Card -->
+                    <div class="lg:col-span-3 bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+                        <div class="space-y-2 text-center md:text-left">
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-bold">
+                                🌟 PILLAR 10 • THE INSPIRASI PROMISE
+                            </div>
+                            <h3 class="text-2xl font-extrabold" data-i18n="p10.title">14-Day Full Satisfaction Money-Back Guarantee</h3>
+                            <p class="text-blue-100 text-sm max-w-2xl leading-relaxed" data-i18n="p10.desc">
+                                We believe in building lasting trust with every parent. If within your first 14 days you or your child are not completely delighted with our teaching quality, we will cheerfully refund 100% of your tuition fees with no questions asked.
+                            </p>
+                        </div>
+                        <a href="#trial" class="px-7 py-4 rounded-xl font-bold text-sm bg-amber-400 text-slate-900 hover:bg-amber-300 shadow-lg transition-all whitespace-nowrap">
+                            Try Risk-Free for 14 Days →
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Syllabus & Level Overview -->
+        <section id="syllabus" class="py-16 bg-white border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full">SYLLABUS COVERAGE</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900" data-i18n="syl.title">Programs Tailored for Every Academic Level</h2>
+                    <p class="text-slate-600 text-sm sm:text-base" data-i18n="syl.subtitle">From primary school foundations to SPM and IGCSE distinctions, we prepare students for peak performance.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- SPM Card -->
+                    <div class="border border-blue-200 rounded-2xl p-6 bg-blue-50/40 space-y-4 hover:shadow-md transition-all">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 text-xs font-bold rounded-full bg-blue-700 text-white">SPM (Form 4 & 5)</span>
+                            <span class="text-xs text-slate-500 font-medium">KSSM Format</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">SPM Fast-Track & Mastery</h3>
+                        <ul class="space-y-2 text-xs text-slate-700">
+                            <li>✓ Additional Mathematics & Modern Maths</li>
+                            <li>✓ Physics, Chemistry & Biology</li>
+                            <li>✓ Bahasa Melayu (Karangan & Tatabahasa)</li>
+                            <li>✓ Sejarah (Mind-Map & KBAT Essay)</li>
+                            <li>✓ English 1119 (CEFR Aligned)</li>
+                        </ul>
+                        <div class="pt-4 border-t border-blue-200/60 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Includes trial drills & 1-on-1 clinic</span>
+                            <a href="#trial" class="text-blue-700 font-bold hover:underline">Enroll Now →</a>
+                        </div>
+                    </div>
+
+                    <!-- IGCSE Card -->
+                    <div class="border border-slate-200 rounded-2xl p-6 bg-white space-y-4 hover:shadow-md transition-all">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 text-xs font-bold rounded-full bg-indigo-700 text-white">Cambridge IGCSE</span>
+                            <span class="text-xs text-slate-500 font-medium">Year 7-11</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Cambridge IGCSE Acceleration</h3>
+                        <ul class="space-y-2 text-xs text-slate-700">
+                            <li>✓ Extended Mathematics & Add Maths (0606)</li>
+                            <li>✓ Physics (0625), Chemistry (0620), Biology (0610)</li>
+                            <li>✓ First & Second Language English (0500/0510)</li>
+                            <li>✓ Economics & Business Studies</li>
+                            <li>✓ Paper 6 Alternative to Practical Drills</li>
+                        </ul>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Includes past 10-year classified papers</span>
+                            <a href="#trial" class="text-blue-700 font-bold hover:underline">Enroll Now →</a>
+                        </div>
+                    </div>
+
+                    <!-- Lower Secondary & Primary -->
+                    <div class="border border-slate-200 rounded-2xl p-6 bg-white space-y-4 hover:shadow-md transition-all">
+                        <div class="flex items-center justify-between">
+                            <span class="px-3 py-1 text-xs font-bold rounded-full bg-emerald-700 text-white">Primary & Lower Sec</span>
+                            <span class="text-xs text-slate-500 font-medium">UASA Standard</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Foundational Core Mastery</h3>
+                        <ul class="space-y-2 text-xs text-slate-700">
+                            <li>✓ Form 1-3 Mathematics & Science</li>
+                            <li>✓ Form 1-3 Bahasa Melayu & English</li>
+                            <li>✓ Standard 4-6 Mathematics & Sains</li>
+                            <li>✓ Building strong study habits & interest</li>
+                            <li>✓ Smooth transition to Upper Secondary</li>
+                        </ul>
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between text-xs">
+                            <span class="text-slate-500">Engaging, interactive classes</span>
+                            <a href="#trial" class="text-blue-700 font-bold hover:underline">Enroll Now →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parent Testimonials Spotlight -->
+        <section id="testimonials" class="py-16 bg-slate-50 border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100 px-3 py-1 rounded-full">COMMUNITY STORIES</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900" data-i18n="results.title">What Malaysian Parents Say About Inspirasi</h2>
+                    <p class="text-slate-600 text-sm sm:text-base" data-i18n="results.subtitle">Read real feedback from parents who saw their children transform from anxious to confident high achievers.</p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-0.5 rounded-full">Form 5 SPM Parent</span>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            "My daughter used to dread Add Maths and cried before exams. Dr. Tan at Inspirasi was so patient. She jumped from 32% in Mid-Year to getting an A in SPM 2025! The WhatsApp updates gave us peace of mind every week."
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-700 text-xs">ST</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-xs">Mrs. Sharon Tan</h4>
+                                <p class="text-[11px] text-slate-500">Mother of Form 5 Student, PJ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full">Cambridge IGCSE Parent</span>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            "The small class sizes make all the difference. In her previous tuition center there were 45 students and she was too shy to ask questions. At Inspirasi, Sir Robert answered every single question. She scored 6A*s!"
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-700 text-xs">MR</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-xs">Mr. Rajesh Kumar</h4>
+                                <p class="text-[11px] text-slate-500">Father of Year 11 Student, Subang</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex text-amber-500 text-sm">★★★★★</div>
+                            <span class="text-[11px] font-bold text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full">Form 4 KSSM Parent</span>
+                        </div>
+                        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                            "The hybrid flexibility is a lifesaver. When my son had badminton tournaments over the weekend, he could easily watch the HD recordings and attend the 1-on-1 clinic on Tuesday. Highly recommend!"
+                        </p>
+                        <div class="pt-3 border-t border-slate-100 flex items-center gap-3">
+                            <div class="w-9 h-9 rounded-full bg-purple-100 flex items-center justify-center font-bold text-purple-700 text-xs">PN</div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-xs">Puan Noraini binti Yusof</h4>
+                                <p class="text-[11px] text-slate-500">Mother of Form 4 Student, Cheras</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 bg-white border-t border-slate-200">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-12 space-y-3">
+                    <span class="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-3 py-1 rounded-full">FREQUENTLY ASKED QUESTIONS</span>
+                    <h2 class="text-3xl font-extrabold text-slate-900" data-i18n="faq.title">Questions Parents Often Ask</h2>
+                    <p class="text-slate-600 text-sm" data-i18n="faq.subtitle">We are committed to full clarity. Here are answers to common questions about our trial and programs.</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <button type="button" onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-slate-900 hover:text-blue-700 bg-slate-50/50">
+                            <span data-i18n="faq.q1">How does the 1-Week Free Trial work?</span>
+                            <span id="faq-icon-1" class="text-blue-700 font-bold text-lg">+</span>
+                        </button>
+                        <div id="faq-ans-1" class="hidden px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed bg-white border-t border-slate-100">
+                            You can choose any 2 subjects for your child to attend for one full week. Your child will receive study notes, attend live lessons, and get a diagnostic baseline assessment completely free with zero commitment.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <button type="button" onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-slate-900 hover:text-blue-700 bg-slate-50/50">
+                            <span data-i18n="faq.q2">What is the maximum number of students in a class?</span>
+                            <span id="faq-icon-2" class="text-blue-700 font-bold text-lg">+</span>
+                        </button>
+                        <div id="faq-ans-2" class="hidden px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed bg-white border-t border-slate-100">
+                            We strictly cap our micro-classes at 8 to 12 students. This ensures that the teacher can give individual attention to each student and identify their weaknesses early.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <button type="button" onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-slate-900 hover:text-blue-700 bg-slate-50/50">
+                            <span data-i18n="faq.q3">What is your 14-day refund policy?</span>
+                            <span id="faq-icon-3" class="text-blue-700 font-bold text-lg">+</span>
+                        </button>
+                        <div id="faq-ans-3" class="hidden px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed bg-white border-t border-slate-100">
+                            If you or your child are not completely satisfied with our teaching within the first 14 days of enrollment, simply let us know and we will issue a 100% full refund with no cancellation penalty.
+                        </div>
+                    </div>
+
+                    <div class="border border-slate-200 rounded-xl overflow-hidden">
+                        <button type="button" onclick="toggleFaq(4)" class="w-full px-6 py-4 text-left flex items-center justify-between text-sm sm:text-base font-bold text-slate-900 hover:text-blue-700 bg-slate-50/50">
+                            <span data-i18n="faq.q4">How do parents receive weekly updates?</span>
+                            <span id="faq-icon-4" class="text-blue-700 font-bold text-lg">+</span>
+                        </button>
+                        <div id="faq-ans-4" class="hidden px-6 py-4 text-xs sm:text-sm text-slate-600 leading-relaxed bg-white border-t border-slate-100">
+                            We send weekly summary reports directly to your WhatsApp detailing your child's attendance, in-class quiz scores, homework status, and direct feedback from the tutor.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 1-Week Free Trial Registration Form -->
+        <section id="trial" class="py-16 bg-blue-50 border-t border-slate-200">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-6">
+                    <div class="text-center space-y-2">
+                        <span class="px-3.5 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold">ZERO COMMITMENT • 100% FREE</span>
+                        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900" data-i18n="form.title">Book Your Child's Free 1-Week Trial Class</h2>
+                        <p class="text-slate-600 text-xs sm:text-sm" data-i18n="form.subtitle">Experience our caring mentors, proven exam modules, and micro-class attention firsthand.</p>
+                    </div>
+
+                    <form onsubmit="handleEnroll(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="form.parentName">Parent / Guardian Name *</label>
+                                <input type="text" required placeholder="e.g. Datin Sarah / Mr. Tan" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="form.phone">WhatsApp Number *</label>
+                                <input type="tel" required placeholder="e.g. 012-3456789" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-blue-600">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="form.studentName">Student Name *</label>
+                                <input type="text" required placeholder="e.g. Isaac Tan" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-blue-600">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="form.level">Academic Level (2026) *</label>
+                                <select required class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-blue-600">
+                                    <option value="SPM-F5">SPM - Form 5</option>
+                                    <option value="SPM-F4">SPM - Form 4</option>
+                                    <option value="IGCSE-Y11">Cambridge IGCSE - Year 11</option>
+                                    <option value="IGCSE-Y10">Cambridge IGCSE - Year 10</option>
+                                    <option value="LowerSec">Lower Secondary (Form 1-3)</option>
+                                    <option value="Primary">Primary (Standard 4-6)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-1" data-i18n="form.subjects">Subjects You'd Like to Test (Pick up to 2 for Free Trial)</label>
+                            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-slate-700">
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" checked class="text-blue-600"> Add Maths</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" checked class="text-blue-600"> Physics</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> Chemistry</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> Biology</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> Mathematics</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> Bahasa Melayu</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> English</label>
+                                <label class="flex items-center gap-2 p-2.5 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer"><input type="checkbox" class="text-blue-600"> Sejarah</label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl font-bold text-base bg-blue-700 text-white hover:bg-blue-800 shadow-lg transition-all">
+                            <span data-i18n="form.submit">Confirm Free Trial Class Booking</span>
+                        </button>
+
+                        <div class="flex items-center justify-center gap-2 text-[11px] text-slate-500 pt-1">
+                            <span>🛡️ 100% Free & No Credit Card Required</span>
+                            <span>•</span>
+                            <span>PDPA Data Protected</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-parent-darkNavy text-white py-12 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="space-y-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white text-sm">IN</div>
+                        <span class="font-bold text-white text-base">PUSAT TUSYEN INSPIRASI</span>
+                    </div>
+                    <p class="text-slate-400">Dedicated to nurturing student confidence, eliminating exam anxiety, and providing transparent progress to Malaysian parents.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-3 uppercase tracking-wider text-xs">Curriculums</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li><a href="#syllabus" class="hover:text-blue-300">SPM Form 4 & 5</a></li>
+                        <li><a href="#syllabus" class="hover:text-blue-300">Cambridge IGCSE (Y7-11)</a></li>
+                        <li><a href="#syllabus" class="hover:text-blue-300">Lower Secondary (F1-F3)</a></li>
+                        <li><a href="#syllabus" class="hover:text-blue-300">Primary Foundations (S4-S6)</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-3 uppercase tracking-wider text-xs">Branches</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li>📍 Subang Jaya SS15 Campus</li>
+                        <li>📍 Petaling Jaya SS2 Center</li>
+                        <li>📍 Cheras Mahkota Center</li>
+                        <li>🌐 Interactive Live Online Portal</li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="font-bold text-white mb-3 uppercase tracking-wider text-xs">Direct Support</h5>
+                    <ul class="space-y-1.5 text-slate-400">
+                        <li>📞 Parent Helpline: +60 12-345 6789</li>
+                        <li>💬 WhatsApp: +60 12-987 6543</li>
+                        <li>✉️ parents@inspirasi.edu.my</li>
+                        <li>🕒 Open Daily: 9:00 AM - 10:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-400">
+                <p>© 2026 Pusat Tusyen Inspirasi. Registered with Ministry of Education Malaysia (B4K8291).</p>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="hover:text-white">Parent Privacy Commitment</a>
+                    <span>•</span>
+                    <a href="#" class="hover:text-white">Terms of Enrollment</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Floating Action Bar -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 z-50 p-3 bg-white/95 backdrop-blur-md border-t border-slate-200 flex items-center gap-3 shadow-lg">
+        <a href="https://wa.me/60123456789?text=Hi%20Inspirasi,%20I'd%20like%20to%20ask%20about%20classes%20for%20my%20child." target="_blank" class="flex-1 py-3 rounded-xl bg-[#25D366] font-bold text-xs text-white text-center flex items-center justify-center gap-2 shadow-md">
+            <span>WhatsApp Mentor</span>
+        </a>
+        <a href="#trial" class="flex-1 py-3 rounded-xl bg-blue-700 font-bold text-xs text-white text-center flex items-center justify-center gap-2 shadow-md">
+            <span>Book Free Trial</span>
+        </a>
+    </div>
+
+    <!-- Script for Dual Language & Interactions -->
+    <script>
+        const i18n = {
+            en: {
+                "nav.subtitle": "Nurturing Confidence & Proven Grade Improvements",
+                "nav.promise": "Parent Promise",
+                "nav.pillars": "10 Pillars",
+                "nav.syllabus": "Syllabus & Levels",
+                "nav.reporting": "Parent Progress App",
+                "nav.reviews": "Parent Reviews",
+                "nav.faq": "FAQ",
+                "hero.badge": "2026 Academic Intake • Trusted by 15,000+ Malaysian Families",
+                "hero.title1": "Your Child Deserves More Than Memorisation.",
+                "hero.title2": "Build Real Understanding & Exam Confidence.",
+                "hero.subtitle": "We know how stressful exam preparations can be. At Inspirasi, we combine caring MOE examiner mentors with small micro-classes (max 12), customized weakness-fixing plans, and weekly progress updates sent directly to your WhatsApp.",
+                "hero.stat1": "Avg 90-Day Improvement",
+                "hero.stat2": "Students Per Micro-Cohort",
+                "hero.stat3": "1-Week Trial Class",
+                "hero.cta1": "Book Free 1-Week Trial Class",
+                "hero.cta2": "Chat with Academic Advisor",
+                "pillars.title": "The 10 Pillars of the Inspirasi Method",
+                "pillars.subtitle": "Every student has distinct learning strengths. Our structured system ensures your child receives caring mentorship, clear explanations, and joyful progress.",
+                "p1.title": "Gentle Diagnostic Assessment",
+                "p1.desc": "We pinpoint specific concept misunderstandings without making students feel stressed or discouraged. Clear, step-by-step roadmap to close foundational gaps.",
+                "p2.title": "MOE Master Examiner Mentors",
+                "p2.desc": "Experienced, patient teachers who know the official exam marking schemes inside out. They teach students what examiners are looking for to award full marks.",
+                "p3.title": "HOTS & KBAT Simplified",
+                "p3.desc": "We demystify difficult higher-order thinking questions using relatable real-life analogies, breaking complex questions into simple logical stages.",
+                "p4.title": "Micro-Classes (Max 8-12)",
+                "p4.desc": "No giant 50-student lecture halls where quiet students get ignored. In our micro-cohorts, every child is encouraged to ask questions comfortably.",
+                "p5.title": "Hybrid Classroom Flexibility",
+                "p5.desc": "Physical modern classes with air-conditioned comfort, plus live HD online streaming with unlimited 24/7 video replays when travel or school events occur.",
+                "p6.title": "Weekly WhatsApp Parent Updates",
+                "p6.desc": "You never have to guess how your child is doing. We send weekly attendance confirmations, homework feedback, and quiz results directly to your phone.",
+                "p7.title": "Comprehensive Physical Modules",
+                "p7.desc": "Beautifully printed, color-coded study notes and curated past-year trial questions delivered directly to your doorstep with zero extra book fees.",
+                "p8.title": "Free 1-on-1 Homework Clinic",
+                "p8.desc": "Have difficult school homework or tricky past year questions? Students can book weekly 1-on-1 consultation clinics with our tutors at zero additional charge.",
+                "p9.title": "Low-Stress Simulated Mocks",
+                "p9.desc": "Structured mock trials in a supportive environment to help students conquer exam anxiety, build test-taking speed, and master timing.",
+                "p10.title": "14-Day Full Satisfaction Money-Back Guarantee",
+                "p10.desc": "We believe in building lasting trust with every parent. If within your first 14 days you or your child are not completely delighted with our teaching quality, we will cheerfully refund 100% of your tuition fees with no questions asked.",
+                "syl.title": "Programs Tailored for Every Academic Level",
+                "syl.subtitle": "From primary school foundations to SPM and IGCSE distinctions, we prepare students for peak performance.",
+                "results.title": "What Malaysian Parents Say About Inspirasi",
+                "results.subtitle": "Read real feedback from parents who saw their children transform from anxious to confident high achievers.",
+                "faq.title": "Questions Parents Often Ask",
+                "faq.subtitle": "We are committed to full clarity. Here are answers to common questions about our trial and programs.",
+                "faq.q1": "How does the 1-Week Free Trial work?",
+                "faq.q2": "What is the maximum number of students in a class?",
+                "faq.q3": "What is your 14-day refund policy?",
+                "faq.q4": "How do parents receive weekly updates?",
+                "form.title": "Book Your Child's Free 1-Week Trial Class",
+                "form.subtitle": "Experience our caring mentors, proven exam modules, and micro-class attention firsthand.",
+                "form.parentName": "Parent / Guardian Name *",
+                "form.phone": "WhatsApp Number *",
+                "form.studentName": "Student Name *",
+                "form.level": "Academic Level (2026) *",
+                "form.subjects": "Subjects You'd Like to Test (Pick up to 2 for Free Trial)",
+                "form.submit": "Confirm Free Trial Class Booking"
+            },
+            bm: {
+                "nav.subtitle": "Membina Keyakinan & Peningkatan Gred Terbukti",
+                "nav.promise": "Janji Ibu Bapa",
+                "nav.pillars": "10 Tonggak",
+                "nav.syllabus": "Silibus & Tahap",
+                "nav.reporting": "Laporan Ibu Bapa",
+                "nav.reviews": "Ulasan Ibu Bapa",
+                "nav.faq": "Soalan Lazim",
+                "hero.badge": "Pengambilan Akademik 2026 • Dipercayai 15,000+ Keluarga Malaysia",
+                "hero.title1": "Anak Anda Layak Mendapat Lebih Daripada Hafalan.",
+                "hero.title2": "Bina Pemahaman Sebenar & Keyakinan Peperiksaan.",
+                "hero.subtitle": "Kami faham kerisauan ibu bapa menghadapi musim peperiksaan. Di Inspirasi, kami menggabungkan guru penyayang pakar pemeriksa KPM, kelas mikro terhad (maksimum 12), pelan pemulihan topik lemah dan laporan kemajuan mingguan terus ke WhatsApp anda.",
+                "hero.stat1": "Peningkatan Gred 90 Hari",
+                "hero.stat2": "Pelajar Setiap Kelas Mikro",
+                "hero.stat3": "Kelas Percubaan 1 Minggu",
+                "hero.cta1": "Tempah Kelas Percubaan Percuma",
+                "hero.cta2": "Bercakap dengan Penasihat Akademik",
+                "pillars.title": "10 Tonggak Kaedah Pembelajaran Inspirasi",
+                "pillars.subtitle": "Setiap anak mempunyai potensi tersendiri. Sistem berstruktur kami memastikan anak anda dibimbing dengan penuh prihatin, penerangan jelas dan gembira belajar.",
+                "p1.title": "Penilaian Diagnostik Tanpa Tekanan",
+                "p1.desc": "Kami mengenal pasti kelemahan topik secara tepat tanpa membuatkan anak berasa rendah diri. Pelan langkah demi langkah disediakan untuk mengukuhkan asas.",
+                "p2.title": "Guru Pakar Pemeriksa KPM Penyayang",
+                "p2.desc": "Guru berpengalaman yang memahami skema pemarkahan rasmi peperiksaan. Mereka membimbing anak cara tepat menjawab soalan untuk markah penuh.",
+                "p3.title": "KBAT & HOTS Dipermudahkan",
+                "p3.desc": "Kami memudahkan soalan aras tinggi menggunakan analogi kehidupan seharian yang mudah difahami, memecahkan soalan rumit kepada langkah logik mudah.",
+                "p4.title": "Kelas Mikro Terhad (8-12 Pelajar)",
+                "p4.desc": "Tiada dewan kuliah sesak dengan 50 pelajar di mana anak yang pemalu diabaikan. Dalam kelas mikro, setiap anak berpeluang bertanya dengan selesa.",
+                "p5.title": "Fleksibiliti Kelas Hibrid Pintar",
+                "p5.desc": "Kelas fizikal berhawa dingin selesa, serta siaran langsung interaktif HD dengan rakaman ulangkaji 24/7 sekiranya anak tidak sihat atau ada acara sukan.",
+                "p6.title": "Laporan Kemajuan Mingguan ke WhatsApp",
+                "p6.desc": "Ibu bapa tidak perlu tertanya-tanya tentang prestasi anak. Kami menghantar rekod kehadiran, kerja rumah dan markah kuiz terus ke telefon anda setiap minggu.",
+                "p7.title": "Modul Fizikal Lengkap & Kemas",
+                "p7.desc": "Buku nota bercetak berwarna-warni dan himpunan soalan percubaan terkini dihantar terus ke rumah tanpa sebarang bayaran tambahan bahan bacaan.",
+                "p8.title": "Klinik Bantuan 1-ke-1 Percuma",
+                "p8.desc": "Ada kerja rumah sekolah yang sukar difahami? Pelajar boleh menempah sesi klinik bimbingan peribadi 1-ke-1 setiap minggu tanpa sebarang caj tambahan.",
+                "p9.title": "Peperiksaan Simulasi Berperingkat",
+                "p9.desc": "Ujian percubaan dalam suasana yang membina untuk melatih anak mengatasi rasa panik, menguasai pengurusan masa dan membina ketahanan mental.",
+                "p10.title": "Jaminan Kepuasan & Pemulangan Wang 14 Hari",
+                "p10.desc": "Kami mengutamakan kepercayaan ibu bapa. Sekiranya anda tidak berpuas hati dengan kualiti pembelajaran dalam 14 hari pertama, kami pulangkan 100% yuran tanpa sebarang soalan.",
+                "syl.title": "Program Disesuaikan Mengikut Tahap Akademik",
+                "syl.subtitle": "Daripada asas sekolah rendah hingga kecemerlangan SPM dan Cambridge IGCSE, kami membimbing anak anda ke puncak kejayaan.",
+                "results.title": "Kata Ibu Bapa Mengenai Inspirasi",
+                "results.subtitle": "Baca pengalaman sebenar ibu bapa yang menyaksikan anak mereka berubah daripada cemas kepada yakin dan cemerlang.",
+                "faq.title": "Soalan yang Kerap Ditanya Ibu Bapa",
+                "faq.subtitle": "Kami berpegang pada ketelusan penuh. Berikut adalah jawapan kepada soalan lazim mengenai kelas dan jaminan kami.",
+                "faq.q1": "Bagaimanakah Kelas Percubaan Percuma 1 Minggu berfungsi?",
+                "faq.q2": "Berapakah bilangan maksimum pelajar dalam satu kelas?",
+                "faq.q3": "Apakah polisi pemulangan wang 14 hari?",
+                "faq.q4": "Bagaimanakah ibu bapa menerima laporan mingguan?",
+                "form.title": "Tempah Kelas Percubaan 1 Minggu Percuma",
+                "form.subtitle": "Rasai sendiri bimbingan guru prihatin, modul berkualiti dan tumpuan kelas mikro kami.",
+                "form.parentName": "Nama Ibu Bapa / Penjaga *",
+                "form.phone": "Nombor WhatsApp *",
+                "form.studentName": "Nama Pelajar *",
+                "form.level": "Peringkat Akademik (2026) *",
+                "form.subjects": "Subjek Pilihan Percubaan (Pilih sehingga 2 subjek)",
+                "form.submit": "Sahkan Tempahan Kelas Percubaan"
+            }
+        };
+
+        let currentLang = 'en';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (i18n[lang] && i18n[lang][key]) {
+                    el.innerText = i18n[lang][key];
+                }
+            });
+
+            const btnEn = document.getElementById('lang-en');
+            const btnBm = document.getElementById('lang-bm');
+            if (lang === 'en') {
+                btnEn.className = 'px-2.5 py-1 text-xs font-bold rounded-md transition-all bg-blue-700 text-white shadow-sm';
+                btnBm.className = 'px-2.5 py-1 text-xs font-bold rounded-md transition-all text-slate-600 hover:text-slate-900';
+            } else {
+                btnBm.className = 'px-2.5 py-1 text-xs font-bold rounded-md transition-all bg-blue-700 text-white shadow-sm';
+                btnEn.className = 'px-2.5 py-1 text-xs font-bold rounded-md transition-all text-slate-600 hover:text-slate-900';
+            }
+        }
+
+        function toggleFaq(index) {
+            const ans = document.getElementById('faq-ans-' + index);
+            const icon = document.getElementById('faq-icon-' + index);
+            if (ans.classList.contains('hidden')) {
+                ans.classList.remove('hidden');
+                icon.innerText = '−';
+            } else {
+                ans.classList.add('hidden');
+                icon.innerText = '+';
+            }
+        }
+
+        function handleEnroll(e) {
+            e.preventDefault();
+            alert(currentLang === 'en'
+                ? 'Thank you! Your free 1-week trial request has been registered. Our academic advisor will WhatsApp you the class schedule and trial pass shortly.'
+                : 'Terima kasih! Permohonan kelas percubaan percuma anda telah diterima. Pegawai kami akan menghantar jadual kelas dan pas percubaan melalui WhatsApp sebentar lagi.');
+            e.target.reset();
+        }
+    </script>
+</body>
+</html>
