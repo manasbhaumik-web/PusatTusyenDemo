@@ -1139,6 +1139,25 @@
     }
     .footer-links-grid a:hover {
       color: #FDE68A !important;
+      transform: translateX(2px);
+    }
+    .footer-social-btn {
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.6) !important;
+      transition: all 0.2s;
+    }
+    .footer-social-btn:hover {
+      background: #D97706 !important;
+      border-color: #D97706 !important;
+      color: #FFFFFF !important;
+      transform: translateY(-2px);
     }
 
     /* Floating WhatsApp */
@@ -2758,87 +2777,147 @@
   </section>
 
   <!-- Footer with Exact Submenu Mapping -->
-  <footer>
-    <div class="footer-cta">
-      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+  <footer style="background:#060D17;color:#FFFFFF;border-top:4px solid #D97706;">
+    <!-- Modern Top Pre-Footer Callout -->
+    <div style="background:#0A192F;padding:48px 0;border-bottom:1px solid rgba(217,119,6,0.2);">
+      <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;">
         <div>
-          <h3 style="font-size:1.5rem;color:#FFFFFF;margin-bottom:4px;">Empowering Students for Over 13 Years</h3>
-          <p style="color:rgba(255,255,255,0.75);font-size:14px;">Join 1,500+ students achieving top grades in SPM, PT3, and Primary school.</p>
+          <div style="display:inline-flex;align-items:center;gap:6px;padding:4px 12px;background:#FEF3C7;border:1px solid #FDE68A;color:#B45309;border-radius:4px;font-size:11px;font-weight:700;font-family:var(--font-body);margin-bottom:10px;">
+            <i data-lucide="shield-check" style="width:14px;height:14px;color:#D97706;"></i> <span id="footer-pre-badge">Registered with MOE Malaysia</span>
+          </div>
+          <h3 id="footer-pre-title" style="font-family:var(--font-head);font-weight:900;font-size:clamp(1.4rem, 2.8vw, 1.95rem);color:#FFFFFF;line-height:1.25;margin-bottom:6px;">
+            Empowering Students for Over 13 Years
+          </h3>
+          <p id="footer-pre-sub" style="font-family:var(--font-body);font-size:14.5px;color:#CBD5E1;margin:0;max-width:580px;">
+            Join 1,500+ students achieving top grades in SPM, PT3, and Primary school.
+          </p>
         </div>
-        <a href="#contact" class="btn-primary">Enroll Today →</a>
+
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <a href="#contact" class="btn-primary" style="padding:13px 26px;border-radius:8px;font-size:14.5px;box-shadow:0 4px 14px rgba(217,119,6,0.3);">
+            <span id="footer-enroll-btn">Enroll Today →</span>
+          </a>
+          <a href="https://wa.me/60125125792" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:8px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.2);color:#FFFFFF;font-family:var(--font-body);font-weight:600;font-size:14.5px;text-decoration:none;transition:all 0.2s;">
+            <i data-lucide="message-circle" style="width:16px;height:16px;color:#4ADE80;"></i> <span id="footer-wa-btn">Chat on WhatsApp</span>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="container footer-links-grid">
-      <div>
-        <a href="#home" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;text-decoration:none;">
-          <img src="./images/emblem-logo.png" alt="Pusat Tuisyen Bestari Didik Emblem Logo" style="height:52px;width:52px;object-fit:contain;display:block;flex-shrink:0;">
-          <div style="display:flex;flex-direction:column;justify-content:center;">
-            <div style="font-family:var(--font-head);font-weight:800;font-size:16px;color:#FFFFFF;line-height:1.2;display:block;">
-              Pusat Tuisyen Bestari Didik
+    <!-- Main Footer Links Grid -->
+    <div class="container" style="padding:64px 24px 36px;">
+      <div class="footer-links-grid" style="padding:0;margin-bottom:52px;">
+        
+        <!-- Brand Column -->
+        <div>
+          <a href="#home" style="display:flex;align-items:center;gap:12px;margin-bottom:16px;text-decoration:none;">
+            <img src="./images/emblem-logo.png" alt="Pusat Tuisyen Bestari Didik Emblem Logo" style="height:52px;width:52px;object-fit:contain;display:block;flex-shrink:0;">
+            <div style="display:flex;flex-direction:column;justify-content:center;">
+              <div style="font-family:var(--font-head);font-weight:800;font-size:16px;color:#FFFFFF;line-height:1.2;display:block;">
+                Pusat Tuisyen Bestari Didik
+              </div>
+              <div id="footer-slogan" style="font-family:var(--font-body);font-size:11.5px;color:#F59E0B;font-weight:600;margin-top:3px;display:block;line-height:1.2;">
+                "We Guide You to Lead Your Future"
+              </div>
             </div>
-            <div style="font-size:11.5px;color:#FDE68A;font-weight:700;margin-top:3px;display:block;line-height:1.2;">
-              "We Guide You to Lead Your Future"
+          </a>
+          <div style="background:rgba(217,119,6,0.1);border:1px solid rgba(217,119,6,0.25);border-radius:6px;padding:6px 10px;font-size:11px;font-family:var(--font-body);color:#FDE68A;letter-spacing:0.04em;margin-bottom:16px;line-height:1.4;">
+            ACADEMIC • DILIGENCE • DISCIPLINE • DEDICATION • DETERMINATION
+          </div>
+          <p style="font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,0.65);line-height:1.65;margin-bottom:18px;">
+            Registered with Ministry of Education Malaysia. Over 13 years of tuition excellence, structured modular coaching, and maximum 12 students per class.
+          </p>
+
+          <div style="display:flex;flex-direction:column;gap:10px;">
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);">
+              <i data-lucide="phone" style="width:14px;height:14px;color:#F59E0B;"></i> <span>012-512 5792</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);">
+              <i data-lucide="clock" style="width:14px;height:14px;color:#F59E0B;"></i> <span>7:30 AM – 7:00 PM (Mon–Fri)</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);">
+              <i data-lucide="map-pin" style="width:14px;height:14px;color:#F59E0B;"></i> <span>Selangor, Malaysia</span>
+            </div>
+            <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:rgba(255,255,255,0.75);">
+              <i data-lucide="mail" style="width:14px;height:14px;color:#F59E0B;"></i> <span>info@bestarididik.edu.my</span>
             </div>
           </div>
-        </a>
-        <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(217,119,6,0.3);border-radius:6px;padding:6px 10px;font-size:11px;color:#FDE68A;letter-spacing:0.04em;margin-bottom:14px;line-height:1.4;">
-          ACADEMIC • DILIGENCE • DISCIPLINE • DEDICATION • DETERMINATION
         </div>
-        <p style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.7;">Registered with Ministry of Education Malaysia. Over 13 years of quality tuition excellence.</p>
+
+        <!-- About Us Column -->
+        <div>
+          <h4>About Us</h4>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+            <a href="#about">About Bestari Didik</a>
+            <a href="#about">Our Values</a>
+            <a href="#about">Principal's Message</a>
+            <a href="#about">Our Staff & Master Tutors</a>
+          </div>
+        </div>
+
+        <!-- Classes Column -->
+        <div>
+          <h4>Classes</h4>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+            <a href="#classes">Physical Class</a>
+            <a href="#classes">Online Class</a>
+            <a href="#classes">Physical / Online Private Class</a>
+            <a href="#syllabus">SPM Form 4 & 5</a>
+            <a href="#syllabus">Lower Sec Form 1 - 3</a>
+          </div>
+        </div>
+
+        <!-- Our Gallery Column -->
+        <div>
+          <h4>Our Gallery</h4>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+            <a href="#testimonials">Testimonial</a>
+            <a href="#news">Events</a>
+            <a href="#news">Academic Activities</a>
+            <a href="#news">News & Updates</a>
+          </div>
+        </div>
+
+        <!-- Contact Us Column -->
+        <div>
+          <h4>Contact Us</h4>
+          <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;">
+            <a href="#faq">FAQ</a>
+            <a href="#contact">Payment Method</a>
+            <a href="#contact">Our Location</a>
+            <a href="#contact">Book Assessment</a>
+          </div>
+        </div>
+
       </div>
 
-      <!-- About Us Column -->
-      <div>
-        <h4 style="font-size:13.5px;color:#FFFFFF;font-weight:700;text-transform:uppercase;margin-bottom:16px;letter-spacing:0.04em;">About Us</h4>
-        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.75);">
-          <a href="#about">About Bestari Didik</a>
-          <a href="#about">Our Values</a>
-          <a href="#about">Principal's Message</a>
-          <a href="#about">Our Staff & Master Tutors</a>
+      <!-- Bottom Copyright & Social Bar -->
+      <div style="border-top:1px solid rgba(255,255,255,0.08);padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;">
+        <div>
+          <p id="footer-copy" style="font-family:var(--font-body);font-size:12.5px;color:rgba(255,255,255,0.45);margin:0;">
+            © 2026 Pusat Tuisyen Bestari Didik. All rights reserved. Registered with MOE Malaysia.
+          </p>
+          <p id="footer-proposal" style="font-family:var(--font-body);font-size:11.5px;color:#FDE68A;margin-top:5px;font-weight:500;letter-spacing:0.01em;">
+            🔒 Confidential Website Redesign Proposal Prepared for Pusat Tuisyen Bestari Didik Management.
+          </p>
+        </div>
+
+        <!-- Social Links -->
+        <div style="display:flex;gap:8px;">
+          <a href="#" aria-label="Facebook" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" aria-label="X" class="footer-social-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="footer-social-btn">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#060D17" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
         </div>
       </div>
-
-      <!-- Classes Column -->
-      <div>
-        <h4 style="font-size:13.5px;color:#FFFFFF;font-weight:700;text-transform:uppercase;margin-bottom:16px;letter-spacing:0.04em;">Classes</h4>
-        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.75);">
-          <a href="#classes">Physical Class</a>
-          <a href="#classes">Online Class</a>
-          <a href="#classes">Physical / Online Private Class</a>
-          <a href="#syllabus">SPM Form 4 & 5</a>
-          <a href="#syllabus">Lower Sec Form 1 - 3</a>
-        </div>
-      </div>
-
-      <!-- Our Gallery Column -->
-      <div>
-        <h4 style="font-size:13.5px;color:#FFFFFF;font-weight:700;text-transform:uppercase;margin-bottom:16px;letter-spacing:0.04em;">Our Gallery</h4>
-        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.75);">
-          <a href="#testimonials">Testimonial</a>
-          <a href="#news">Events</a>
-          <a href="#news">Academic Activities</a>
-          <a href="#news">News & Updates</a>
-        </div>
-      </div>
-
-      <!-- Contact Us Column -->
-      <div>
-        <h4 style="font-size:13.5px;color:#FFFFFF;font-weight:700;text-transform:uppercase;margin-bottom:16px;letter-spacing:0.04em;">Contact Us</h4>
-        <div style="display:flex;flex-direction:column;gap:9px;font-size:13px;color:rgba(255,255,255,0.75);">
-          <a href="#faq">FAQ</a>
-          <a href="#contact">Payment Method</a>
-          <a href="#contact">Our Location</a>
-          <a href="#contact">Book Assessment</a>
-        </div>
-      </div>
-    </div>
-
-    <div style="border-top:1px solid rgba(255,255,255,0.08);padding:20px 0 8px;text-align:center;font-size:12.5px;color:rgba(255,255,255,0.4);">
-      © 2026 Pusat Tuisyen Bestari Didik. All rights reserved. Registered with MOE Malaysia.
-    </div>
-    <div style="text-align:center;padding:0 0 20px;font-size:11.5px;color:#FDE68A;letter-spacing:0.02em;font-weight:500;">
-      🔒 Confidential Website Redesign Proposal Prepared for Pusat Tuisyen Bestari Didik Management.
     </div>
   </footer>
 
@@ -3472,12 +3551,18 @@
       // Footer
       const footer = document.querySelector('footer');
       if (footer) {
-        const ctaH3 = footer.querySelector('.footer-cta h3');
+        const badge = document.getElementById('footer-pre-badge');
+        if (badge) badge.textContent = lang === 'bm' ? 'Anugerah & Pengiktirafan KPM' : 'Registered with MOE Malaysia';
+        const ctaH3 = document.getElementById('footer-pre-title');
         if (ctaH3) ctaH3.textContent = d.footerPreTitle;
-        const ctaP = footer.querySelector('.footer-cta p');
+        const ctaP = document.getElementById('footer-pre-sub');
         if (ctaP) ctaP.textContent = d.footerPreSub;
-        const ctaBtn = footer.querySelector('.footer-cta a.btn-primary');
+        const ctaBtn = document.getElementById('footer-enroll-btn');
         if (ctaBtn) ctaBtn.textContent = d.footerEnrollBtn;
+        const waBtn = document.getElementById('footer-wa-btn');
+        if (waBtn) waBtn.textContent = lang === 'bm' ? 'Hubungi Melalui WhatsApp' : 'Chat on WhatsApp';
+        const slogan = document.getElementById('footer-slogan');
+        if (slogan) slogan.textContent = lang === 'bm' ? '"Kami Membimbing Anda Memimpin Masa Depan"' : '"We Guide You to Lead Your Future"';
 
         const colH4s = footer.querySelectorAll('.footer-links-grid h4');
         if (colH4s.length >= 4) {
@@ -3487,10 +3572,10 @@
           colH4s[3].textContent = d.footerColContact;
         }
 
-        const copyDiv = footer.querySelector('div[style*="border-top:1px solid rgba(255,255,255,0.08)"]');
+        const copyDiv = document.getElementById('footer-copy');
         if (copyDiv) copyDiv.textContent = d.footerCopyright;
 
-        const tagDiv = footer.querySelector('div[style*="letter-spacing:0.02em"]');
+        const tagDiv = document.getElementById('footer-proposal');
         if (tagDiv) tagDiv.textContent = d.footerProposalTag;
       }
 
