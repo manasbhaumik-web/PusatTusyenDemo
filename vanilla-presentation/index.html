@@ -286,8 +286,8 @@
       vertical-align: middle;
     }
     .nav-link:hover {
-      color: var(--gold-dark);
-      background: var(--gold-light);
+      color: #2563EB;
+      background: #EFF6FF;
     }
 
     .dropdown-menu {
@@ -331,17 +331,17 @@
       transition: all 0.15s;
     }
     .dropdown-link-item:hover {
-      background: var(--gold-light);
+      background: #F8FAFC;
       transform: translateX(3px);
     }
     .dropdown-icon-box {
-      width: 32px; height: 32px;
+      width: 34px; height: 34px;
       border-radius: 6px;
-      background: var(--gold-light);
+      background: #EFF6FF;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--gold-dark);
+      color: #2563EB;
       flex-shrink: 0;
       margin-top: 2px;
     }
@@ -363,13 +363,13 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      padding: 0 22px;
+      padding: 0 20px;
       height: 42px;
       box-sizing: border-box;
       border-radius: 7px;
       background: var(--navy);
       color: var(--white);
-      border: 1.5px solid var(--gold);
+      border: 1px solid rgba(217, 119, 6, 0.4);
       font-size: 14px;
       font-weight: 700;
       font-family: var(--font-head);
@@ -380,10 +380,11 @@
       box-shadow: 0 2px 8px rgba(10,25,47,0.15);
     }
     .nav-cta:hover {
-      background: var(--gold);
-      color: var(--navy-dark);
+      background: #112240;
+      border-color: #D97706;
+      color: var(--white);
       transform: translateY(-1px);
-      box-shadow: 0 4px 14px rgba(217, 119, 6, 0.3);
+      box-shadow: 0 4px 14px rgba(10, 25, 47, 0.25);
     }
 
     .mob-menu-btn {
@@ -784,7 +785,7 @@
     }
     .why-cat-btn.active .why-cat-count {
       background: var(--gold);
-      color: var(--navy-dark);
+      color: #FFFFFF;
     }
 
     .bento-hero-grid {
@@ -960,26 +961,37 @@
 
     /* Stats Section */
     .stats-section {
-      background: var(--navy-dark);
+      background: #1B3A6B;
       padding: 80px 0;
-      border-top: 4px solid var(--gold);
+      border-top: 4px solid #2563EB;
     }
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 16px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
     }
     .stat-box {
-      border: 1px solid rgba(255,255,255,0.1);
-      border-radius: 10px;
-      padding: 40px 24px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 12px;
+      padding: 36px 20px;
       text-align: center;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255,255,255,0.06);
+      transition: all 0.25s;
     }
     .stat-box.highlight {
-      background: linear-gradient(135deg, #D97706 0%, #B45309 100%);
-      border-color: #F59E0B;
-      box-shadow: 0 8px 24px rgba(217, 119, 6, 0.35);
+      background: #2563EB;
+      border-color: #3B82F6;
+      box-shadow: 0 8px 30px rgba(37, 99, 235, 0.3);
+    }
+    .stat-accent-bar {
+      width: 36px;
+      height: 3px;
+      background: #38BDF8;
+      border-radius: 2px;
+      margin: 0 auto 14px;
+    }
+    .stat-box.highlight .stat-accent-bar {
+      background: #FFFFFF;
     }
     .stat-number {
       font-family: var(--font-head);
@@ -1553,9 +1565,9 @@
         <span id="top-hours" class="hidden-mobile-text" style="color:rgba(255,255,255,0.7);white-space:nowrap;">07:30 AM – 07:00 PM (Mon–Fri)</span>
         
         <!-- Language Switcher Pill -->
-        <div class="lang-pill-wrap" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.12);border:1px solid rgba(217,119,6,0.4);border-radius:20px;padding:2px;gap:2px;margin-left:4px;">
-          <button id="btn-lang-en" onclick="setLanguage('en')" class="lang-btn" style="padding:3px 9px;border-radius:14px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:var(--gold);color:#0A192F;transition:all 0.2s;">🇬🇧 EN</button>
-          <button id="btn-lang-bm" onclick="setLanguage('bm')" class="lang-btn" style="padding:3px 9px;border-radius:14px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:transparent;color:rgba(255,255,255,0.75);transition:all 0.2s;">🇲🇾 BM</button>
+        <div class="lang-pill-wrap" style="display:inline-flex;align-items:center;background:rgba(255,255,255,0.14);border:1px solid rgba(255,255,255,0.22);border-radius:20px;padding:2px;gap:2px;margin-left:4px;">
+          <button id="btn-lang-en" onclick="setLanguage('en')" class="lang-btn" style="padding:2px 8px;border-radius:14px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:#2563EB;color:#FFFFFF;transition:all 0.15s;">🇬🇧 EN</button>
+          <button id="btn-lang-bm" onclick="setLanguage('bm')" class="lang-btn" style="padding:2px 8px;border-radius:14px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:transparent;color:#93C5FD;transition:all 0.15s;">🇲🇾 BM</button>
         </div>
       </div>
     </div>
@@ -2468,17 +2480,20 @@
         </div>
 
         <div class="class-card">
-          <div class="class-card-top-bar" style="background:#DC2626;"></div>
+          <div class="class-card-top-bar" style="background:#2563EB;"></div>
           <div style="padding:28px 24px;">
-            <span style="font-size:11px;font-weight:700;color:#DC2626;background:#FEF2F2;padding:3px 10px;border-radius:4px;text-transform:uppercase;">Personalized</span>
+            <span style="font-size:11px;font-weight:700;color:#2563EB;background:#EFF6FF;padding:3px 10px;border-radius:4px;text-transform:uppercase;">Personalized</span>
             <h3 style="font-size:1.3rem;margin:12px 0 8px;color:var(--navy);">1-on-1 Private Tuition</h3>
             <p style="font-size:14px;color:var(--text-md);line-height:1.7;margin-bottom:20px;">Dedicated one-on-one sessions customized entirely around your learning pace.</p>
-            <a href="#contact" class="btn-primary" style="padding:10px 18px;font-size:13.5px;background:#B91C1C;">Book Private</a>
+            <a href="#contact" class="btn-primary" style="padding:10px 18px;font-size:13.5px;background:#2563EB;border:1px solid rgba(37,99,235,0.4);">Book Private</a>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
   <!-- Stats -->
-  <section class="stats-section">
+  <section id="stats" class="stats-section">
     <div class="container">
       <div style="text-align:center;margin-bottom:48px;">
         <h2 style="color:#fff;font-size:clamp(1.6rem, 3.5vw, 2.3rem);margin-bottom:8px;">Pusat Tuisyen Bestari Didik in Numbers</h2>
@@ -2488,18 +2503,21 @@
       <div class="stats-grid">
         <div class="stat-box">
           <div class="stat-number">13+</div>
+          <div class="stat-accent-bar"></div>
           <div style="font-size:15px;font-weight:700;color:#fff;">Years of Experience</div>
           <div style="font-size:12.5px;color:rgba(255,255,255,0.7);margin-top:4px;">Established since 2011</div>
         </div>
 
         <div class="stat-box highlight">
           <div class="stat-number">1,500+</div>
+          <div class="stat-accent-bar"></div>
           <div style="font-size:15px;font-weight:700;color:#fff;">Students Taught</div>
           <div style="font-size:12.5px;color:rgba(255,255,255,0.9);margin-top:4px;">Across all levels & exams</div>
         </div>
 
         <div class="stat-box">
           <div class="stat-number">100%</div>
+          <div class="stat-accent-bar"></div>
           <div style="font-size:15px;font-weight:700;color:#fff;">Satisfaction Rate</div>
           <div style="font-size:12.5px;color:rgba(255,255,255,0.7);margin-top:4px;">Parent & student feedback</div>
         </div>
@@ -3176,15 +3194,15 @@
       const btnBm = document.getElementById('btn-lang-bm');
       if (btnEn && btnBm) {
         if (lang === 'en') {
-          btnEn.style.background = '#D97706';
-          btnEn.style.color = '#0A192F';
+          btnEn.style.background = '#2563EB';
+          btnEn.style.color = '#FFFFFF';
           btnBm.style.background = 'transparent';
-          btnBm.style.color = 'rgba(255,255,255,0.75)';
+          btnBm.style.color = '#93C5FD';
         } else {
-          btnBm.style.background = '#D97706';
-          btnBm.style.color = '#0A192F';
+          btnBm.style.background = '#2563EB';
+          btnBm.style.color = '#FFFFFF';
           btnEn.style.background = 'transparent';
-          btnEn.style.color = 'rgba(255,255,255,0.75)';
+          btnEn.style.color = '#93C5FD';
         }
       }
 
