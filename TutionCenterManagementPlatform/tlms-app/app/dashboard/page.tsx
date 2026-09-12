@@ -1,173 +1,148 @@
 'use client'
 import AppShell from '@/components/AppShell'
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, ReferenceLine } from 'recharts'
 
 const revenueData = [
   { month: 'Jan', revenue: 98000 }, { month: 'Feb', revenue: 104000 },
   { month: 'Mar', revenue: 112000 }, { month: 'Apr', revenue: 108000 },
   { month: 'May', revenue: 118000 }, { month: 'Jun', revenue: 125000 },
   { month: 'Jul', revenue: 131000 }, { month: 'Aug', revenue: 138000 },
-  { month: 'Sep', revenue: 142000 },
+  { month: 'Sep', revenue: 142340 },
 ]
 
-const classes = [
-  { time: '10:00 AM', name: 'SPM Add Maths', room: 'Room A', tutor: 'Dr. Tan', cap: 12, enrolled: 12 },
-  { time: '11:30 AM', name: 'IGCSE Chemistry', room: 'Room B', tutor: 'Sir Robert', cap: 12, enrolled: 10 },
-  { time: '02:00 PM', name: 'Primary Maths (Std 6)', room: 'Room C', tutor: 'Miss Lim', cap: 10, enrolled: 7 },
-  { time: '04:00 PM', name: 'SPM Physics', room: 'Room A', tutor: 'Dr. Tan', cap: 12, enrolled: 9 },
-]
-
-const transactions = [
-  { name: 'Lucas Tan (Form 5)', amount: 'RM 350', method: 'FPX Maybank', time: '09:14 AM' },
-  { name: 'Isaac Lim (Year 10)', amount: 'RM 420', method: 'DuitNow QR', time: '08:52 AM' },
-  { name: 'Nur Aisha Binti Hassan', amount: 'RM 280', method: 'FPX CIMB', time: 'Yesterday' },
-]
-
-const unpaid = [
-  { name: 'Sarah Lee (Form 4)', amount: 'RM 280', days: 9 },
-  { name: 'Amirul Bin Azman (Form 5)', amount: 'RM 350', days: 7 },
-  { name: 'Tan Xin Yi (Year 8)', amount: 'RM 420', days: 12 },
-]
-
-function KpiCard({ label, value, delta, deltaType, sub }: any) {
+export default function Dashboard() {
   return (
-    <div style={{
-      background: 'var(--surface)', borderRadius: 12, padding: 20,
-      boxShadow: 'var(--shadow-card)', border: '1px solid var(--border)',
-    }}>
-      <div style={{ fontSize: 11, fontWeight: 600, color: 'var(--foreground-muted)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 8 }}>{label}</div>
-      <div style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 28, color: 'var(--foreground)', lineHeight: 1 }}>{value}</div>
-      {sub && <div style={{ fontSize: 12, color: 'var(--foreground-muted)', marginTop: 4 }}>{sub}</div>}
-      {delta && (
-        <div style={{ fontSize: 12, fontWeight: 600, marginTop: 8, color: deltaType === 'up' ? 'var(--success)' : 'var(--destructive)' }}>
-          {deltaType === 'up' ? '▲' : '▼'} {delta}
-        </div>
-      )}
-    </div>
-  )
-}
-
-export default function DashboardPage() {
-  return (
-    <AppShell title="Dashboard">
-      {/* Page header */}
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 24 }}>
+    <AppShell>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
         <div>
-          <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 24, fontWeight: 700, color: 'var(--foreground)' }}>
-            Monthly Overview
-          </h1>
-          <p style={{ fontSize: 13, color: 'var(--foreground-muted)', marginTop: 2 }}>September 2026 — Subang Jaya SS15</p>
+          <h1 style={{ fontSize: 22, marginBottom: 4 }}>September 2026 — Executive Overview</h1>
+          <p style={{ color: 'var(--text-muted)' }}>Subang Jaya SS15 Branch</p>
         </div>
-        <div style={{ display: 'flex', gap: 8 }}>
-          <button style={{
-            padding: '8px 16px', borderRadius: 8, border: '1px solid var(--border)',
-            background: 'var(--surface)', cursor: 'pointer', fontSize: 13, fontWeight: 500, fontFamily: 'var(--font-sans)',
-          }}>📤 Export</button>
-          <button style={{
-            padding: '8px 16px', borderRadius: 8, border: 'none',
-            background: 'var(--primary)', color: '#fff', cursor: 'pointer',
-            fontSize: 13, fontWeight: 600, fontFamily: 'var(--font-sans)',
-          }}>+ Enroll Student</button>
-        </div>
+        <button className="btn-primary">Generate Report</button>
       </div>
 
-      {/* KPI Cards */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 16, marginBottom: 24 }}>
-        <KpiCard label="Total Active Students" value="482" delta="+14 this month" deltaType="up" sub="Across all branches" />
-        <KpiCard label="Collection Rate" value="94.2%" delta="+3.1% vs August" deltaType="up" sub="RM 142,340 collected" />
-        <KpiCard label="Outstanding Fees" value="RM 8,740" delta="-42% vs August" deltaType="up" sub="18 unpaid invoices" />
-        <KpiCard label="Attendance Today" value="96.8%" sub="214 / 221 students present" delta="🟢 12 active classes now" deltaType="up" />
-      </div>
-
-      {/* Charts + Today's Classes */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 380px', gap: 16, marginBottom: 16 }}>
-        {/* Revenue chart */}
-        <div style={{ background: 'var(--surface)', borderRadius: 12, padding: 20, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 16 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, color: 'var(--foreground)' }}>Revenue Trajectory 2026</h2>
-            <span style={{ fontSize: 11, color: 'var(--foreground-muted)', fontFamily: 'var(--font-mono)', fontWeight: 600 }}>MYR</span>
-          </div>
-          <ResponsiveContainer width="100%" height={200}>
-            <AreaChart data={revenueData}>
-              <defs>
-                <linearGradient id="revGrad" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="#1D4ED8" stopOpacity={0.15} />
-                  <stop offset="100%" stopColor="#1D4ED8" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <CartesianGrid strokeDasharray="3 3" stroke="var(--border)" />
-              <XAxis dataKey="month" tick={{ fontSize: 11, fill: '#64748B' }} axisLine={false} tickLine={false} />
-              <YAxis tick={{ fontSize: 11, fill: '#64748B' }} axisLine={false} tickLine={false} tickFormatter={v => `RM${(v/1000).toFixed(0)}k`} />
-              <Tooltip formatter={(v: any) => [`RM ${v.toLocaleString()}`, 'Revenue']} contentStyle={{ borderRadius: 8, border: '1px solid var(--border)', fontFamily: 'var(--font-sans)' }} />
-              <Area type="monotone" dataKey="revenue" stroke="#1D4ED8" strokeWidth={2} fill="url(#revGrad)" />
-            </AreaChart>
-          </ResponsiveContainer>
-        </div>
-
-        {/* Today's classes */}
-        <div style={{ background: 'var(--surface)', borderRadius: 12, padding: 20, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border)' }}>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, marginBottom: 14, color: 'var(--foreground)' }}>Today's Classes</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-            {classes.map((c, i) => (
-              <div key={i} style={{ padding: '10px 12px', borderRadius: 8, background: 'var(--surface-muted)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <div>
-                  <div style={{ fontSize: 12, fontFamily: 'var(--font-mono)', color: 'var(--foreground-muted)', fontWeight: 500 }}>{c.time}</div>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--foreground)', marginTop: 1 }}>{c.name}</div>
-                  <div style={{ fontSize: 11, color: 'var(--foreground-muted)' }}>{c.room} · {c.tutor}</div>
-                </div>
-                <div style={{
-                  fontSize: 11, fontWeight: 700, padding: '4px 10px', borderRadius: 20,
-                  background: c.enrolled === c.cap ? '#FEF3C7' : '#DCFCE7',
-                  color: c.enrolled === c.cap ? 'var(--warning)' : 'var(--success)',
-                  fontFamily: 'var(--font-mono)', whiteSpace: 'nowrap',
-                }}>{c.enrolled}/{c.cap}</div>
+      {/* KPIs */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 16, marginBottom: 24 }}>
+        {[
+          { label: 'Total Students', value: '482', sub: '+2.1% from Aug', icon: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2 M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z M23 21v-2a4 4 0 0 0-3-3.87 M16 3.13a4 4 0 0 1 0 7.75', color: 'var(--info)', bg: 'var(--info-bg)' },
+          { label: 'MYR Revenue Collected', value: 'RM 142,340', sub: '92% of target', icon: 'M12 1v22 M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6', color: 'var(--success)', bg: 'var(--success-bg)' },
+          { label: 'Outstanding Fees', value: 'RM 8,740', sub: '-5.3% reduction', icon: 'M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z M12 9v4 M12 17h.01', color: 'var(--danger)', bg: 'var(--danger-bg)' },
+          { label: 'Attendance Rate', value: '96.8%', sub: '+0.5% from Aug', icon: 'M22 11.08V12a10 10 0 1 1-5.93-9.14 M22 4L12 14.01l-3-3', color: 'var(--primary)', bg: 'var(--primary-light)' }
+        ].map((kpi, i) => (
+          <div key={i} className="card" style={{ padding: 20 }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 16 }}>
+              <div style={{ width: 32, height: 32, borderRadius: 8, background: kpi.bg, color: kpi.color, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d={kpi.icon}/></svg>
               </div>
-            ))}
+              <span style={{ fontSize: 13, fontWeight: 600, color: 'var(--text-secondary)' }}>{kpi.label}</span>
+            </div>
+            <div style={{ fontSize: 28, fontWeight: 700, fontFamily: 'DM Sans', color: 'var(--text-primary)', marginBottom: 4 }}>{kpi.value}</div>
+            <div style={{ fontSize: 12, color: 'var(--text-muted)' }}>{kpi.sub}</div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 16, marginBottom: 16 }}>
+        {/* Chart */}
+        <div className="card" style={{ padding: 20 }}>
+          <h2 style={{ fontSize: 16, marginBottom: 20 }}>Monthly Revenue Performance — 2026</h2>
+          <div style={{ height: 260 }}>
+            <ResponsiveContainer width="100%" height="100%">
+              <LineChart data={revenueData}>
+                <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--border)" />
+                <XAxis dataKey="month" axisLine={false} tickLine={false} tick={{ fontSize: 12, fill: 'var(--text-muted)' }} />
+                <YAxis axisLine={false} tickLine={false} tickFormatter={v => 'RM ' + (v/1000) + 'k'} tick={{ fontSize: 12, fill: 'var(--text-muted)' }} />
+                <Tooltip contentStyle={{ borderRadius: 8, border: '1px solid var(--border)', boxShadow: 'var(--shadow-md)' }} />
+                <ReferenceLine y={145000} stroke="var(--primary)" strokeDasharray="3 3" label={{ position: 'top', value: 'Target', fill: 'var(--primary)', fontSize: 12 }} />
+                <Line type="monotone" dataKey="revenue" stroke="var(--primary)" strokeWidth={3} dot={{ r: 4, fill: 'var(--primary)', strokeWidth: 2, stroke: '#fff' }} activeDot={{ r: 6 }} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+        </div>
+
+        {/* Classes */}
+        <div className="card" style={{ padding: 20 }}>
+          <h2 style={{ fontSize: 16, marginBottom: 16 }}>Today's Classes</h2>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
+            {[
+              { title: 'SPM Physics (Form 5)', time: '8:00 AM - 10:00 AM', room: 'Room 2A', tutor: 'Mr. Lee K. W.', enrolled: 18, cap: 20 },
+              { title: 'A-Level Maths', time: '10:30 AM - 12:30 PM', room: 'Room 1C', tutor: 'Ms. Priya S.', enrolled: 12, cap: 15 },
+              { title: 'IGCSE English', time: '1:00 PM - 3:00 PM', room: 'Room 3B', tutor: 'Mr. David C.', enrolled: 20, cap: 20 },
+              { title: 'PT3 Science', time: '3:30 PM - 5:30 PM', room: 'Room 2C', tutor: 'Madam Fauziah', enrolled: 22, cap: 20 },
+            ].map((cls, i) => {
+              const pct = cls.enrolled / cls.cap;
+              const isFull = pct >= 1;
+              const isOver = pct > 1;
+              return (
+                <div key={i} style={{ border: '1px solid var(--border)', borderRadius: 8, padding: 12, background: isOver ? 'var(--danger-bg)' : isFull ? 'var(--success-bg)' : 'transparent' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+                    <div style={{ fontWeight: 600, fontSize: 13, color: 'var(--text-primary)' }}>{cls.title}</div>
+                    <div className={`badge ${isOver ? 'badge-danger' : isFull ? 'badge-success' : 'badge-teal'}`}>
+                      {cls.enrolled}/{cls.cap} Students {isFull && '- Full'}
+                    </div>
+                  </div>
+                  <div style={{ fontSize: 12, color: 'var(--text-secondary)' }}>{cls.room} | Tutor: {cls.tutor}</div>
+                  <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 4 }}>{cls.time}</div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
 
-      {/* Transactions + Unpaid */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 16 }}>
-        {/* Recent Transactions */}
-        <div style={{ background: 'var(--surface)', borderRadius: 12, padding: 20, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border)' }}>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, marginBottom: 14, color: 'var(--foreground)' }}>Recent Transactions</h2>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-            {transactions.map((t, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', padding: '10px 0', borderBottom: i < transactions.length - 1 ? '1px solid var(--border)' : 'none', gap: 10 }}>
-                <div style={{ width: 36, height: 36, borderRadius: 8, background: '#DCFCE7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: 16 }}>💳</div>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--foreground)' }}>{t.name}</div>
-                  <div style={{ fontSize: 11, color: 'var(--foreground-muted)' }}>{t.method} · {t.time}</div>
-                </div>
-                <div style={{ fontFamily: 'var(--font-mono)', fontWeight: 700, fontSize: 13, color: 'var(--success)' }}>{t.amount}</div>
-              </div>
-            ))}
-          </div>
+        {/* Transactions */}
+        <div className="card" style={{ padding: 20 }}>
+          <h2 style={{ fontSize: 16, marginBottom: 16 }}>Recent FPX/DuitNow Transactions</h2>
+          <table>
+            <thead>
+              <tr><th>Date</th><th>Transaction ID</th><th>Payer Name</th><th>Amount (RM)</th><th>Status</th></tr>
+            </thead>
+            <tbody>
+              {[
+                ['2026/09/12', '201001678', 'Ahmad Zikri', '350.00'],
+                ['2026/09/12', '201001625', 'Sarah Tan', '420.00'],
+                ['2026/09/11', '201003583', 'Lim Wei', '280.00'],
+              ].map((row, i) => (
+                <tr key={i}>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: 12 }}>{row[0]}</td>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: 12 }}>{row[1]}</td>
+                  <td style={{ fontWeight: 500 }}>{row[2]}</td>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 600 }}>RM {row[3]}</td>
+                  <td><span className="badge badge-success">Success</span></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
-        {/* Unpaid Invoices */}
-        <div style={{ background: 'var(--surface)', borderRadius: 12, padding: 20, boxShadow: 'var(--shadow-card)', border: '1px solid var(--border)' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 14 }}>
-            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: 15, color: 'var(--foreground)' }}>Unpaid Invoices</h2>
-            <span style={{ fontSize: 11, background: '#FEE2E2', color: 'var(--destructive)', fontWeight: 700, padding: '3px 8px', borderRadius: 20 }}>{unpaid.length} overdue</span>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
-            {unpaid.map((u, i) => (
-              <div key={i} style={{ display: 'flex', alignItems: 'center', padding: '10px 0', borderBottom: i < unpaid.length - 1 ? '1px solid var(--border)' : 'none', gap: 10 }}>
-                <div style={{ flex: 1 }}>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: 'var(--foreground)' }}>{u.name}</div>
-                  <div style={{ fontSize: 11, color: 'var(--destructive)' }}>{u.days} days overdue</div>
-                </div>
-                <div style={{ fontFamily: 'var(--font-mono)', fontWeight: 700, fontSize: 13, color: 'var(--destructive)', marginRight: 8 }}>{u.amount}</div>
-                <button style={{
-                  padding: '5px 12px', borderRadius: 7, border: 'none',
-                  background: '#25D366', color: '#fff', cursor: 'pointer',
-                  fontSize: 12, fontWeight: 600, fontFamily: 'var(--font-sans)', display: 'flex', alignItems: 'center', gap: 4,
-                }}>💬 WhatsApp</button>
-              </div>
-            ))}
-          </div>
+        {/* Overdue */}
+        <div className="card" style={{ padding: 20 }}>
+          <h2 style={{ fontSize: 16, marginBottom: 16 }}>Overdue Student List</h2>
+          <table>
+            <thead>
+              <tr><th>Student Name</th><th>Parent Contact</th><th>Amount Overdue</th><th>Action</th></tr>
+            </thead>
+            <tbody>
+              {[
+                ['Isaac Lim', '012-345-6789', '420.00'],
+                ['Nur Aisha', '017-654-3210', '280.00'],
+                ['Daniel Wong', '019-876-5432', '700.00'],
+              ].map((row, i) => (
+                <tr key={i}>
+                  <td style={{ fontWeight: 500 }}>{row[0]}</td>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontSize: 12 }}>{row[1]}</td>
+                  <td style={{ fontFamily: 'var(--font-mono)', fontWeight: 600, color: 'var(--danger)' }}>RM {row[2]}</td>
+                  <td style={{ textAlign: 'right' }}>
+                    <button className="btn-whatsapp">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                      Reminder
+                    </button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
       </div>
     </AppShell>

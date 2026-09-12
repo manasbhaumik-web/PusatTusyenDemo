@@ -18,7 +18,7 @@ export default function SyllabusMatrix() {
       heading: t.syllabus.spmHeading,
       sub: t.syllabus.spmSub,
       badge: 'High Demand',
-      badgeColor: '#D97706',
+      badgeColor: '#0EA5E9',
       subjects: [
         { name: 'Additional Mathematics (Matematik Tambahan)', code: 'SPM-3472', hours: `2.0 ${t.syllabus.hoursPerWeek}`, teacher: 'Specialist Tutors (15+ yrs)', mode: 'Physical & Online' },
         { name: 'Mathematics (Matematik)', code: 'SPM-1449', hours: `1.5 ${t.syllabus.hoursPerWeek}`, teacher: 'Senior MOE Trained', mode: 'Physical & Online' },
@@ -44,7 +44,7 @@ export default function SyllabusMatrix() {
       heading: t.syllabus.pt3Heading,
       sub: t.syllabus.pt3Sub,
       badge: 'Core Foundation',
-      badgeColor: '#0A192F',
+      badgeColor: '#1E3A8A',
       subjects: [
         { name: 'Mathematics (Matematik)', code: 'KSSM-M01', hours: `1.5 ${t.syllabus.hoursPerWeek}`, teacher: 'Math Specialist', mode: 'Physical & Online' },
         { name: 'Science (Sains)', code: 'KSSM-S01', hours: `1.5 ${t.syllabus.hoursPerWeek}`, teacher: 'Science Specialist', mode: 'Physical & Online' },
@@ -85,7 +85,7 @@ export default function SyllabusMatrix() {
       heading: t.syllabus.privateHeading,
       sub: t.syllabus.privateSub,
       badge: 'Tailored',
-      badgeColor: '#D97706',
+      badgeColor: '#0EA5E9',
       subjects: [
         { name: 'IGCSE Cambridge Mathematics / Add Maths', code: '0580 / 0606', hours: 'Customized', teacher: 'International Syllabus Expert', mode: 'Physical / Online' },
         { name: 'IGCSE Physics / Chemistry / Biology', code: '0625 / 0620 / 0610', hours: 'Customized', teacher: 'International Syllabus Expert', mode: 'Physical / Online' },
@@ -121,18 +121,18 @@ export default function SyllabusMatrix() {
           style={{ marginBottom: 44 }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-            <div style={{ width: 4, height: 28, background: '#D97706', borderRadius: 2 }} />
+            <div style={{ width: 4, height: 28, background: '#0EA5E9', borderRadius: 2 }} />
             <span style={{
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontWeight: 700,
               fontSize: 12,
-              color: '#B45309',
+              color: '#0284C7',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               background: '#FEF3C7',
               padding: '4px 10px',
               borderRadius: 4,
-              border: '1px solid #FDE68A',
+              border: '1px solid #E0F2FE',
             }}>
               {t.syllabus.tag}
             </span>
@@ -140,16 +140,16 @@ export default function SyllabusMatrix() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 16 }}>
             <div style={{ maxWidth: 680 }}>
               <h2 style={{
-                fontFamily: 'Merriweather, Georgia, serif',
+                fontFamily: 'Raleway, Georgia, serif',
                 fontWeight: 900,
                 fontSize: 'clamp(1.9rem, 3.8vw, 2.7rem)',
-                color: '#0A192F',
+                color: '#1E3A8A',
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
               }}>
                 {t.syllabus.title}
               </h2>
-              <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, lineHeight: 1.7 }}>
                 {t.syllabus.sub}
               </p>
             </div>
@@ -164,8 +164,8 @@ export default function SyllabusMatrix() {
               borderRadius: 10,
               boxShadow: '0 2px 8px rgba(10,25,47,0.03)',
             }}>
-              <Award size={20} color="#D97706" />
-              <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13, fontWeight: 700, color: '#0A192F' }}>
+              <Award size={20} color="#0EA5E9" />
+              <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13, fontWeight: 700, color: '#1E3A8A' }}>
                 {t.syllabus.moeCompliance}
               </span>
             </div>
@@ -191,11 +191,11 @@ export default function SyllabusMatrix() {
               onClick={() => setActiveTab(tab.id)}
               style={{
                 padding: '12px 20px',
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontWeight: activeTab === tab.id ? 700 : 600,
                 fontSize: 14,
-                color: activeTab === tab.id ? '#0A192F' : '#6B7280',
-                borderBottom: activeTab === tab.id ? '3px solid #D97706' : '3px solid transparent',
+                color: activeTab === tab.id ? '#1E3A8A' : '#6B7280',
+                borderBottom: activeTab === tab.id ? '3px solid #0EA5E9' : '3px solid transparent',
                 marginBottom: -2,
                 cursor: 'pointer',
                 background: activeTab === tab.id ? '#FEF3C7' : 'transparent',
@@ -215,7 +215,7 @@ export default function SyllabusMatrix() {
                 borderRadius: 10,
                 fontSize: 11,
                 fontWeight: 700,
-                background: activeTab === tab.id ? '#0A192F' : '#F3F4F6',
+                background: activeTab === tab.id ? '#1E3A8A' : '#F3F4F6',
                 color: activeTab === tab.id ? '#FFFFFF' : '#6B7280',
               }}>
                 {tab.subjects.length} Subjects
@@ -246,24 +246,24 @@ export default function SyllabusMatrix() {
             }} className="matrix-banner-grid">
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8, flexWrap: 'wrap' }}>
-                  <h3 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: '1.4rem', color: '#0A192F' }}>
+                  <h3 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: '1.4rem', color: '#1E3A8A' }}>
                     {currentLevel.heading}
                   </h3>
                   <span style={{
                     padding: '3px 10px',
                     borderRadius: 4,
                     background: '#FEF3C7',
-                    color: '#B45309',
-                    border: '1px solid #FDE68A',
+                    color: '#0284C7',
+                    border: '1px solid #E0F2FE',
                     fontSize: 11,
                     fontWeight: 700,
-                    fontFamily: 'Plus Jakarta Sans, sans-serif',
+                    fontFamily: 'Roboto, sans-serif',
                     textTransform: 'uppercase',
                   }}>
                     {currentLevel.badge}
                   </span>
                 </div>
-                <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 14.5, color: '#4B5563', lineHeight: 1.7, marginBottom: 18 }}>
+                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 14.5, color: '#4B5563', lineHeight: 1.7, marginBottom: 18 }}>
                   {currentLevel.sub}
                 </p>
 
@@ -271,8 +271,8 @@ export default function SyllabusMatrix() {
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 10 }}>
                   {currentLevel.features.map(feat => (
                     <div key={feat} style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-                      <CheckCircle size={16} color="#D97706" style={{ flexShrink: 0, marginTop: 2 }} />
-                      <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13, color: '#374151' }}>{feat}</span>
+                      <CheckCircle size={16} color="#0EA5E9" style={{ flexShrink: 0, marginTop: 2 }} />
+                      <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13, color: '#374151' }}>{feat}</span>
                     </div>
                   ))}
                 </div>
@@ -292,7 +292,7 @@ export default function SyllabusMatrix() {
               }}>
                 <div>
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                    <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11, fontWeight: 800, color: '#D97706', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
+                    <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11, fontWeight: 800, color: '#0EA5E9', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                       Diagnostic Progress Report
                     </span>
                     <span style={{ fontSize: 10.5, fontWeight: 700, color: '#15803D', background: '#DCFCE7', padding: '2px 6px', borderRadius: 4 }}>
@@ -302,11 +302,11 @@ export default function SyllabusMatrix() {
 
                   <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 12 }}>
                     <div style={{ width: 36, height: 36, borderRadius: 8, background: '#FEF3C7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <Users size={18} color="#D97706" />
+                      <Users size={18} color="#0EA5E9" />
                     </div>
                     <div>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700, fontSize: 13, color: '#0A192F' }}>Class Size: Max 12</div>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#6B7280' }}>Individual Tutor Attention</div>
+                      <div style={{ fontFamily: 'Roboto, sans-serif', fontWeight: 700, fontSize: 13, color: '#1E3A8A' }}>Class Size: Max 12</div>
+                      <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#6B7280' }}>Individual Tutor Attention</div>
                     </div>
                   </div>
 
@@ -314,10 +314,10 @@ export default function SyllabusMatrix() {
                   <div style={{ background: '#F9FAFB', padding: '10px', borderRadius: 8, border: '1px solid #F3F4F6' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, fontWeight: 600, color: '#4B5563', marginBottom: 4 }}>
                       <span>Average Score Jump</span>
-                      <span style={{ color: '#D97706', fontWeight: 800 }}>+2.4 Grades in 90 Days</span>
+                      <span style={{ color: '#0EA5E9', fontWeight: 800 }}>+2.4 Grades in 90 Days</span>
                     </div>
                     <div style={{ height: 6, background: '#E5E7EB', borderRadius: 3, overflow: 'hidden' }}>
-                      <div style={{ width: '88%', height: '100%', background: 'linear-gradient(90deg, #D97706, #F59E0B)', borderRadius: 3 }} />
+                      <div style={{ width: '88%', height: '100%', background: 'linear-gradient(90deg, #0EA5E9, #38BDF8)', borderRadius: 3 }} />
                     </div>
                   </div>
                 </div>
@@ -327,10 +327,10 @@ export default function SyllabusMatrix() {
                   style={{
                     padding: '11px',
                     borderRadius: 8,
-                    background: '#0A192F',
+                    background: '#1E3A8A',
                     color: '#FFFFFF',
-                    border: '1px solid rgba(217,119,6,0.3)',
-                    fontFamily: 'Plus Jakarta Sans, sans-serif',
+                    border: '1px solid rgba(14, 165, 233,0.3)',
+                    fontFamily: 'Roboto, sans-serif',
                     fontWeight: 700,
                     fontSize: 13,
                     textAlign: 'center',
@@ -338,12 +338,12 @@ export default function SyllabusMatrix() {
                     boxShadow: '0 2px 8px rgba(10,25,47,0.15)',
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.background = '#112240'
-                    e.currentTarget.style.borderColor = '#D97706'
+                    e.currentTarget.style.background = '#1E40AF'
+                    e.currentTarget.style.borderColor = '#0EA5E9'
                   }}
                   onMouseLeave={e => {
-                    e.currentTarget.style.background = '#0A192F'
-                    e.currentTarget.style.borderColor = 'rgba(217,119,6,0.3)'
+                    e.currentTarget.style.background = '#1E3A8A'
+                    e.currentTarget.style.borderColor = 'rgba(14, 165, 233,0.3)'
                   }}
                 >
                   Enroll in {currentLevel.tabName}
@@ -353,7 +353,7 @@ export default function SyllabusMatrix() {
 
             {/* Filter Mode Row */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 18, flexWrap: 'wrap', gap: 12 }}>
-              <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 700, fontSize: 16, color: '#0A192F' }}>
+              <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 700, fontSize: 16, color: '#1E3A8A' }}>
                 {t.syllabus.subjectsOffered} ({filteredSubjects.length})
               </div>
               <div style={{ display: 'flex', gap: 6 }}>
@@ -369,11 +369,11 @@ export default function SyllabusMatrix() {
                       padding: '7px 16px',
                       borderRadius: 6,
                       fontSize: 12.5,
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      fontFamily: 'Roboto, sans-serif',
                       fontWeight: 600,
-                      background: filterMode === opt.val ? '#0A192F' : '#F3F4F6',
+                      background: filterMode === opt.val ? '#1E3A8A' : '#F3F4F6',
                       color: filterMode === opt.val ? '#FFFFFF' : '#4B5563',
-                      border: filterMode === opt.val ? '1px solid #D97706' : '1px solid transparent',
+                      border: filterMode === opt.val ? '1px solid #0EA5E9' : '1px solid transparent',
                       cursor: 'pointer',
                       transition: 'all 0.18s',
                     }}
@@ -409,7 +409,7 @@ export default function SyllabusMatrix() {
                     transition: 'all 0.2s',
                   }}
                   onMouseEnter={e => {
-                    e.currentTarget.style.borderColor = '#D97706'
+                    e.currentTarget.style.borderColor = '#0EA5E9'
                     e.currentTarget.style.boxShadow = '0 8px 24px rgba(10,25,47,0.06)'
                   }}
                   onMouseLeave={e => {
@@ -419,34 +419,34 @@ export default function SyllabusMatrix() {
                 >
                   <div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 }}>
-                      <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11, fontWeight: 700, color: '#B45309', background: '#FEF3C7', padding: '2px 8px', borderRadius: 4, border: '1px solid #FDE68A' }}>
+                      <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11, fontWeight: 700, color: '#0284C7', background: '#FEF3C7', padding: '2px 8px', borderRadius: 4, border: '1px solid #E0F2FE' }}>
                         {subject.code}
                       </span>
-                      <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, color: '#6B7280', display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <Clock size={12} color="#D97706" /> {subject.hours}
+                      <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12, color: '#6B7280', display: 'flex', alignItems: 'center', gap: 4 }}>
+                        <Clock size={12} color="#0EA5E9" /> {subject.hours}
                       </span>
                     </div>
 
-                    <h4 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 700, fontSize: 15, color: '#0A192F', marginBottom: 6 }}>
+                    <h4 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 700, fontSize: 15, color: '#1E3A8A', marginBottom: 6 }}>
                       {subject.name}
                     </h4>
 
-                    <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13, color: '#6B7280' }}>
+                    <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13, color: '#6B7280' }}>
                       🎓 {subject.teacher}
                     </div>
                   </div>
 
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #F3F4F6', paddingTop: 12 }}>
-                    <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, fontWeight: 600, color: '#15803D', background: '#DCFCE7', padding: '2px 8px', borderRadius: 4 }}>
+                    <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12, fontWeight: 600, color: '#15803D', background: '#DCFCE7', padding: '2px 8px', borderRadius: 4 }}>
                       ✓ {subject.mode}
                     </span>
                     <a
                       href="#contact"
                       style={{
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                         fontWeight: 700,
                         fontSize: 13,
-                        color: '#D97706',
+                        color: '#0EA5E9',
                         display: 'flex',
                         alignItems: 'center',
                         gap: 4,

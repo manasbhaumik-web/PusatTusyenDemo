@@ -118,19 +118,19 @@ export default function Hero() {
                   alignItems: 'center',
                   gap: 7,
                   padding: '6px 14px',
-                  background: 'rgba(217, 119, 6, 0.2)',
-                  border: '1px solid rgba(245, 158, 11, 0.45)',
+                  background: 'rgba(14, 165, 233, 0.2)',
+                  border: '1px solid rgba(56, 189, 248, 0.45)',
                   borderRadius: 6,
-                  color: '#FDE68A',
+                  color: '#E0F2FE',
                   fontSize: 11.5,
-                  fontFamily: 'Merriweather, sans-serif',
+                  fontFamily: 'Raleway, sans-serif',
                   fontWeight: 700,
                   letterSpacing: '0.08em',
                   marginBottom: 18,
                   textTransform: 'uppercase',
-                  boxShadow: '0 2px 12px rgba(217, 119, 6, 0.2)',
+                  boxShadow: '0 2px 12px rgba(14, 165, 233, 0.2)',
                 }}>
-                  <CheckCircle2 size={13} color="#F59E0B" />
+                  <CheckCircle2 size={13} color="#38BDF8" />
                   {slide.label}
                 </span>
               </motion.div>
@@ -142,7 +142,7 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
                 style={{
-                  fontFamily: 'Merriweather, sans-serif',
+                  fontFamily: 'Raleway, sans-serif',
                   fontWeight: 800,
                   fontSize: 'clamp(2rem, 5vw, 3.4rem)',
                   color: '#FFFFFF',
@@ -164,7 +164,7 @@ export default function Hero() {
                   color: 'rgba(255,255,255,0.85)',
                   fontSize: 'clamp(0.95rem, 2vw, 1.12rem)',
                   lineHeight: 1.75,
-                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                  fontFamily: 'Roboto, sans-serif',
                   marginBottom: 26,
                   maxWidth: 540,
                 }}
@@ -187,14 +187,14 @@ export default function Hero() {
                   style={{
                     display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                     padding: '13px 26px', borderRadius: 8,
-                    background: '#2563EB', color: '#fff',
-                    fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 14.5,
+                    background: '#1E3A8A', color: '#fff',
+                    fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 14.5,
                     border: '1px solid rgba(255, 255, 255, 0.2)',
                     boxShadow: '0 4px 16px rgba(37, 99, 235, 0.35)',
                     transition: 'background 0.2s, transform 0.15s, box-shadow 0.2s',
                   }}
-                  onMouseEnter={e => { e.currentTarget.style.background = '#1D4ED8'; e.currentTarget.style.transform = 'translateY(-2px)' }}
-                  onMouseLeave={e => { e.currentTarget.style.background = '#2563EB'; e.currentTarget.style.transform = 'translateY(0)' }}
+                  onMouseEnter={e => { e.currentTarget.style.background = '#1E40AF'; e.currentTarget.style.transform = 'translateY(-2px)' }}
+                  onMouseLeave={e => { e.currentTarget.style.background = '#1E3A8A'; e.currentTarget.style.transform = 'translateY(0)' }}
                 >
                   {t.hero.ctaBook} <ArrowRight size={15} />
                 </a>
@@ -206,10 +206,10 @@ export default function Hero() {
                     padding: '13px 26px', borderRadius: 8,
                     background: 'rgba(255,255,255,0.08)', color: '#fff',
                     border: '1.5px solid rgba(255,255,255,0.4)',
-                    fontFamily: 'Merriweather, sans-serif', fontWeight: 600, fontSize: 14.5,
+                    fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: 14.5,
                     transition: 'all 0.2s',
                   }}
-                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.18)'; e.currentTarget.style.borderColor = '#F59E0B' }}
+                  onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.18)'; e.currentTarget.style.borderColor = '#38BDF8' }}
                   onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.08)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.4)' }}
                 >
                   <BookOpen size={15} /> {t.hero.ctaTimetable}
@@ -219,17 +219,17 @@ export default function Hero() {
               {/* Prestigious Trust Metrics Strip */}
               <div style={{ display: 'flex', alignItems: 'center', gap: 24, paddingTop: 18, borderTop: '1px solid rgba(255,255,255,0.12)', flexWrap: 'wrap' }}>
                 <div>
-                  <div style={{ fontFamily: 'Merriweather, serif', fontSize: '1.4rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1.1 }}>13+ Yrs</div>
+                  <div style={{ fontFamily: 'Raleway, serif', fontSize: '1.4rem', fontWeight: 800, color: '#38BDF8', lineHeight: 1.1 }}>13+ Yrs</div>
                   <div style={{ fontSize: '11px', color: '#94A3B8', marginTop: 2 }}>Established in Selangor</div>
                 </div>
                 <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.15)' }} className="hidden-mobile-text" />
                 <div>
-                  <div style={{ fontFamily: 'Merriweather, serif', fontSize: '1.4rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1.1 }}>Max 12</div>
+                  <div style={{ fontFamily: 'Raleway, serif', fontSize: '1.4rem', fontWeight: 800, color: '#38BDF8', lineHeight: 1.1 }}>Max 12</div>
                   <div style={{ fontSize: '11px', color: '#94A3B8', marginTop: 2 }}>Students / Physical Class</div>
                 </div>
                 <div style={{ width: 1, height: 28, background: 'rgba(255,255,255,0.15)' }} className="hidden-mobile-text" />
                 <div>
-                  <div style={{ fontFamily: 'Merriweather, serif', fontSize: '1.4rem', fontWeight: 800, color: '#F59E0B', lineHeight: 1.1 }}>1,500+</div>
+                  <div style={{ fontFamily: 'Raleway, serif', fontSize: '1.4rem', fontWeight: 800, color: '#38BDF8', lineHeight: 1.1 }}>1,500+</div>
                   <div style={{ fontSize: '11px', color: '#94A3B8', marginTop: 2 }}>Achievers Guided</div>
                 </div>
               </div>
@@ -270,7 +270,7 @@ export default function Hero() {
               aria-label={`Slide ${i + 1}`}
               style={{
                 width: i === current ? 24 : 8, height: 8, borderRadius: 4,
-                background: i === current ? '#F59E0B' : 'rgba(255,255,255,0.4)',
+                background: i === current ? '#38BDF8' : 'rgba(255,255,255,0.4)',
                 border: 'none', cursor: 'pointer',
                 transition: 'all 0.3s ease', padding: 0,
               }}
@@ -280,20 +280,20 @@ export default function Hero() {
       </section>
 
       {/* Quick Class & Level Finder Widget */}
-      <section style={{ background: '#0A192F', padding: '24px 0', borderBottom: '1px solid rgba(255,255,255,0.1)', position: 'relative', zIndex: 20 }}>
+      <section style={{ background: '#1E3A8A', padding: '24px 0', borderBottom: '1px solid rgba(255,255,255,0.1)', position: 'relative', zIndex: 20 }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px' }}>
           <form onSubmit={handleFinderSearch} className="quick-finder-form" style={{ display: 'flex', alignItems: 'flex-end', gap: 16, flexWrap: 'wrap' }}>
             
             {/* Title & Icon Header */}
             <div className="quick-finder-header" style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0, minWidth: 175, paddingBottom: 2 }}>
-              <div style={{ width: 38, height: 38, borderRadius: 8, background: '#D97706', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', flexShrink: 0, boxShadow: '0 2px 8px rgba(217, 119, 6, 0.35)' }}>
+              <div style={{ width: 38, height: 38, borderRadius: 8, background: '#0EA5E9', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', flexShrink: 0, boxShadow: '0 2px 8px rgba(14, 165, 233, 0.35)' }}>
                 <Search size={18} />
               </div>
               <div>
-                <div style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 14, color: '#fff', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
+                <div style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 14, color: '#fff', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
                   {t.hero.quickFinderTitle}
                 </div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#FDE68A', whiteSpace: 'nowrap', marginTop: 3, lineHeight: 1.2 }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#E0F2FE', whiteSpace: 'nowrap', marginTop: 3, lineHeight: 1.2 }}>
                   {t.hero.quickFinderSub}
                 </div>
               </div>
@@ -301,7 +301,7 @@ export default function Hero() {
 
             {/* Level Selector */}
             <div className="quick-finder-field" style={{ flex: '1 1 180px', display: 'flex', flexDirection: 'column' }}>
-              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Plus Jakarta Sans, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
+              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Roboto, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
                 {t.hero.levelLabel}
               </label>
               <select
@@ -316,7 +316,7 @@ export default function Hero() {
                   background: '#FFFFFF',
                   color: '#0F172A',
                   fontSize: 14,
-                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                  fontFamily: 'Roboto, sans-serif',
                   fontWeight: 500,
                   outline: 'none',
                   boxSizing: 'border-box',
@@ -331,7 +331,7 @@ export default function Hero() {
 
             {/* Subject Selector */}
             <div className="quick-finder-field" style={{ flex: '1 1 180px', display: 'flex', flexDirection: 'column' }}>
-              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Plus Jakarta Sans, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
+              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Roboto, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
                 {t.hero.subjectLabel}
               </label>
               <select
@@ -346,7 +346,7 @@ export default function Hero() {
                   background: '#FFFFFF',
                   color: '#0F172A',
                   fontSize: 14,
-                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                  fontFamily: 'Roboto, sans-serif',
                   fontWeight: 500,
                   outline: 'none',
                   boxSizing: 'border-box',
@@ -364,7 +364,7 @@ export default function Hero() {
 
             {/* Mode Selector */}
             <div className="quick-finder-field" style={{ flex: '1 1 180px', display: 'flex', flexDirection: 'column' }}>
-              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Plus Jakarta Sans, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
+              <label style={{ display: 'block', fontSize: 11, fontFamily: 'Roboto, sans-serif', color: '#93C5FD', fontWeight: 700, marginBottom: 5, textTransform: 'uppercase', letterSpacing: '0.04em', whiteSpace: 'nowrap', lineHeight: 1.2 }}>
                 {t.hero.modeLabel}
               </label>
               <select
@@ -379,7 +379,7 @@ export default function Hero() {
                   background: '#FFFFFF',
                   color: '#0F172A',
                   fontSize: 14,
-                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                  fontFamily: 'Roboto, sans-serif',
                   fontWeight: 500,
                   outline: 'none',
                   boxSizing: 'border-box',
@@ -399,9 +399,9 @@ export default function Hero() {
                   height: 44,
                   padding: '0 24px',
                   borderRadius: 8,
-                  background: '#2563EB',
+                  background: '#1E3A8A',
                   color: '#FFFFFF',
-                  fontFamily: 'Merriweather, sans-serif',
+                  fontFamily: 'Raleway, sans-serif',
                   fontWeight: 700,
                   fontSize: 14,
                   display: 'inline-flex',
@@ -415,8 +415,8 @@ export default function Hero() {
                   boxSizing: 'border-box',
                   width: '100%',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = '#1D4ED8'}
-                onMouseLeave={e => e.currentTarget.style.background = '#2563EB'}
+                onMouseEnter={e => e.currentTarget.style.background = '#1E40AF'}
+                onMouseLeave={e => e.currentTarget.style.background = '#1E3A8A'}
               >
                 {t.hero.findClassesBtn} <ArrowRight size={14} />
               </button>

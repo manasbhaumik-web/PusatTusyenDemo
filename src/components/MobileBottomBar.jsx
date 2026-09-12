@@ -127,8 +127,8 @@ export default function MobileBottomBar() {
         }
 
         .mobile-action-icon-box.call-icon {
-          background: #EFF6FF;
-          color: #2563EB;
+          background: #F0F9FF;
+          color: #1E3A8A;
         }
 
         .mobile-action-icon-box.wa-icon {
@@ -138,7 +138,7 @@ export default function MobileBottomBar() {
 
         .mobile-action-icon-box.class-icon {
           background: #FEF3C7;
-          color: #D97706;
+          color: #0EA5E9;
         }
 
         .mobile-action-icon-box.map-icon {
@@ -147,7 +147,7 @@ export default function MobileBottomBar() {
         }
 
         .mobile-action-label {
-          font-family: 'Plus Jakarta Sans', sans-serif;
+          font-family: 'Roboto', sans-serif;
           font-size: 11px;
           font-weight: 600;
           letter-spacing: -0.01em;
@@ -161,14 +161,14 @@ export default function MobileBottomBar() {
           color: #FFFFFF !important;
           padding: 8px 14px;
           border-radius: 20px;
-          font-family: 'Merriweather', serif;
+          font-family: 'Raleway', serif;
           font-weight: 700;
           font-size: 12.5px;
           box-shadow: 0 2px 8px rgba(27, 58, 107, 0.25);
         }
 
         .mobile-enroll-btn:active {
-          background: #2563EB !important;
+          background: #1E3A8A !important;
           transform: scale(0.96);
         }
 

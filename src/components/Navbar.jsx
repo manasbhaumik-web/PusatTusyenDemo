@@ -83,19 +83,19 @@ export default function Navbar() {
         position: 'fixed',
         top: 0, left: 0, right: 0,
         zIndex: 1002,
-        background: '#0A192F',
+        background: '#1E3A8A',
         height: 38,
         borderBottom: '1px solid rgba(255,255,255,0.1)',
         fontSize: '12px',
         color: '#93C5FD',
-        fontFamily: 'Plus Jakarta Sans, sans-serif',
+        fontFamily: 'Roboto, sans-serif',
         display: 'flex',
         alignItems: 'center',
       }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 24px', width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'nowrap' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, flexShrink: 0 }}>
-            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#F59E0B', fontWeight: 700, fontSize: '12px', whiteSpace: 'nowrap' }}>
-              <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#F59E0B', display: 'inline-block', boxShadow: '0 0 8px rgba(245, 158, 11, 0.6)' }} />
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#38BDF8', fontWeight: 700, fontSize: '12px', whiteSpace: 'nowrap' }}>
+              <span style={{ width: 6, height: 6, borderRadius: '50%', background: '#38BDF8', display: 'inline-block', boxShadow: '0 0 8px rgba(56, 189, 248, 0.6)' }} />
               {t.topbar.intake || '2026 Intake Now Open'}
             </span>
             <span className="hidden-mobile-text" style={{ color: 'rgba(255,255,255,0.3)' }}>|</span>
@@ -128,7 +128,7 @@ export default function Navbar() {
                 style={{
                   padding: '2px 8px',
                   borderRadius: 14,
-                  background: lang === 'en' ? '#2563EB' : 'transparent',
+                  background: lang === 'en' ? '#1E3A8A' : 'transparent',
                   color: lang === 'en' ? '#FFFFFF' : '#93C5FD',
                   border: 'none',
                   cursor: 'pointer',
@@ -144,7 +144,7 @@ export default function Navbar() {
                 style={{
                   padding: '2px 8px',
                   borderRadius: 14,
-                  background: lang === 'bm' ? '#2563EB' : 'transparent',
+                  background: lang === 'bm' ? '#1E3A8A' : 'transparent',
                   color: lang === 'bm' ? '#FFFFFF' : '#93C5FD',
                   border: 'none',
                   cursor: 'pointer',
@@ -183,10 +183,10 @@ export default function Navbar() {
             />
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: 2 }}>
               <span className="navbar-brand-title" style={{
-                fontFamily: 'Merriweather, sans-serif',
+                fontFamily: 'Raleway, sans-serif',
                 fontWeight: 800,
                 fontSize: '16.5px',
-                color: '#0A192F',
+                color: '#1E3A8A',
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
                 display: 'block',
@@ -196,9 +196,9 @@ export default function Navbar() {
                 Pusat Tuisyen Bestari Didik
               </span>
               <span className="navbar-brand-slogan" style={{
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontSize: '11px',
-                color: '#D97706',
+                color: '#0EA5E9',
                 fontWeight: 700,
                 letterSpacing: '0.04em',
                 display: 'block',
@@ -231,11 +231,11 @@ export default function Navbar() {
                     height: 40,
                     boxSizing: 'border-box',
                     borderRadius: 6,
-                    color: activeDropdown === item.label ? '#2563EB' : '#1E293B',
+                    color: activeDropdown === item.label ? '#1E3A8A' : '#1E293B',
                     fontSize: 14,
                     fontWeight: 600,
-                    fontFamily: 'Merriweather, sans-serif',
-                    background: activeDropdown === item.label ? '#EFF6FF' : 'transparent',
+                    fontFamily: 'Raleway, sans-serif',
+                    background: activeDropdown === item.label ? '#F0F9FF' : 'transparent',
                     transition: 'all 0.18s',
                     whiteSpace: 'nowrap',
                     lineHeight: 1,
@@ -307,14 +307,14 @@ export default function Navbar() {
                                 e.currentTarget.style.transform = 'translateX(0)'
                               }}
                             >
-                            <div style={{ width: 34, height: 34, borderRadius: 6, background: '#EFF6FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
-                              <IconComponent size={17} color="#2563EB" />
+                            <div style={{ width: 34, height: 34, borderRadius: 6, background: '#F0F9FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: 2 }}>
+                              <IconComponent size={17} color="#1E3A8A" />
                             </div>
                             <div>
-                              <div style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 13.5, color: '#0F172A', marginBottom: 2 }}>
+                              <div style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 13.5, color: '#0F172A', marginBottom: 2 }}>
                                 {subItem.label}
                               </div>
-                              <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, color: '#64748B', lineHeight: 1.4 }}>
+                              <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12, color: '#64748B', lineHeight: 1.4 }}>
                                 {subItem.desc}
                               </div>
                             </div>
@@ -343,12 +343,12 @@ export default function Navbar() {
                 height: 42,
                 boxSizing: 'border-box',
                 borderRadius: 7,
-                background: '#0A192F',
+                background: '#1E3A8A',
                 color: '#FFFFFF',
                 fontSize: 14,
                 fontWeight: 700,
-                fontFamily: 'Merriweather, sans-serif',
-                border: '1px solid rgba(217, 119, 6, 0.4)',
+                fontFamily: 'Raleway, sans-serif',
+                border: '1px solid rgba(14, 165, 233, 0.4)',
                 boxShadow: '0 2px 8px rgba(10, 25, 47, 0.2)',
                 transition: 'background 0.2s, transform 0.15s, border-color 0.2s',
                 whiteSpace: 'nowrap',
@@ -356,13 +356,13 @@ export default function Navbar() {
                 verticalAlign: 'middle',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.background = '#112240'
-                e.currentTarget.style.borderColor = '#D97706'
+                e.currentTarget.style.background = '#1E40AF'
+                e.currentTarget.style.borderColor = '#0EA5E9'
                 e.currentTarget.style.transform = 'translateY(-1px)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.background = '#0A192F'
-                e.currentTarget.style.borderColor = 'rgba(217, 119, 6, 0.4)'
+                e.currentTarget.style.background = '#1E3A8A'
+                e.currentTarget.style.borderColor = 'rgba(14, 165, 233, 0.4)'
                 e.currentTarget.style.transform = 'translateY(0)'
               }}
             >
@@ -405,11 +405,11 @@ export default function Navbar() {
                 justifyContent: 'center',
                 padding: 0,
                 boxSizing: 'border-box',
-                background: mobileOpen ? '#EFF6FF' : '#F8FAFC',
+                background: mobileOpen ? '#F0F9FF' : '#F8FAFC',
               }}
               aria-label={mobileOpen ? 'Close Menu' : 'Open Menu'}
             >
-              {mobileOpen ? <X size={22} color="#2563EB" /> : <Menu size={22} />}
+              {mobileOpen ? <X size={22} color="#1E3A8A" /> : <Menu size={22} />}
             </button>
           </div>
 
@@ -429,7 +429,7 @@ export default function Navbar() {
                 
                 {/* Mobile Language Switcher */}
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 14, borderBottom: '1px solid #E2E8F0', marginBottom: 12 }}>
-                  <span style={{ fontSize: 13, fontWeight: 600, color: '#64748B', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
+                  <span style={{ fontSize: 13, fontWeight: 600, color: '#64748B', fontFamily: 'Roboto, sans-serif' }}>
                     Language / Bahasa:
                   </span>
                   <div style={{ display: 'inline-flex', background: '#F1F5F9', borderRadius: 8, padding: 3, border: '1px solid #E2E8F0' }}>
@@ -438,7 +438,7 @@ export default function Navbar() {
                       style={{
                         padding: '6px 14px',
                         borderRadius: 6,
-                        background: lang === 'en' ? '#2563EB' : 'transparent',
+                        background: lang === 'en' ? '#1E3A8A' : 'transparent',
                         color: lang === 'en' ? '#FFFFFF' : '#475569',
                         border: 'none',
                         fontWeight: 700,
@@ -453,7 +453,7 @@ export default function Navbar() {
                       style={{
                         padding: '6px 14px',
                         borderRadius: 6,
-                        background: lang === 'bm' ? '#2563EB' : 'transparent',
+                        background: lang === 'bm' ? '#1E3A8A' : 'transparent',
                         color: lang === 'bm' ? '#FFFFFF' : '#475569',
                         border: 'none',
                         fontWeight: 700,
@@ -483,7 +483,7 @@ export default function Navbar() {
                       <a
                         href={!item.children ? item.href : '#'}
                         onClick={!item.children ? () => setMobileOpen(false) : e => e.preventDefault()}
-                        style={{ color: '#0F172A', fontSize: 15.5, fontWeight: 700, fontFamily: 'Merriweather, sans-serif', display: 'flex', alignItems: 'center', gap: 8 }}
+                        style={{ color: '#0F172A', fontSize: 15.5, fontWeight: 700, fontFamily: 'Raleway, sans-serif', display: 'flex', alignItems: 'center', gap: 8 }}
                       >
                         {item.label}
                         {item.badge && (
@@ -493,8 +493,8 @@ export default function Navbar() {
                         )}
                       </a>
                       {item.children && (
-                        <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', background: openMobileMenu === item.label ? '#EFF6FF' : 'transparent', borderRadius: 6 }}>
-                          <ChevronDown size={17} color={openMobileMenu === item.label ? '#2563EB' : '#64748B'} style={{ transform: openMobileMenu === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
+                        <div style={{ width: 32, height: 32, display: 'flex', alignItems: 'center', justifyContent: 'center', background: openMobileMenu === item.label ? '#F0F9FF' : 'transparent', borderRadius: 6 }}>
+                          <ChevronDown size={17} color={openMobileMenu === item.label ? '#1E3A8A' : '#64748B'} style={{ transform: openMobileMenu === item.label ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s' }} />
                         </div>
                       )}
                     </div>
@@ -522,13 +522,13 @@ export default function Navbar() {
                                   padding: '11px 10px',
                                   color: '#334155',
                                   fontSize: 14,
-                                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                                  fontFamily: 'Roboto, sans-serif',
                                   borderBottom: '1px solid #F1F5F9',
                                   fontWeight: 600,
                                 }}
                               >
-                                <div style={{ width: 26, height: 26, borderRadius: 6, background: '#EFF6FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                                  <ChildIcon size={14} color="#2563EB" />
+                                <div style={{ width: 26, height: 26, borderRadius: 6, background: '#F0F9FF', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                                  <ChildIcon size={14} color="#1E3A8A" />
                                 </div>
                                 <span>{child.label}</span>
                               </a>
@@ -551,10 +551,10 @@ export default function Navbar() {
                       gap: 6,
                       padding: '12px',
                       borderRadius: 8,
-                      background: '#EFF6FF',
-                      color: '#2563EB',
+                      background: '#F0F9FF',
+                      color: '#1E3A8A',
                       border: '1px solid #BFDBFE',
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      fontFamily: 'Roboto, sans-serif',
                       fontWeight: 700,
                       fontSize: 13.5,
                       textDecoration: 'none',
@@ -577,7 +577,7 @@ export default function Navbar() {
                       background: '#DCFCE7',
                       color: '#16A34A',
                       border: '1px solid #BBF7D0',
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      fontFamily: 'Roboto, sans-serif',
                       fontWeight: 700,
                       fontSize: 13.5,
                       textDecoration: 'none',
@@ -598,7 +598,7 @@ export default function Navbar() {
                     background: '#1B3A6B',
                     color: '#fff',
                     borderRadius: 8,
-                    fontFamily: 'Merriweather, sans-serif',
+                    fontFamily: 'Raleway, sans-serif',
                     fontWeight: 700,
                     fontSize: 15,
                     boxShadow: '0 4px 12px rgba(27,58,107,0.2)',

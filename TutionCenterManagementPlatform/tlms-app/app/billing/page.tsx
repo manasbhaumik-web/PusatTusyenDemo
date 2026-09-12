@@ -1,11 +1,11 @@
 import AppShell from '@/components/AppShell'
 export default function Page() {
   return (
-    <AppShell>
-      <div style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', minHeight: 400 }}>
-        <div style={{ fontSize: 48, marginBottom: 16 }}>🚧</div>
-        <h1 style={{ fontFamily:'var(--font-display)', fontSize: 22, fontWeight: 700 }}>Invoicing & Billing</h1>
-        <p style={{ color:'var(--foreground-muted)', marginTop: 8 }}>This module is coming in Sprint 7–8.</p>
+    <AppShell title="Fee Management">
+      <div style={{ display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', minHeight: '60vh', color: 'var(--text-muted)' }}>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: 16 }}><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h1 style={{ fontFamily:'DM Sans', fontSize: 24, fontWeight: 700, color: 'var(--text-primary)', marginBottom: 8 }}>Fee Management</h1>
+        <p>This module is currently in development (Sprint 7).</p>
       </div>
     </AppShell>
   )

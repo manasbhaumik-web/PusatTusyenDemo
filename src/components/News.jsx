@@ -8,7 +8,7 @@ const posts = [
     img: '/images/news1.png',
     date: { day: '01', month: 'Sep 2021' },
     category: 'Online Learning',
-    categoryColor: '#2563EB',
+    categoryColor: '#1E3A8A',
     title: 'What Is the Benefit of Our Online Class?',
     excerpt: 'Discover the many advantages of joining our online class programme — flexible schedules, live interaction, and expert guidance.',
     author: 'Administrator',
@@ -52,15 +52,15 @@ export default function News() {
         >
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 14 }}>
-              <div style={{ width: 4, height: 32, background: '#2563EB', borderRadius: 2 }} />
-              <span style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 600, fontSize: 12, color: '#2563EB', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
+              <div style={{ width: 4, height: 32, background: '#1E3A8A', borderRadius: 2 }} />
+              <span style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: 12, color: '#1E3A8A', letterSpacing: '0.1em', textTransform: 'uppercase' }}>
                 {t.news.tag}
               </span>
             </div>
-            <h2 style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 800, fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', color: '#0F172A', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
+            <h2 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 800, fontSize: 'clamp(1.7rem, 3.5vw, 2.5rem)', color: '#0F172A', lineHeight: 1.2, letterSpacing: '-0.02em' }}>
               {t.news.title}
             </h2>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#64748B', marginTop: 10, maxWidth: 560, lineHeight: 1.7 }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#64748B', marginTop: 10, maxWidth: 560, lineHeight: 1.7 }}>
               {t.news.sub}
             </p>
           </div>
@@ -70,7 +70,7 @@ export default function News() {
               display: 'inline-flex', alignItems: 'center', gap: 6,
               padding: '9px 18px', borderRadius: 7,
               border: '1.5px solid #1B3A6B', color: '#1B3A6B',
-              fontFamily: 'Merriweather, sans-serif', fontWeight: 600, fontSize: 13.5,
+              fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: 13.5,
               transition: 'all 0.2s',
             }}
             onMouseEnter={e => { e.currentTarget.style.background = '#1B3A6B'; e.currentTarget.style.color = '#fff' }}
@@ -115,7 +115,7 @@ export default function News() {
                   position: 'absolute', bottom: 12, left: 12,
                   background: post.categoryColor, color: '#fff',
                   padding: '4px 10px', borderRadius: 4,
-                  fontSize: 11, fontWeight: 700, fontFamily: 'Merriweather, sans-serif',
+                  fontSize: 11, fontWeight: 700, fontFamily: 'Raleway, sans-serif',
                   letterSpacing: '0.05em', textTransform: 'uppercase',
                 }}>
                   {post.category}
@@ -126,19 +126,19 @@ export default function News() {
               <div style={{ padding: '22px 22px 24px', flex: 1, display: 'flex', flexDirection: 'column', gap: 10 }}>
                 {/* Meta */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: 14 }}>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, color: '#94A3B8' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'Roboto, sans-serif', fontSize: 12, color: '#94A3B8' }}>
                     <CalendarDays size={12} /> {post.date.day} {post.date.month}
                   </span>
-                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, color: '#94A3B8' }}>
+                  <span style={{ display: 'flex', alignItems: 'center', gap: 5, fontFamily: 'Roboto, sans-serif', fontSize: 12, color: '#94A3B8' }}>
                     <User size={12} /> {post.author}
                   </span>
                 </div>
 
-                <h3 style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 15.5, color: '#0F172A', lineHeight: 1.35 }}>
+                <h3 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 15.5, color: '#0F172A', lineHeight: 1.35 }}>
                   {post.title}
                 </h3>
 
-                <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#64748B', lineHeight: 1.65, flex: 1 }}>
+                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#64748B', lineHeight: 1.65, flex: 1 }}>
                   {post.excerpt}
                 </p>
 
@@ -146,7 +146,7 @@ export default function News() {
                   href="#news"
                   style={{
                     display: 'inline-flex', alignItems: 'center', gap: 5,
-                    color: post.categoryColor, fontFamily: 'Merriweather, sans-serif',
+                    color: post.categoryColor, fontFamily: 'Raleway, sans-serif',
                     fontWeight: 600, fontSize: 13.5, marginTop: 4,
                     transition: 'gap 0.2s',
                   }}

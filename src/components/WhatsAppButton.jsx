@@ -35,8 +35,8 @@ export default function WhatsAppButton() {
                 <WhatsAppSvg />
               </div>
               <div style={{ flex: 1 }}>
-                <div style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 14, color: '#fff' }}>Bestari Didik</div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: 'rgba(255,255,255,0.82)', display: 'flex', alignItems: 'center', gap: 5 }}>
+                <div style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 14, color: '#fff' }}>Bestari Didik</div>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: 'rgba(255,255,255,0.82)', display: 'flex', alignItems: 'center', gap: 5 }}>
                   <span style={{ width: 7, height: 7, borderRadius: '50%', background: '#90EE90', display: 'inline-block' }} />
                   Online — typically replies in minutes
                 </div>
@@ -49,11 +49,11 @@ export default function WhatsAppButton() {
             {/* Chat bubble */}
             <div style={{ padding: '16px 16px 18px' }}>
               <div style={{ background: '#F0F9FF', borderRadius: '0 10px 10px 10px', padding: '12px 14px', marginBottom: 14, border: '1px solid #BAE6FD' }}>
-                <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#0F172A', lineHeight: 1.6 }}>
+                <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#0F172A', lineHeight: 1.6 }}>
                   👋 Hi! Welcome to <strong>Pusat Tuisyen Bestari Didik</strong>.<br />
                   How can we help you? Ask about our classes, fees, or enrollment!
                 </p>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 10.5, color: '#94A3B8', textAlign: 'right', marginTop: 6 }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 10.5, color: '#94A3B8', textAlign: 'right', marginTop: 6 }}>
                   Bestari Didik Team
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function WhatsAppButton() {
                   display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                   width: '100%', padding: '11px',
                   background: '#25D366', color: '#fff', borderRadius: 8,
-                  fontFamily: 'Merriweather, sans-serif', fontWeight: 600, fontSize: 14,
+                  fontFamily: 'Raleway, sans-serif', fontWeight: 600, fontSize: 14,
                   transition: 'background 0.2s',
                 }}
                 onMouseEnter={e => e.currentTarget.style.background = '#1EBE59'}

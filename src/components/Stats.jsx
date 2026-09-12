@@ -30,7 +30,7 @@ export default function Stats() {
   ]
 
   return (
-    <section id="stats" className="stats-section" style={{ background: '#1B3A6B', padding: '80px 0', borderTop: '4px solid #2563EB' }}>
+    <section id="stats" className="stats-section" style={{ background: '#1B3A6B', padding: '80px 0', borderTop: '4px solid #1E3A8A' }}>
       <div ref={ref} style={{ maxWidth: 1200, margin: '0 auto', padding: '0 24px' }}>
 
         {/* Header */}
@@ -40,10 +40,10 @@ export default function Stats() {
           transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', marginBottom: 56 }}
         >
-          <h2 style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem, 3.5vw, 2.3rem)', color: '#FFFFFF', letterSpacing: '-0.02em' }}>
+          <h2 style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 800, fontSize: 'clamp(1.6rem, 3.5vw, 2.3rem)', color: '#FFFFFF', letterSpacing: '-0.02em' }}>
             {t.stats.title}
           </h2>
-          <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15, color: 'rgba(255,255,255,0.6)', marginTop: 10 }}>
+          <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15, color: 'rgba(255,255,255,0.6)', marginTop: 10 }}>
             {t.stats.tag}
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export default function Stats() {
               transition={{ delay: i * 0.14, duration: 0.52 }}
               whileHover={{ y: -4, boxShadow: '0 12px 32px rgba(0,0,0,0.2)' }}
               style={{
-                background: i === 1 ? '#2563EB' : 'rgba(255,255,255,0.06)',
+                background: i === 1 ? '#1E3A8A' : 'rgba(255,255,255,0.06)',
                 border: i === 1 ? '1px solid #3B82F6' : '1px solid rgba(255,255,255,0.12)',
                 borderRadius: 12,
                 padding: '36px 20px',
@@ -68,7 +68,7 @@ export default function Stats() {
               }}
             >
               <div style={{
-                fontFamily: 'Merriweather, sans-serif', fontWeight: 900,
+                fontFamily: 'Raleway, sans-serif', fontWeight: 900,
                 fontSize: 'clamp(2.5rem, 6vw, 3.8rem)',
                 color: '#FFFFFF', lineHeight: 1, letterSpacing: '-0.03em',
                 marginBottom: 12,
@@ -76,10 +76,10 @@ export default function Stats() {
                 <CountUp target={s.value} suffix={s.suffix} run={inView} />
               </div>
               <div style={{ width: 36, height: 3, background: i === 1 ? '#FFFFFF' : '#38BDF8', borderRadius: 2, margin: '0 auto 14px' }} />
-              <p style={{ fontFamily: 'Merriweather, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 4 }}>
+              <p style={{ fontFamily: 'Raleway, sans-serif', fontWeight: 700, fontSize: 16, color: '#FFFFFF', marginBottom: 4 }}>
                 {s.label}
               </p>
-              <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13, color: i === 1 ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.65)' }}>
+              <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13, color: i === 1 ? 'rgba(255,255,255,0.9)' : 'rgba(255,255,255,0.65)' }}>
                 {s.sub}
               </p>
             </motion.div>

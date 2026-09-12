@@ -67,19 +67,19 @@ export default function Footer() {
   ]
 
   return (
-    <footer style={{ background: '#060D17', color: '#FFFFFF', borderTop: '4px solid #D97706' }}>
+    <footer style={{ background: '#172554', color: '#FFFFFF', borderTop: '4px solid #0EA5E9' }}>
       
       {/* Modern Top Pre-Footer Callout */}
-      <div style={{ background: '#0A192F', padding: '48px 0', borderBottom: '1px solid rgba(217,119,6,0.2)' }}>
+      <div style={{ background: '#1E3A8A', padding: '48px 0', borderBottom: '1px solid rgba(14, 165, 233,0.2)' }}>
         <div style={{ maxWidth: 1240, margin: '0 auto', padding: '0 24px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 24 }}>
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 12px', background: '#FEF3C7', border: '1px solid #FDE68A', color: '#B45309', borderRadius: 4, fontSize: 11, fontWeight: 700, fontFamily: 'Plus Jakarta Sans, sans-serif', marginBottom: 10 }}>
-              <ShieldCheck size={14} color="#D97706" /> {t.footer.awardBadge}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '4px 12px', background: '#FEF3C7', border: '1px solid #E0F2FE', color: '#0284C7', borderRadius: 4, fontSize: 11, fontWeight: 700, fontFamily: 'Roboto, sans-serif', marginBottom: 10 }}>
+              <ShieldCheck size={14} color="#0EA5E9" /> {t.footer.awardBadge}
             </div>
-            <h3 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 900, fontSize: 'clamp(1.4rem, 2.8vw, 1.95rem)', color: '#FFFFFF', lineHeight: 1.25 }}>
+            <h3 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 900, fontSize: 'clamp(1.4rem, 2.8vw, 1.95rem)', color: '#FFFFFF', lineHeight: 1.25 }}>
               {t.footer.prefooterTitle}
             </h3>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 14.5, color: '#CBD5E1', marginTop: 6, maxWidth: 580 }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 14.5, color: '#CBD5E1', marginTop: 6, maxWidth: 580 }}>
               {t.footer.prefooterSub}
             </p>
           </div>
@@ -93,20 +93,20 @@ export default function Footer() {
                 gap: 8,
                 padding: '13px 26px',
                 borderRadius: 8,
-                background: 'linear-gradient(135deg, #D97706, #B45309)',
+                background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
                 color: '#FFFFFF',
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontWeight: 700,
                 fontSize: 14.5,
-                boxShadow: '0 4px 14px rgba(217,119,6,0.3)',
+                boxShadow: '0 4px 14px rgba(14, 165, 233,0.3)',
                 transition: 'all 0.2s',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.boxShadow = '0 6px 20px rgba(217,119,6,0.5)'
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(14, 165, 233,0.5)'
                 e.currentTarget.style.transform = 'translateY(-1px)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.boxShadow = '0 4px 14px rgba(217,119,6,0.3)'
+                e.currentTarget.style.boxShadow = '0 4px 14px rgba(14, 165, 233,0.3)'
                 e.currentTarget.style.transform = 'translateY(0)'
               }}
             >
@@ -125,7 +125,7 @@ export default function Footer() {
                 background: 'rgba(255,255,255,0.08)',
                 border: '1px solid rgba(255,255,255,0.2)',
                 color: '#FFFFFF',
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontWeight: 600,
                 fontSize: 14.5,
                 transition: 'all 0.2s',
@@ -158,44 +158,44 @@ export default function Footer() {
                 style={{ height: 52, width: 52, objectFit: 'contain', display: 'block', flexShrink: 0 }}
               />
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: 16, color: '#FFFFFF', lineHeight: 1.2, display: 'block' }}>
+                <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: 16, color: '#FFFFFF', lineHeight: 1.2, display: 'block' }}>
                   Pusat Tuisyen Bestari Didik
                 </div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#F59E0B', fontWeight: 600, marginTop: 3, display: 'block', lineHeight: 1.2 }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#38BDF8', fontWeight: 600, marginTop: 3, display: 'block', lineHeight: 1.2 }}>
                   {t.nav.slogan || '"We Guide You to Lead Your Future"'}
                 </div>
               </div>
             </a>
             <div style={{
-              background: 'rgba(217,119,6,0.1)',
-              border: '1px solid rgba(217,119,6,0.25)',
+              background: 'rgba(14, 165, 233,0.1)',
+              border: '1px solid rgba(14, 165, 233,0.25)',
               borderRadius: 6,
               padding: '6px 10px',
               fontSize: '11px',
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
-              color: '#FDE68A',
+              fontFamily: 'Roboto, sans-serif',
+              color: '#E0F2FE',
               letterSpacing: '0.04em',
               marginBottom: 16,
               lineHeight: 1.4,
             }}>
               ACADEMIC • DILIGENCE • DISCIPLINE • DEDICATION • DETERMINATION
             </div>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: 1.65, marginBottom: 18 }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13, color: 'rgba(255,255,255,0.65)', lineHeight: 1.65, marginBottom: 18 }}>
               Registered with Ministry of Education Malaysia. Over 13 years of tuition excellence, structured modular coaching, and maximum 12 students per class.
             </p>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>
-                <Phone size={14} color="#F59E0B" /> <span>012-512 5792</span>
+                <Phone size={14} color="#38BDF8" /> <span>012-512 5792</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>
-                <Clock size={14} color="#F59E0B" /> <span>7:30 AM – 7:00 PM (Mon–Fri)</span>
+                <Clock size={14} color="#38BDF8" /> <span>7:30 AM – 7:00 PM (Mon–Fri)</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>
-                <MapPin size={14} color="#F59E0B" /> <span>Selangor, Malaysia</span>
+                <MapPin size={14} color="#38BDF8" /> <span>Selangor, Malaysia</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'rgba(255,255,255,0.75)' }}>
-                <Mail size={14} color="#F59E0B" /> <span>info@bestarididik.edu.my</span>
+                <Mail size={14} color="#38BDF8" /> <span>info@bestarididik.edu.my</span>
               </div>
             </div>
           </div>
@@ -204,14 +204,14 @@ export default function Footer() {
           {footerNavStructure.map((col) => (
             <div key={col.title}>
               <h4 style={{
-                fontFamily: 'Merriweather, Georgia, serif',
+                fontFamily: 'Raleway, Georgia, serif',
                 fontWeight: 700,
                 fontSize: 13.5,
                 color: '#FFFFFF',
                 marginBottom: 16,
                 letterSpacing: '0.04em',
                 textTransform: 'uppercase',
-                borderBottom: '2px solid #D97706',
+                borderBottom: '2px solid #0EA5E9',
                 paddingBottom: 6,
                 display: 'inline-block',
               }}>
@@ -223,14 +223,14 @@ export default function Footer() {
                     <a
                       href={link.href}
                       style={{
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                         fontSize: 13,
                         color: 'rgba(255,255,255,0.65)',
                         transition: 'color 0.2s, transform 0.15s',
                         display: 'inline-block',
                       }}
                       onMouseEnter={e => {
-                        e.currentTarget.style.color = '#FDE68A'
+                        e.currentTarget.style.color = '#E0F2FE'
                         e.currentTarget.style.transform = 'translateX(2px)'
                       }}
                       onMouseLeave={e => {
@@ -259,10 +259,10 @@ export default function Footer() {
           gap: 16,
         }}>
           <div>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12.5, color: 'rgba(255,255,255,0.45)' }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12.5, color: 'rgba(255,255,255,0.45)' }}>
               © {new Date().getFullYear()} Pusat Tuisyen Bestari Didik. All rights reserved. Registered with MOE Malaysia.
             </p>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#FDE68A', marginTop: 5, fontWeight: 500, letterSpacing: '0.01em' }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#E0F2FE', marginTop: 5, fontWeight: 500, letterSpacing: '0.01em' }}>
               {t.footer.proposalTag}
             </p>
           </div>
@@ -290,8 +290,8 @@ export default function Footer() {
                   transition: 'all 0.2s',
                 }}
                 onMouseEnter={e => {
-                  e.currentTarget.style.background = '#D97706'
-                  e.currentTarget.style.borderColor = '#D97706'
+                  e.currentTarget.style.background = '#0EA5E9'
+                  e.currentTarget.style.borderColor = '#0EA5E9'
                   e.currentTarget.style.color = '#FFFFFF'
                 }}
                 onMouseLeave={e => {

@@ -77,41 +77,41 @@ export default function Testimonials() {
           style={{ marginBottom: 48 }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-            <div style={{ width: 4, height: 28, background: '#D97706', borderRadius: 2 }} />
+            <div style={{ width: 4, height: 28, background: '#0EA5E9', borderRadius: 2 }} />
             <span style={{
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontWeight: 700,
               fontSize: 12,
-              color: '#B45309',
+              color: '#0284C7',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               background: '#FEF3C7',
               padding: '4px 10px',
               borderRadius: 4,
-              border: '1px solid #FDE68A',
+              border: '1px solid #E0F2FE',
             }}>
               {t.testimonials.tag}
             </span>
           </div>
           <h2 style={{
-            fontFamily: 'Merriweather, Georgia, serif',
+            fontFamily: 'Raleway, Georgia, serif',
             fontWeight: 900,
             fontSize: 'clamp(1.9rem, 3.8vw, 2.7rem)',
-            color: '#0A192F',
+            color: '#1E3A8A',
             lineHeight: 1.2,
             letterSpacing: '-0.02em',
           }}>
             {t.testimonials.title}
           </h2>
-          <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, maxWidth: 600, lineHeight: 1.7 }}>
+          <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, maxWidth: 600, lineHeight: 1.7 }}>
             {t.testimonials.sub}
           </p>
         </motion.div>
 
         {/* Student Achievers Grid */}
         <div style={{ marginBottom: 56 }}>
-          <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: 19, color: '#0A192F', marginBottom: 22, display: 'flex', alignItems: 'center', gap: 10 }}>
-            <Award size={22} color="#D97706" /> Top Student Success Stories
+          <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: 19, color: '#1E3A8A', marginBottom: 22, display: 'flex', alignItems: 'center', gap: 10 }}>
+            <Award size={22} color="#0EA5E9" /> Top Student Success Stories
           </div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 20 }}>
@@ -134,7 +134,7 @@ export default function Testimonials() {
                   gap: 16,
                   transition: 'all 0.2s',
                 }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = '#D97706'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = '#0EA5E9'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = '#E7E5E4'}
               >
                 <div>
@@ -144,23 +144,23 @@ export default function Testimonials() {
                       padding: '4px 10px',
                       borderRadius: 4,
                       background: '#FEF3C7',
-                      color: '#B45309',
-                      border: '1px solid #FDE68A',
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      color: '#0284C7',
+                      border: '1px solid #E0F2FE',
+                      fontFamily: 'Roboto, sans-serif',
                       fontWeight: 700,
                       fontSize: 11.5,
                     }}>
                       {achiever.level}
                     </span>
-                    <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12, color: '#6B7280', fontWeight: 500 }}>
+                    <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12, color: '#6B7280', fontWeight: 500 }}>
                       {achiever.school}
                     </span>
                   </div>
 
                   {/* Result Banner */}
                   <div style={{
-                    background: '#0A192F',
-                    border: '1px solid rgba(217,119,6,0.3)',
+                    background: '#1E3A8A',
+                    border: '1px solid rgba(14, 165, 233,0.3)',
                     borderRadius: 8,
                     padding: '12px 14px',
                     color: '#FFFFFF',
@@ -169,26 +169,26 @@ export default function Testimonials() {
                     alignItems: 'center',
                     gap: 10,
                   }}>
-                    <TrendingUp size={20} color="#F59E0B" style={{ flexShrink: 0 }} />
+                    <TrendingUp size={20} color="#38BDF8" style={{ flexShrink: 0 }} />
                     <div>
-                      <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: 14, color: '#FFFFFF' }}>{achiever.result}</div>
-                      <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#CBD5E1' }}>{achiever.highlight}</div>
+                      <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: 14, color: '#FFFFFF' }}>{achiever.result}</div>
+                      <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#CBD5E1' }}>{achiever.highlight}</div>
                     </div>
                   </div>
 
                   {/* Quote */}
-                  <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#4B5563', lineHeight: 1.65, fontStyle: 'italic' }}>
+                  <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#4B5563', lineHeight: 1.65, fontStyle: 'italic' }}>
                     "{achiever.quote}"
                   </p>
                 </div>
 
                 <div style={{ borderTop: '1px solid #F3F4F6', paddingTop: 14, display: 'flex', alignItems: 'center', gap: 10 }}>
-                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#0A192F', border: '1.5px solid #D97706', color: '#FEF3C7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 13, fontFamily: 'Merriweather, Georgia, serif' }}>
+                  <div style={{ width: 36, height: 36, borderRadius: '50%', background: '#1E3A8A', border: '1.5px solid #0EA5E9', color: '#FEF3C7', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: 13, fontFamily: 'Raleway, Georgia, serif' }}>
                     {achiever.name[0]}
                   </div>
                   <div>
-                    <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 700, fontSize: 14, color: '#0A192F' }}>{achiever.name}</div>
-                    <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: '#6B7280' }}>Verified Bestari Didik Achiever</div>
+                    <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 700, fontSize: 14, color: '#1E3A8A' }}>{achiever.name}</div>
+                    <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: '#6B7280' }}>Verified Bestari Didik Achiever</div>
                   </div>
                 </div>
               </motion.div>
@@ -198,8 +198,8 @@ export default function Testimonials() {
 
         {/* Parent Testimonial Spotlight */}
         <div style={{
-          background: 'linear-gradient(135deg, #0A192F 0%, #112240 100%)',
-          border: '1px solid rgba(217,119,6,0.35)',
+          background: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%)',
+          border: '1px solid rgba(14, 165, 233,0.35)',
           borderRadius: 16,
           padding: '40px 36px',
           color: '#FFFFFF',
@@ -211,13 +211,13 @@ export default function Testimonials() {
         }} className="parent-review-grid">
           
           <div>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(217,119,6,0.2)', border: '1px solid #D97706', color: '#FDE68A', padding: '4px 10px', borderRadius: 6, fontSize: 11, fontWeight: 700, fontFamily: 'Plus Jakarta Sans, sans-serif', marginBottom: 12, letterSpacing: '0.04em' }}>
-              <CheckCircle size={13} color="#F59E0B" /> 100% VERIFIED REVIEWS
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, background: 'rgba(14, 165, 233,0.2)', border: '1px solid #0EA5E9', color: '#E0F2FE', padding: '4px 10px', borderRadius: 6, fontSize: 11, fontWeight: 700, fontFamily: 'Roboto, sans-serif', marginBottom: 12, letterSpacing: '0.04em' }}>
+              <CheckCircle size={13} color="#38BDF8" /> 100% VERIFIED REVIEWS
             </div>
-            <h3 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: '1.55rem', lineHeight: 1.25, marginBottom: 8, color: '#FFFFFF' }}>
+            <h3 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: '1.55rem', lineHeight: 1.25, marginBottom: 8, color: '#FFFFFF' }}>
               What Parents Say About Us
             </h3>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#CBD5E1', lineHeight: 1.6 }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#CBD5E1', lineHeight: 1.6 }}>
               Over 13 years of partnering with Malaysian families to cultivate lifelong confidence and academic excellence.
             </p>
 
@@ -231,7 +231,7 @@ export default function Testimonials() {
                   color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center',
                   cursor: 'pointer', transition: 'all 0.2s',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = 'rgba(217,119,6,0.3)'}
+                onMouseEnter={e => e.currentTarget.style.background = 'rgba(14, 165, 233,0.3)'}
                 onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.08)'}
               >
                 <ChevronLeft size={18} />
@@ -245,7 +245,7 @@ export default function Testimonials() {
                   color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center',
                   cursor: 'pointer', transition: 'all 0.2s',
                 }}
-                onMouseEnter={e => e.currentTarget.style.background = 'rgba(217,119,6,0.3)'}
+                onMouseEnter={e => e.currentTarget.style.background = 'rgba(14, 165, 233,0.3)'}
                 onMouseLeave={e => e.currentTarget.style.background = 'rgba(255,255,255,0.08)'}
               >
                 <ChevronRight size={18} />
@@ -262,24 +262,24 @@ export default function Testimonials() {
           }}>
             <div style={{ display: 'flex', gap: 4, marginBottom: 14 }}>
               {[...Array(5)].map((_, i) => (
-                <Star key={i} size={18} fill="#F59E0B" color="#F59E0B" />
+                <Star key={i} size={18} fill="#38BDF8" color="#38BDF8" />
               ))}
             </div>
 
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, lineHeight: 1.7, color: '#F8FAFC', marginBottom: 20, fontStyle: 'italic' }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, lineHeight: 1.7, color: '#F8FAFC', marginBottom: 20, fontStyle: 'italic' }}>
               "{parentReviews[activeReviewIdx].comment}"
             </p>
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 8, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 14 }}>
               <div>
-                <div style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF' }}>
+                <div style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 700, fontSize: 15, color: '#FFFFFF' }}>
                   {parentReviews[activeReviewIdx].parentName}
                 </div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12.5, color: '#FDE68A' }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12.5, color: '#E0F2FE' }}>
                   {parentReviews[activeReviewIdx].relationship}
                 </div>
               </div>
-              <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11.5, color: 'rgba(255,255,255,0.5)' }}>
+              <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11.5, color: 'rgba(255,255,255,0.5)' }}>
                 {parentReviews[activeReviewIdx].date}
               </span>
             </div>

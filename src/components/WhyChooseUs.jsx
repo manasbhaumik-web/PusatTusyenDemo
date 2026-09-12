@@ -15,22 +15,22 @@ export default function WhyChooseUs() {
   const [activeCategory, setActiveCategory] = useState('all')
 
   const featureIcons = [
-    { icon: Award, accent: '#D97706', bg: '#FFFBEB', border: '#FDE68A' },
-    { icon: Users, accent: '#0A192F', bg: '#F1F5F9', border: '#CBD5E1' },
-    { icon: GraduationCap, accent: '#2563EB', bg: '#EFF6FF', border: '#BFDBFE' },
-    { icon: ClipboardList, accent: '#D97706', bg: '#FFFBEB', border: '#FDE68A' },
-    { icon: BookOpen, accent: '#0A192F', bg: '#F1F5F9', border: '#CBD5E1' },
-    { icon: BarChart2, accent: '#2563EB', bg: '#EFF6FF', border: '#BFDBFE' },
+    { icon: Award, accent: '#0EA5E9', bg: '#FFFBEB', border: '#E0F2FE' },
+    { icon: Users, accent: '#1E3A8A', bg: '#F1F5F9', border: '#CBD5E1' },
+    { icon: GraduationCap, accent: '#1E3A8A', bg: '#F0F9FF', border: '#BFDBFE' },
+    { icon: ClipboardList, accent: '#0EA5E9', bg: '#FFFBEB', border: '#E0F2FE' },
+    { icon: BookOpen, accent: '#1E3A8A', bg: '#F1F5F9', border: '#CBD5E1' },
+    { icon: BarChart2, accent: '#1E3A8A', bg: '#F0F9FF', border: '#BFDBFE' },
     { icon: DollarSign, accent: '#16A34A', bg: '#F0FDF4', border: '#BBF7D0' },
-    { icon: Presentation, accent: '#0A192F', bg: '#F1F5F9', border: '#CBD5E1' },
-    { icon: BookMarked, accent: '#2563EB', bg: '#EFF6FF', border: '#BFDBFE' },
-    { icon: Clock, accent: '#D97706', bg: '#FFFBEB', border: '#FDE68A' },
+    { icon: Presentation, accent: '#1E3A8A', bg: '#F1F5F9', border: '#CBD5E1' },
+    { icon: BookMarked, accent: '#1E3A8A', bg: '#F0F9FF', border: '#BFDBFE' },
+    { icon: Clock, accent: '#0EA5E9', bg: '#FFFBEB', border: '#E0F2FE' },
   ]
 
   const features = t.why.features.map((item, idx) => ({
     ...item,
     icon: featureIcons[idx]?.icon || Award,
-    accent: featureIcons[idx]?.accent || '#0A192F',
+    accent: featureIcons[idx]?.accent || '#1E3A8A',
     bg: featureIcons[idx]?.bg || '#F8FAFC',
     border: featureIcons[idx]?.border || '#E2E8F0',
   }))
@@ -59,18 +59,18 @@ export default function WhyChooseUs() {
           style={{ marginBottom: 40 }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-            <div style={{ width: 4, height: 28, background: '#D97706', borderRadius: 2 }} />
+            <div style={{ width: 4, height: 28, background: '#0EA5E9', borderRadius: 2 }} />
             <span style={{
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontWeight: 700,
               fontSize: 12,
-              color: '#B45309',
+              color: '#0284C7',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               background: '#FEF3C7',
               padding: '4px 10px',
               borderRadius: 4,
-              border: '1px solid #FDE68A',
+              border: '1px solid #E0F2FE',
             }}>
               {t.why.tag}
             </span>
@@ -79,17 +79,17 @@ export default function WhyChooseUs() {
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 20 }}>
             <div style={{ maxWidth: 680 }}>
               <h2 style={{
-                fontFamily: 'Merriweather, Georgia, serif',
+                fontFamily: 'Raleway, Georgia, serif',
                 fontWeight: 900,
                 fontSize: 'clamp(1.9rem, 3.8vw, 2.7rem)',
-                color: '#0A192F',
+                color: '#1E3A8A',
                 lineHeight: 1.2,
                 letterSpacing: '-0.02em',
                 marginBottom: 12,
               }}>
                 {t.why.title}
               </h2>
-              <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#4B5563', lineHeight: 1.7 }}>
+              <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#4B5563', lineHeight: 1.7 }}>
                 {t.why.sub}
               </p>
             </div>
@@ -105,13 +105,13 @@ export default function WhyChooseUs() {
               boxShadow: '0 2px 10px rgba(10,25,47,0.04)',
             }}>
               <div style={{ width: 34, height: 34, borderRadius: 8, background: '#FEF3C7', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <ShieldCheck size={20} color="#D97706" />
+                <ShieldCheck size={20} color="#0EA5E9" />
               </div>
               <div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 12.5, fontWeight: 700, color: '#0A192F', lineHeight: 1.2 }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 12.5, fontWeight: 700, color: '#1E3A8A', lineHeight: 1.2 }}>
                   {t.why.trustBadge || '13+ Years Trusted in Education'}
                 </div>
-                <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11, color: '#6B7280', lineHeight: 1.2, marginTop: 2 }}>
+                <div style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11, color: '#6B7280', lineHeight: 1.2, marginTop: 2 }}>
                   Registered with MOE Malaysia
                 </div>
               </div>
@@ -143,12 +143,12 @@ export default function WhyChooseUs() {
                   gap: 8,
                   padding: '9px 18px',
                   borderRadius: 8,
-                  fontFamily: 'Plus Jakarta Sans, sans-serif',
+                  fontFamily: 'Roboto, sans-serif',
                   fontWeight: 600,
                   fontSize: 13,
                   cursor: 'pointer',
-                  border: isActive ? '1px solid #D97706' : '1px solid #E7E5E4',
-                  background: isActive ? '#0A192F' : '#FFFFFF',
+                  border: isActive ? '1px solid #0EA5E9' : '1px solid #E7E5E4',
+                  background: isActive ? '#1E3A8A' : '#FFFFFF',
                   color: isActive ? '#FFFFFF' : '#4B5563',
                   boxShadow: isActive ? '0 4px 14px rgba(10,25,47,0.2)' : '0 1px 2px rgba(0,0,0,0.02)',
                   transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
@@ -160,7 +160,7 @@ export default function WhyChooseUs() {
                   fontWeight: 700,
                   padding: '2px 8px',
                   borderRadius: 12,
-                  background: isActive ? '#D97706' : '#F3F4F6',
+                  background: isActive ? '#0EA5E9' : '#F3F4F6',
                   color: isActive ? '#FFFFFF' : '#6B7280',
                 }}>
                   {cat.count}
@@ -215,7 +215,7 @@ export default function WhyChooseUs() {
                         left: 0,
                         right: 0,
                         height: 4,
-                        background: 'linear-gradient(90deg, #D97706, #F59E0B)',
+                        background: 'linear-gradient(90deg, #0EA5E9, #38BDF8)',
                       }} />
 
                       {/* Header Row */}
@@ -237,10 +237,10 @@ export default function WhyChooseUs() {
                             </div>
                             <div>
                               <span style={{
-                                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                                fontFamily: 'Roboto, sans-serif',
                                 fontSize: 11,
                                 fontWeight: 800,
-                                color: '#D97706',
+                                color: '#0EA5E9',
                                 letterSpacing: '0.08em',
                                 textTransform: 'uppercase',
                                 display: 'block',
@@ -248,7 +248,7 @@ export default function WhyChooseUs() {
                                 PILLAR {f.num}
                               </span>
                               <span style={{
-                                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                                fontFamily: 'Roboto, sans-serif',
                                 fontSize: 11.5,
                                 fontWeight: 600,
                                 color: '#15803D',
@@ -264,12 +264,12 @@ export default function WhyChooseUs() {
                           </div>
 
                           <span style={{
-                            fontFamily: 'Plus Jakarta Sans, sans-serif',
+                            fontFamily: 'Roboto, sans-serif',
                             fontSize: 11,
                             fontWeight: 700,
                             color: '#FFFFFF',
-                            background: '#0A192F',
-                            border: '1px solid rgba(217,119,6,0.3)',
+                            background: '#1E3A8A',
+                            border: '1px solid rgba(14, 165, 233,0.3)',
                             padding: '4px 10px',
                             borderRadius: 6,
                             letterSpacing: '0.04em',
@@ -280,10 +280,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h3 style={{
-                          fontFamily: 'Merriweather, Georgia, serif',
+                          fontFamily: 'Raleway, Georgia, serif',
                           fontWeight: 700,
                           fontSize: '1.25rem',
-                          color: '#0A192F',
+                          color: '#1E3A8A',
                           marginBottom: 10,
                           lineHeight: 1.35,
                         }}>
@@ -291,7 +291,7 @@ export default function WhyChooseUs() {
                         </h3>
 
                         <p style={{
-                          fontFamily: 'Plus Jakarta Sans, sans-serif',
+                          fontFamily: 'Roboto, sans-serif',
                           fontSize: 14.5,
                           color: '#4B5563',
                           lineHeight: 1.7,
@@ -307,13 +307,13 @@ export default function WhyChooseUs() {
                         paddingTop: 14,
                         borderTop: '1px solid #F3F4F6',
                         fontSize: 12.5,
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                         color: '#6B7280',
                       }}>
-                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontWeight: 600, color: '#D97706' }}>
-                          <CheckCircle2 size={15} color="#D97706" /> Institutional Standard
+                        <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6, fontWeight: 600, color: '#0EA5E9' }}>
+                          <CheckCircle2 size={15} color="#0EA5E9" /> Institutional Standard
                         </span>
-                        <span style={{ fontWeight: 700, color: '#0A192F' }}>
+                        <span style={{ fontWeight: 700, color: '#1E3A8A' }}>
                           Verified Quality
                         </span>
                       </div>
@@ -347,7 +347,7 @@ export default function WhyChooseUs() {
                         position: 'relative',
                         transition: 'all 0.2s ease',
                       }}
-                      onMouseEnter={e => e.currentTarget.style.borderColor = '#D97706'}
+                      onMouseEnter={e => e.currentTarget.style.borderColor = '#0EA5E9'}
                       onMouseLeave={e => e.currentTarget.style.borderColor = '#E7E5E4'}
                     >
                       <div>
@@ -368,7 +368,7 @@ export default function WhyChooseUs() {
 
                           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
                             <span style={{
-                              fontFamily: 'Plus Jakarta Sans, sans-serif',
+                              fontFamily: 'Roboto, sans-serif',
                               fontSize: 11,
                               fontWeight: 800,
                               color: '#9CA3AF',
@@ -377,10 +377,10 @@ export default function WhyChooseUs() {
                               #{f.num}
                             </span>
                             <span style={{
-                              fontFamily: 'Plus Jakarta Sans, sans-serif',
+                              fontFamily: 'Roboto, sans-serif',
                               fontSize: 10.5,
                               fontWeight: 700,
-                              color: f.accent === '#0A192F' ? '#0A192F' : f.accent,
+                              color: f.accent === '#1E3A8A' ? '#1E3A8A' : f.accent,
                               background: f.bg,
                               padding: '3px 7px',
                               borderRadius: 4,
@@ -391,10 +391,10 @@ export default function WhyChooseUs() {
                         </div>
 
                         <h3 style={{
-                          fontFamily: 'Merriweather, Georgia, serif',
+                          fontFamily: 'Raleway, Georgia, serif',
                           fontWeight: 700,
                           fontSize: 15,
-                          color: '#0A192F',
+                          color: '#1E3A8A',
                           marginBottom: 8,
                           lineHeight: 1.35,
                         }}>
@@ -402,7 +402,7 @@ export default function WhyChooseUs() {
                         </h3>
 
                         <p style={{
-                          fontFamily: 'Plus Jakarta Sans, sans-serif',
+                          fontFamily: 'Roboto, sans-serif',
                           fontSize: 13,
                           color: '#4B5563',
                           lineHeight: 1.65,
@@ -418,12 +418,12 @@ export default function WhyChooseUs() {
                         paddingTop: 10,
                         borderTop: '1px solid #F9FAFB',
                         fontSize: 11.5,
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                       }}>
-                        <span style={{ color: '#0A192F', fontWeight: 600 }}>
+                        <span style={{ color: '#1E3A8A', fontWeight: 600 }}>
                           {f.highlight}
                         </span>
-                        <CheckCircle2 size={13} color="#D97706" />
+                        <CheckCircle2 size={13} color="#0EA5E9" />
                       </div>
                     </motion.div>
                   )
@@ -461,7 +461,7 @@ export default function WhyChooseUs() {
                       gap: 16,
                       transition: 'all 0.2s ease',
                     }}
-                    onMouseEnter={e => e.currentTarget.style.borderColor = '#D97706'}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#0EA5E9'}
                     onMouseLeave={e => e.currentTarget.style.borderColor = '#E7E5E4'}
                   >
                     <div>
@@ -479,14 +479,14 @@ export default function WhyChooseUs() {
                           <Icon size={23} color={f.accent} />
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                          <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 11, fontWeight: 800, color: '#9CA3AF' }}>
+                          <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 11, fontWeight: 800, color: '#9CA3AF' }}>
                             PILLAR {f.num}
                           </span>
                           <span style={{
-                            fontFamily: 'Plus Jakarta Sans, sans-serif',
+                            fontFamily: 'Roboto, sans-serif',
                             fontSize: 11,
                             fontWeight: 700,
-                            color: f.accent === '#0A192F' ? '#0A192F' : f.accent,
+                            color: f.accent === '#1E3A8A' ? '#1E3A8A' : f.accent,
                             background: f.bg,
                             padding: '3px 8px',
                             borderRadius: 4,
@@ -497,10 +497,10 @@ export default function WhyChooseUs() {
                       </div>
 
                       <h3 style={{
-                        fontFamily: 'Merriweather, Georgia, serif',
+                        fontFamily: 'Raleway, Georgia, serif',
                         fontWeight: 700,
                         fontSize: 16,
-                        color: '#0A192F',
+                        color: '#1E3A8A',
                         marginBottom: 8,
                         lineHeight: 1.35,
                       }}>
@@ -508,7 +508,7 @@ export default function WhyChooseUs() {
                       </h3>
 
                       <p style={{
-                        fontFamily: 'Plus Jakarta Sans, sans-serif',
+                        fontFamily: 'Roboto, sans-serif',
                         fontSize: 13.5,
                         color: '#4B5563',
                         lineHeight: 1.65,
@@ -524,13 +524,13 @@ export default function WhyChooseUs() {
                       paddingTop: 12,
                       borderTop: '1px solid #F3F4F6',
                       fontSize: 12,
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      fontFamily: 'Roboto, sans-serif',
                     }}>
-                      <span style={{ color: '#0A192F', fontWeight: 600 }}>
+                      <span style={{ color: '#1E3A8A', fontWeight: 600 }}>
                         {f.highlight}
                       </span>
-                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: '#D97706', fontWeight: 700 }}>
-                        <CheckCircle2 size={14} color="#D97706" /> Verified
+                      <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4, color: '#0EA5E9', fontWeight: 700 }}>
+                        <CheckCircle2 size={14} color="#0EA5E9" /> Verified
                       </span>
                     </div>
                   </motion.div>
@@ -547,10 +547,10 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.5, delay: 0.2 }}
           style={{
             marginTop: 44,
-            background: 'linear-gradient(135deg, #0A192F 0%, #112240 100%)',
+            background: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%)',
             borderRadius: 14,
             padding: '28px 32px',
-            border: '1px solid rgba(217,119,6,0.35)',
+            border: '1px solid rgba(14, 165, 233,0.35)',
             boxShadow: '0 12px 36px rgba(10,25,47,0.25)',
             display: 'flex',
             alignItems: 'center',
@@ -560,11 +560,11 @@ export default function WhyChooseUs() {
           }}
         >
           <div style={{ maxWidth: 620 }}>
-            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#F59E0B', fontSize: 11.5, fontWeight: 700, fontFamily: 'Plus Jakarta Sans, sans-serif', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 6 }}>
-              <ShieldCheck size={14} color="#F59E0B" /> {t.why.tag}
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, color: '#38BDF8', fontSize: 11.5, fontWeight: 700, fontFamily: 'Roboto, sans-serif', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: 6 }}>
+              <ShieldCheck size={14} color="#38BDF8" /> {t.why.tag}
             </div>
             <h4 style={{
-              fontFamily: 'Merriweather, Georgia, serif',
+              fontFamily: 'Raleway, Georgia, serif',
               fontWeight: 800,
               fontSize: '1.25rem',
               color: '#FFFFFF',
@@ -574,7 +574,7 @@ export default function WhyChooseUs() {
               {t.why.calloutTitle || 'Experience the Bestari Didik Advantage Today'}
             </h4>
             <p style={{
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontSize: 13.5,
               color: '#CBD5E1',
               lineHeight: 1.5,
@@ -593,21 +593,21 @@ export default function WhyChooseUs() {
                 gap: 8,
                 padding: '12px 24px',
                 borderRadius: 8,
-                background: 'linear-gradient(135deg, #D97706, #B45309)',
+                background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
                 color: '#FFFFFF',
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontWeight: 700,
                 fontSize: 13.5,
-                boxShadow: '0 4px 14px rgba(217,119,6,0.3)',
+                boxShadow: '0 4px 14px rgba(14, 165, 233,0.3)',
                 transition: 'all 0.2s',
                 whiteSpace: 'nowrap',
               }}
               onMouseEnter={e => {
-                e.currentTarget.style.boxShadow = '0 6px 20px rgba(217,119,6,0.5)'
+                e.currentTarget.style.boxShadow = '0 6px 20px rgba(14, 165, 233,0.5)'
                 e.currentTarget.style.transform = 'translateY(-1px)'
               }}
               onMouseLeave={e => {
-                e.currentTarget.style.boxShadow = '0 4px 14px rgba(217,119,6,0.3)'
+                e.currentTarget.style.boxShadow = '0 4px 14px rgba(14, 165, 233,0.3)'
                 e.currentTarget.style.transform = 'translateY(0)'
               }}
             >
@@ -627,7 +627,7 @@ export default function WhyChooseUs() {
                 background: 'rgba(255,255,255,0.08)',
                 color: '#FFFFFF',
                 border: '1px solid rgba(255,255,255,0.2)',
-                fontFamily: 'Plus Jakarta Sans, sans-serif',
+                fontFamily: 'Roboto, sans-serif',
                 fontWeight: 600,
                 fontSize: 13.5,
                 transition: 'all 0.2s',

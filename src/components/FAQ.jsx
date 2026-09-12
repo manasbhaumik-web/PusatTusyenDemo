@@ -94,20 +94,20 @@ export default function FAQ() {
           transition={{ duration: 0.5 }}
           style={{ textAlign: 'center', marginBottom: 48 }}
         >
-          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '5px 14px', background: '#FEF3C7', border: '1px solid #FDE68A', borderRadius: 100, color: '#B45309', fontSize: 12, fontWeight: 700, fontFamily: 'Plus Jakarta Sans, sans-serif', marginBottom: 12, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-            <HelpCircle size={14} color="#D97706" /> {t.faq.tag}
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: 6, padding: '5px 14px', background: '#FEF3C7', border: '1px solid #E0F2FE', borderRadius: 100, color: '#0284C7', fontSize: 12, fontWeight: 700, fontFamily: 'Roboto, sans-serif', marginBottom: 12, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+            <HelpCircle size={14} color="#0EA5E9" /> {t.faq.tag}
           </div>
           <h2 style={{
-            fontFamily: 'Merriweather, Georgia, serif',
+            fontFamily: 'Raleway, Georgia, serif',
             fontWeight: 900,
             fontSize: 'clamp(1.9rem, 3.8vw, 2.7rem)',
-            color: '#0A192F',
+            color: '#1E3A8A',
             lineHeight: 1.2,
             letterSpacing: '-0.02em',
           }}>
             {t.faq.title}
           </h2>
-          <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, maxWidth: 540, margin: '10px auto 0', lineHeight: 1.7 }}>
+          <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 10, maxWidth: 540, margin: '10px auto 0', lineHeight: 1.7 }}>
             {t.faq.sub}
           </p>
         </motion.div>
@@ -124,7 +124,7 @@ export default function FAQ() {
                 transition={{ delay: idx * 0.08, duration: 0.4 }}
                 style={{
                   borderRadius: 12,
-                  border: `1.5px solid ${isOpen ? '#D97706' : '#E7E5E4'}`,
+                  border: `1.5px solid ${isOpen ? '#0EA5E9' : '#E7E5E4'}`,
                   background: isOpen ? '#FFFFFF' : '#FFFFFF',
                   boxShadow: isOpen ? '0 8px 24px rgba(10,25,47,0.06)' : '0 2px 6px rgba(10,25,47,0.02)',
                   overflow: 'hidden',
@@ -147,14 +147,14 @@ export default function FAQ() {
                   }}
                   aria-expanded={isOpen}
                 >
-                  <span style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 700, fontSize: 16, color: isOpen ? '#0A192F' : '#1F2937' }}>
+                  <span style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 700, fontSize: 16, color: isOpen ? '#1E3A8A' : '#1F2937' }}>
                     {faq.q}
                   </span>
                   <div style={{
                     width: 32, height: 32, borderRadius: 8,
-                    background: isOpen ? '#0A192F' : '#F3F4F6',
-                    color: isOpen ? '#F59E0B' : '#6B7280',
-                    border: isOpen ? '1px solid #D97706' : '1px solid transparent',
+                    background: isOpen ? '#1E3A8A' : '#F3F4F6',
+                    color: isOpen ? '#38BDF8' : '#6B7280',
+                    border: isOpen ? '1px solid #0EA5E9' : '1px solid transparent',
                     display: 'flex', alignItems: 'center', justifyContent: 'center',
                     flexShrink: 0, transition: 'all 0.2s',
                   }}>
@@ -172,7 +172,7 @@ export default function FAQ() {
                       style={{ overflow: 'hidden' }}
                     >
                       <div style={{ padding: '0 24px 22px', borderTop: '1px solid #F3F4F6' }}>
-                        <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 14.5, color: '#4B5563', lineHeight: 1.75, paddingTop: 12 }}>
+                        <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 14.5, color: '#4B5563', lineHeight: 1.75, paddingTop: 12 }}>
                           {faq.a}
                         </p>
                       </div>
@@ -187,9 +187,9 @@ export default function FAQ() {
         {/* Help CTA Box */}
         <div style={{
           marginTop: 48,
-          background: 'linear-gradient(135deg, #0A192F 0%, #112240 100%)',
+          background: 'linear-gradient(135deg, #1E3A8A 0%, #1E40AF 100%)',
           borderRadius: 14,
-          border: '1px solid rgba(217,119,6,0.35)',
+          border: '1px solid rgba(14, 165, 233,0.35)',
           padding: '28px 32px',
           boxShadow: '0 12px 36px rgba(10,25,47,0.18)',
           display: 'flex',
@@ -199,10 +199,10 @@ export default function FAQ() {
           gap: 16,
         }}>
           <div>
-            <h4 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: 16, color: '#FFFFFF', marginBottom: 4 }}>
+            <h4 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: 16, color: '#FFFFFF', marginBottom: 4 }}>
               Have a specific question not answered here?
             </h4>
-            <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#CBD5E1', margin: 0 }}>
+            <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#CBD5E1', margin: 0 }}>
               Our administration team is available Monday – Friday (7:30 AM – 7:00 PM) to assist you.
             </p>
           </div>
@@ -216,20 +216,20 @@ export default function FAQ() {
               gap: 8,
               padding: '12px 24px',
               borderRadius: 8,
-              background: 'linear-gradient(135deg, #D97706, #B45309)',
+              background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
               color: '#FFFFFF',
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontWeight: 700,
               fontSize: 13.5,
-              boxShadow: '0 4px 14px rgba(217,119,6,0.3)',
+              boxShadow: '0 4px 14px rgba(14, 165, 233,0.3)',
               transition: 'all 0.2s',
             }}
             onMouseEnter={e => {
-              e.currentTarget.style.boxShadow = '0 6px 20px rgba(217,119,6,0.5)'
+              e.currentTarget.style.boxShadow = '0 6px 20px rgba(14, 165, 233,0.5)'
               e.currentTarget.style.transform = 'translateY(-1px)'
             }}
             onMouseLeave={e => {
-              e.currentTarget.style.boxShadow = '0 4px 14px rgba(217,119,6,0.3)'
+              e.currentTarget.style.boxShadow = '0 4px 14px rgba(14, 165, 233,0.3)'
               e.currentTarget.style.transform = 'translateY(0)'
             }}
           >

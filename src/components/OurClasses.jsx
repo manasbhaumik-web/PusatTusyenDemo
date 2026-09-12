@@ -15,10 +15,10 @@ export default function OurClasses() {
       badge: t.classes.physical.badge,
       desc: t.classes.physical.desc,
       points: [t.classes.physical.f1, t.classes.physical.f2, t.classes.physical.f3, t.classes.physical.f4],
-      color: '#0A192F',
-      accentColor: '#D97706',
+      color: '#1E3A8A',
+      accentColor: '#0EA5E9',
       bgLight: '#FFFBEB',
-      borderLight: '#FDE68A',
+      borderLight: '#E0F2FE',
       href: '#contact',
       cta: t.classes.physical.cta,
     },
@@ -28,10 +28,10 @@ export default function OurClasses() {
       badge: t.classes.online.badge,
       desc: t.classes.online.desc,
       points: [t.classes.online.f1, t.classes.online.f2, t.classes.online.f3, t.classes.online.f4],
-      color: '#D97706',
-      accentColor: '#D97706',
+      color: '#0EA5E9',
+      accentColor: '#0EA5E9',
       bgLight: '#FFFBEB',
-      borderLight: '#FDE68A',
+      borderLight: '#E0F2FE',
       href: '#contact',
       cta: t.classes.online.cta,
     },
@@ -41,9 +41,9 @@ export default function OurClasses() {
       badge: t.classes.private.badge,
       desc: t.classes.private.desc,
       points: [t.classes.private.f1, t.classes.private.f2, t.classes.private.f3, t.classes.private.f4],
-      color: '#2563EB',
-      accentColor: '#2563EB',
-      bgLight: '#EFF6FF',
+      color: '#1E3A8A',
+      accentColor: '#1E3A8A',
+      bgLight: '#F0F9FF',
       borderLight: '#BFDBFE',
       href: '#contact',
       cta: t.classes.private.cta,
@@ -63,33 +63,33 @@ export default function OurClasses() {
           style={{ marginBottom: 48 }}
         >
           <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
-            <div style={{ width: 4, height: 28, background: '#D97706', borderRadius: 2 }} />
+            <div style={{ width: 4, height: 28, background: '#0EA5E9', borderRadius: 2 }} />
             <span style={{
-              fontFamily: 'Plus Jakarta Sans, sans-serif',
+              fontFamily: 'Roboto, sans-serif',
               fontWeight: 700,
               fontSize: 12,
-              color: '#B45309',
+              color: '#0284C7',
               letterSpacing: '0.08em',
               textTransform: 'uppercase',
               background: '#FEF3C7',
               padding: '4px 10px',
               borderRadius: 4,
-              border: '1px solid #FDE68A',
+              border: '1px solid #E0F2FE',
             }}>
               {t.classes.tag}
             </span>
           </div>
           <h2 style={{
-            fontFamily: 'Merriweather, Georgia, serif',
+            fontFamily: 'Raleway, Georgia, serif',
             fontWeight: 900,
             fontSize: 'clamp(1.9rem, 3.8vw, 2.7rem)',
-            color: '#0A192F',
+            color: '#1E3A8A',
             lineHeight: 1.2,
             letterSpacing: '-0.02em',
           }}>
             {t.classes.title}
           </h2>
-          <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 12, maxWidth: 560, lineHeight: 1.7 }}>
+          <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 15.5, color: '#4B5563', marginTop: 12, maxWidth: 560, lineHeight: 1.7 }}>
             {t.classes.sub}
           </p>
         </motion.div>
@@ -115,11 +115,11 @@ export default function OurClasses() {
                   flexDirection: 'column',
                   transition: 'all 0.28s',
                 }}
-                onMouseEnter={e => e.currentTarget.style.borderColor = '#D97706'}
+                onMouseEnter={e => e.currentTarget.style.borderColor = '#0EA5E9'}
                 onMouseLeave={e => e.currentTarget.style.borderColor = '#E7E5E4'}
               >
                 {/* Top accent bar */}
-                <div style={{ height: 4, background: cls.color === '#0A192F' ? 'linear-gradient(90deg, #0A192F, #D97706)' : cls.color }} />
+                <div style={{ height: 4, background: cls.color === '#1E3A8A' ? 'linear-gradient(90deg, #1E3A8A, #0EA5E9)' : cls.color }} />
 
                 {/* Card header */}
                 <div style={{ padding: '28px 26px 20px' }}>
@@ -130,24 +130,24 @@ export default function OurClasses() {
                       border: `1.5px solid ${cls.borderLight}`,
                       display: 'flex', alignItems: 'center', justifyContent: 'center',
                     }}>
-                      <Icon size={26} color={cls.color === '#0A192F' ? '#D97706' : cls.color} />
+                      <Icon size={26} color={cls.color === '#1E3A8A' ? '#0EA5E9' : cls.color} />
                     </div>
                     <span style={{
                       padding: '4px 10px', borderRadius: 6,
                       background: cls.bgLight,
-                      color: cls.color === '#0A192F' ? '#B45309' : cls.color,
+                      color: cls.color === '#1E3A8A' ? '#0284C7' : cls.color,
                       border: `1px solid ${cls.borderLight}`,
                       fontSize: 11, fontWeight: 700,
-                      fontFamily: 'Plus Jakarta Sans, sans-serif',
+                      fontFamily: 'Roboto, sans-serif',
                       letterSpacing: '0.04em', textTransform: 'uppercase',
                     }}>
                       {cls.badge}
                     </span>
                   </div>
-                  <h3 style={{ fontFamily: 'Merriweather, Georgia, serif', fontWeight: 800, fontSize: '1.3rem', color: '#0A192F', marginBottom: 10 }}>
+                  <h3 style={{ fontFamily: 'Raleway, Georgia, serif', fontWeight: 800, fontSize: '1.3rem', color: '#1E3A8A', marginBottom: 10 }}>
                     {cls.title}
                   </h3>
-                  <p style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 14, color: '#4B5563', lineHeight: 1.7 }}>
+                  <p style={{ fontFamily: 'Roboto, sans-serif', fontSize: 14, color: '#4B5563', lineHeight: 1.7 }}>
                     {cls.desc}
                   </p>
                 </div>
@@ -157,8 +157,8 @@ export default function OurClasses() {
                   <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: 10 }}>
                     {cls.points.map(pt => (
                       <li key={pt} style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
-                        <CheckCircle size={16} color="#D97706" style={{ flexShrink: 0 }} />
-                        <span style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontSize: 13.5, color: '#374151' }}>{pt}</span>
+                        <CheckCircle size={16} color="#0EA5E9" style={{ flexShrink: 0 }} />
+                        <span style={{ fontFamily: 'Roboto, sans-serif', fontSize: 13.5, color: '#374151' }}>{pt}</span>
                       </li>
                     ))}
                   </ul>
@@ -169,10 +169,10 @@ export default function OurClasses() {
                     style={{
                       display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: 8,
                       padding: '12px 22px', borderRadius: 8,
-                      background: cls.color === '#0A192F' ? '#0A192F' : cls.color,
+                      background: cls.color === '#1E3A8A' ? '#1E3A8A' : cls.color,
                       color: '#fff',
-                      border: '1px solid rgba(217,119,6,0.3)',
-                      fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700, fontSize: 13.5,
+                      border: '1px solid rgba(14, 165, 233,0.3)',
+                      fontFamily: 'Roboto, sans-serif', fontWeight: 700, fontSize: 13.5,
                       transition: 'all 0.2s', alignSelf: 'flex-start',
                       boxShadow: '0 2px 8px rgba(10,25,47,0.12)',
                     }}

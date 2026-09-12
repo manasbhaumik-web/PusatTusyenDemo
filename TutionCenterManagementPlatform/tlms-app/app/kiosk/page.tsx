@@ -1,147 +1,58 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-const MOCK_STUDENTS: Record<string, { name: string, form: string, className: string, room: string, time: string, parent: string }> = {
-  '080512-10-1234': { name: 'Daniel Wong Jun Kiat', form: 'Form 5', className: 'SPM Additional Mathematics', room: 'Room 1', time: '09:58 AM', parent: 'Mrs. Sharon Tan (+6012-***5678)' },
-}
-
-export default function KioskPage() {
+export default function Kiosk() {
   const [ic, setIc] = useState('')
-  const [scanning, setScanning] = useState(true)
-  const [student, setStudent] = useState<typeof MOCK_STUDENTS[string] | null>(null)
-  const [pulse, setPulse] = useState(false)
+  const [scanned, setScanned] = useState(false)
 
   useEffect(() => {
-    const interval = setInterval(() => setPulse(p => !p), 1000)
-    return () => clearInterval(interval)
-  }, [])
-
-  useEffect(() => {
-    if (student) {
-      const t = setTimeout(() => { setStudent(null); setIc(''); setScanning(true); }, 5000)
+    if (scanned) {
+      const t = setTimeout(() => { setScanned(false); setIc(''); }, 4000)
       return () => clearTimeout(t)
     }
-  }, [student])
-
-  function handleCheck() {
-    const found = MOCK_STUDENTS[ic] || MOCK_STUDENTS['080512-10-1234']
-    if (found) {
-      setStudent(found)
-      setScanning(false)
-    }
-  }
+  }, [scanned])
 
   return (
-    <div data-theme="dark" style={{
-      minHeight: '100vh', background: '#090D16',
-      display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
-      fontFamily: 'var(--font-sans)', position: 'relative', overflow: 'hidden', padding: 24,
-    }}>
-      {/* Background gradient */}
-      <div style={{ position: 'absolute', top: -200, left: '50%', transform: 'translateX(-50%)', width: 600, height: 600, borderRadius: '50%', background: 'radial-gradient(circle, rgba(29,78,216,0.12) 0%, transparent 70%)', pointerEvents: 'none' }} />
-
-      {!student ? (
-        <>
-          {/* Logo & header */}
-          <div style={{ textAlign: 'center', marginBottom: 40 }}>
-            <div style={{ width: 64, height: 64, borderRadius: 16, background: 'linear-gradient(135deg, #1D4ED8, #3B82F6)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', boxShadow: '0 0 40px rgba(29,78,216,0.4)' }}>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 28, color: '#fff' }}>T</span>
-            </div>
-            <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 28, color: '#F8FAFC', letterSpacing: '-0.02em' }}>Pusat Tusyen Inspirasi</h1>
-            <p style={{ color: '#64748B', fontSize: 14, marginTop: 6 }}>📍 Subang Jaya SS15 Campus · Student Check-In</p>
+    <div style={{ minHeight: '100vh', background: 'var(--sidebar-bg)', color: '#fff', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: 24, position: 'relative' }}>
+      
+      {!scanned ? (
+        <div style={{ textAlign: 'center', maxWidth: 400, width: '100%' }}>
+          <div style={{ width: 64, height: 64, borderRadius: 16, background: 'linear-gradient(135deg, #0D9488 0%, #0891B2 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px' }}>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h1 style={{ fontFamily: 'DM Sans', fontSize: 28, fontWeight: 700, marginBottom: 8 }}>Academix Pro Kiosk</h1>
+          <p style={{ color: 'var(--sidebar-muted)', marginBottom: 40 }}>Please scan your Student ID or enter IC number below.</p>
+          
+          <div style={{ background: '#0F172A', border: '1px solid var(--primary)', borderRadius: 16, height: 260, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: 24, position: 'relative', boxShadow: '0 0 20px rgba(13,148,136,0.2)' }}>
+             <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginBottom: 16 }}><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>
+             <p style={{ color: 'var(--sidebar-text)', fontSize: 14 }}>Hold QR Code steady within frame</p>
           </div>
 
-          {/* Camera viewport */}
-          <div style={{
-            width: 320, height: 260, borderRadius: 16,
-            border: `2px solid ${pulse ? '#3B82F6' : '#1E293B'}`,
-            background: '#0F172A', display: 'flex', flexDirection: 'column',
-            alignItems: 'center', justifyContent: 'center', gap: 12,
-            marginBottom: 28, position: 'relative', overflow: 'hidden',
-            transition: 'border-color 500ms',
-            boxShadow: pulse ? '0 0 24px rgba(59,130,246,0.2)' : 'none',
-          }}>
-            {/* Scan corners */}
-            {[{top:12,left:12,borderT:true,borderL:true},{top:12,right:12,borderT:true,borderR:true},{bottom:12,left:12,borderB:true,borderL:true},{bottom:12,right:12,borderB:true,borderR:true}].map((s,i) => (
-              <div key={i} style={{ position:'absolute', top:s.top, bottom:s.bottom, left:s.left, right:s.right, width:24, height:24, borderColor:'#3B82F6', borderStyle:'solid', borderWidth:0, borderTopWidth: s.borderT ? 3:0, borderLeftWidth: s.borderL ? 3:0, borderRightWidth: s.borderR ? 3:0, borderBottomWidth: s.borderB ? 3:0 }} />
-            ))}
-            <div style={{ fontSize: 40 }}>📷</div>
-            <p style={{ color: '#475569', fontSize: 13, textAlign: 'center', lineHeight: 1.5 }}>Position Student QR Badge<br />Inside The Frame</p>
-            <div style={{ fontSize: 11, color: '#3B82F6', fontWeight: 600, fontFamily: 'var(--font-mono)' }}>SCANNING · 30 FPS</div>
-          </div>
-
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, marginBottom: 24, color: '#475569', fontSize: 13 }}>
-            <div style={{ flex: 1, height: 1, background: '#1E293B' }} />
-            OR ENTER IC / STUDENT ID
-            <div style={{ flex: 1, height: 1, background: '#1E293B' }} />
-          </div>
-
-          {/* IC input */}
-          <div style={{ display: 'flex', gap: 10 }}>
-            <input
-              value={ic} onChange={e => setIc(e.target.value)}
-              onKeyDown={e => e.key === 'Enter' && handleCheck()}
-              placeholder="080512-10-1234"
-              style={{
-                width: 240, padding: '12px 16px', borderRadius: 10,
-                border: '1px solid #1E293B', background: '#0F172A',
-                color: '#F8FAFC', fontFamily: 'var(--font-mono)', fontSize: 15,
-                outline: 'none', letterSpacing: '0.05em',
-              }}
-            />
-            <button onClick={handleCheck} style={{
-              padding: '12px 20px', borderRadius: 10, border: 'none',
-              background: 'linear-gradient(135deg, #1D4ED8, #3B82F6)', color: '#fff',
-              cursor: 'pointer', fontWeight: 700, fontSize: 14, fontFamily: 'var(--font-sans)',
-            }}>Check In →</button>
-          </div>
-
-          {/* Try demo */}
-          <button onClick={handleCheck} style={{ marginTop: 28, padding: '8px 20px', borderRadius: 8, border: '1px solid #1E293B', background: 'transparent', color: '#64748B', cursor: 'pointer', fontSize: 12 }}>
-            Try Demo Scan →
-          </button>
-        </>
-      ) : (
-        /* Success overlay */
-        <div style={{
-          width: '100%', maxWidth: 480, background: '#0F172A',
-          borderRadius: 20, padding: 36, textAlign: 'center',
-          border: '1px solid rgba(5,150,105,0.4)',
-          boxShadow: '0 0 60px rgba(5,150,105,0.2)',
-          animation: 'fadeIn 0.3s ease',
-        }}>
-          <div style={{ fontSize: 64, marginBottom: 12 }}>✅</div>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 26, color: '#F8FAFC', marginBottom: 4 }}>
-            Welcome, {student.name}!
-          </h2>
-          <p style={{ color: '#34D399', fontWeight: 600, fontSize: 14, marginBottom: 24 }}>{student.form}</p>
-          <div style={{ background: '#1E293B', borderRadius: 12, padding: 20, textAlign: 'left', display: 'flex', flexDirection: 'column', gap: 12, marginBottom: 20 }}>
-            {[
-              { icon: '🕒', label: 'Checked In', value: student.time },
-              { icon: '📚', label: 'Class', value: student.className },
-              { icon: '🏫', label: 'Room', value: student.room },
-              { icon: '📱', label: 'WhatsApp Sent', value: student.parent },
-            ].map(item => (
-              <div key={item.label} style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-                <span style={{ fontSize: 20 }}>{item.icon}</span>
-                <div>
-                  <div style={{ fontSize: 11, color: '#64748B', fontWeight: 500 }}>{item.label}</div>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: '#F8FAFC' }}>{item.value}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div style={{ fontSize: 12, color: '#475569' }}>Resetting in 5 seconds…</div>
-          <div style={{ height: 3, background: '#1E293B', borderRadius: 3, marginTop: 12, overflow: 'hidden' }}>
-            <div style={{ height: '100%', background: '#059669', borderRadius: 3, animation: 'shrink 5s linear forwards', width: '100%' }} />
+          <div style={{ display: 'flex', gap: 12 }}>
+            <input value={ic} onChange={e => setIc(e.target.value)} onKeyDown={e => e.key === 'Enter' && setScanned(true)} placeholder="Enter IC Number..." style={{ flex: 1, padding: '14px 20px', borderRadius: 12, border: '1px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.05)', color: '#fff', fontSize: 16, outline: 'none', fontFamily: 'DM Mono' }} />
+            <button onClick={() => setScanned(true)} style={{ padding: '14px 24px', borderRadius: 12, border: 'none', background: 'var(--primary)', color: '#fff', fontWeight: 600, fontSize: 16, cursor: 'pointer' }}>Enter</button>
           </div>
         </div>
+      ) : (
+        <div style={{ background: 'var(--bg-surface)', color: 'var(--text-primary)', padding: 40, borderRadius: 24, textAlign: 'center', maxWidth: 400, width: '100%', boxShadow: '0 20px 40px rgba(0,0,0,0.3)', border: '2px solid var(--success)' }}>
+          <div style={{ width: 80, height: 80, borderRadius: '50%', background: 'var(--success-bg)', color: 'var(--success)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 20px' }}>
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 style={{ fontFamily: 'DM Sans', fontSize: 24, fontWeight: 700, marginBottom: 8 }}>Welcome, Ahmad Zikri!</h2>
+          <p style={{ color: 'var(--text-secondary)', fontSize: 15, marginBottom: 24 }}>Successfully checked in for <strong>SPM Physics</strong> at Room 2A.</p>
+          <div style={{ background: 'var(--bg-surface-alt)', padding: 16, borderRadius: 12, textAlign: 'left', marginBottom: 20 }}>
+            <div style={{ fontSize: 12, color: 'var(--text-muted)', marginBottom: 4 }}>WhatsApp Notification</div>
+            <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--success)', display: 'flex', alignItems: 'center', gap: 6 }}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Sent to Parent (012-***-4567)
+            </div>
+          </div>
+          <div style={{ height: 4, background: 'var(--border)', borderRadius: 2, overflow: 'hidden' }}>
+             <div style={{ height: '100%', background: 'var(--success)', animation: 'shrink 4s linear forwards' }} />
+          </div>
+          <style>{`@keyframes shrink { from { width: 100% } to { width: 0% } }`}</style>
+        </div>
       )}
-
-      <style>{`
-        @keyframes fadeIn { from { opacity: 0; transform: scale(0.96); } to { opacity: 1; transform: scale(1); } }
-        @keyframes shrink { from { width: 100%; } to { width: 0%; } }
-      `}</style>
     </div>
   )
 }
